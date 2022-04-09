@@ -61,6 +61,19 @@
         crossChapter: true,
         crossChapterText: true,
       },
+
+      plugins: [
+        function (hook, vm) {
+          hook.beforeEach(function (html) {
+            let candidates = html.match(/==(.+?)==/g);
+            for (var i = 0; i < candidates.length; i++) {
+              html = html.replace(candidates[i],
+                `<mark>` + candidates[i].replace(/==/g, "") + `</mark>`);
+            }
+            return html;
+          })
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
