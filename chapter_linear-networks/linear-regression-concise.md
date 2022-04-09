@@ -251,5 +251,5 @@ print('b的估计误差：', true_b - b)
 1. 你如何访问线性回归的梯度？
 
 
-[Discussions](https://discuss.d2l.ai/t/1781)
+
 

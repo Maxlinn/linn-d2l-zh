@@ -7,7 +7,7 @@ Kaggle的房价预测比赛是一个很好的起点。
 此数据集由Bart de Cock于2011年收集 :cite:`De-Cock.2011`，
 涵盖了2006-2010年期间亚利桑那州埃姆斯市的房价。
 这个数据集是相当通用的，不会需要使用复杂模型架构。
-它比哈里森和鲁宾菲尔德的[波士顿房价](https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names)
+它比哈里森和鲁宾菲尔德的
 数据集要大得多，也有更多的特征。
 
 本节我们将详细介绍数据预处理、模型设计和超参数选择。
@@ -97,7 +97,7 @@ def download_all():  #@save
 
 ## Kaggle
 
-[Kaggle](https://www.kaggle.com)是一个当今流行举办机器学习比赛的平台，
+是一个当今流行举办机器学习比赛的平台，
 每场比赛都以至少一个数据集为中心。
 许多比赛有赞助方，他们为获胜的解决方案提供奖金。
 该平台帮助用户通过论坛和共享代码进行互动，促进协作和竞争。
@@ -443,7 +443,7 @@ print(f'{k}-折验证: 平均训练log rmse: {float(train_l):f}, '
 
 
     
-![svg](kaggle-house-price_files/kaggle-house-price_35_1.svg)
+![svg](chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_35_1.svg)
     
 
 
@@ -496,7 +496,7 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 
 
     
-![svg](kaggle-house-price_files/kaggle-house-price_39_1.svg)
+![svg](chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_39_1.svg)
     
 
 
@@ -531,5 +531,5 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 1. 如果我们没有像本节所做的那样标准化连续的数值特征，会发生什么？
 
 
-[Discussions](https://discuss.d2l.ai/t/1824)
+
 

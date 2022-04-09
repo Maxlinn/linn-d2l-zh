@@ -114,7 +114,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, updater)
 
 
     
-![svg](mlp-scratch_files/mlp-scratch_12_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp-scratch_files/mlp-scratch_12_0.svg)
     
 
 
@@ -128,7 +128,7 @@ d2l.predict_ch3(net, test_iter)
 
 
     
-![svg](mlp-scratch_files/mlp-scratch_14_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp-scratch_files/mlp-scratch_14_0.svg)
     
 
 
@@ -146,5 +146,5 @@ d2l.predict_ch3(net, test_iter)
 1. 如果要构建多个超参数的搜索方法，你能想到的最聪明的策略是什么？
 
 
-[Discussions](https://discuss.d2l.ai/t/1804)
+
 

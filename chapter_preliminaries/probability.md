@@ -149,7 +149,7 @@ d2l.plt.legend();
 
 
     
-![svg](probability_files/probability_9_0.svg)
+![svg](chapter_preliminaries/probability_files/probability_9_0.svg)
     
 
 
@@ -207,7 +207,7 @@ d2l.plt.legend();
 高度恰好为1.80米的概率为0，但密度不是0。
 在任何两个不同高度之间的区间，我们都有非零的概率。
 在本节的其余部分中，我们将考虑离散空间中的概率。
-对于连续随机变量的概率，你可以参考深度学习数学附录中[随机变量](https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/random-variables.html)
+对于连续随机变量的概率，你可以参考深度学习数学附录中
 的一节。
 
 ## 处理多个随机变量
@@ -403,10 +403,10 @@ $$\mathrm{Var}[f(x)] = E\left[\left(f(x) - E[f(x)]\right)^2\right].$$
 ## 练习
 
 1. 进行$m=500$组实验，每组抽取$n=10$个样本。改变$m$和$n$，观察和分析实验结果。
-2. 给定两个概率为$P(\mathcal{A})$和$P(\mathcal{B})$的事件，计算$P(\mathcal{A} \cup \mathcal{B})$和$P(\mathcal{A} \cap \mathcal{B})$的上限和下限。（提示：使用[友元图](https://en.wikipedia.org/wiki/Venn_diagram)来展示这些情况。)
-3. 假设我们有一系列随机变量，例如$A$、$B$和$C$，其中$B$只依赖于$A$，而$C$只依赖于$B$，你能简化联合概率$P(A, B, C)$吗？（提示：这是一个[马尔可夫链](https://en.wikipedia.org/wiki/Markov_chain)。)
+2. 给定两个概率为$P(\mathcal{A})$和$P(\mathcal{B})$的事件，计算$P(\mathcal{A} \cup \mathcal{B})$和$P(\mathcal{A} \cap \mathcal{B})$的上限和下限。（提示：使用来展示这些情况。)
+3. 假设我们有一系列随机变量，例如$A$、$B$和$C$，其中$B$只依赖于$A$，而$C$只依赖于$B$，你能简化联合概率$P(A, B, C)$吗？（提示：这是一个。)
 4. 在 :numref:`subsec_probability_hiv_app`中，第一个测试更准确。为什么不运行第一个测试两次，而是同时运行第一个和第二个测试?
 
 
-[Discussions](https://discuss.d2l.ai/t/1762)
+
 

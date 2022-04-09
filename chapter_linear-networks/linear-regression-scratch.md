@@ -81,7 +81,7 @@ d2l.plt.scatter(features[:, (1)].detach().numpy(), labels.detach().numpy(), 1);
 
 
     
-![svg](linear-regression-scratch_files/linear-regression-scratch_8_0.svg)
+![svg](chapter_linear-networks/linear-regression-scratch_files/linear-regression-scratch_8_0.svg)
     
 
 
@@ -309,13 +309,13 @@ print(f'b的估计误差: {true_b - b}')
 ## 练习
 
 1. 如果我们将权重初始化为零，会发生什么。算法仍然有效吗？
-1. 假设你是[乔治·西蒙·欧姆](https://en.wikipedia.org/wiki/Georg_Ohm)，试图为电压和电流的关系建立一个模型。你能使用自动微分来学习模型的参数吗?
-1. 您能基于[普朗克定律](https://en.wikipedia.org/wiki/Planck%27s_law)使用光谱能量密度来确定物体的温度吗？
+1. 假设你是，试图为电压和电流的关系建立一个模型。你能使用自动微分来学习模型的参数吗?
+1. 您能基于使用光谱能量密度来确定物体的温度吗？
 1. 如果你想计算二阶导数可能会遇到什么问题？你会如何解决这些问题？
 1. 为什么在`squared_loss`函数中需要使用`reshape`函数？
 1. 尝试使用不同的学习率，观察损失函数值下降的快慢。
 1. 如果样本个数不能被批量大小整除，`data_iter`函数的行为会有什么变化？
 
 
-[Discussions](https://discuss.d2l.ai/t/1778)
+
 

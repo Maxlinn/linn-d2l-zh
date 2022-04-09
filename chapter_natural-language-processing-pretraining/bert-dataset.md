@@ -279,5 +279,5 @@ len(vocab)
 1. 如果我们不过滤出一些不常见的词元，词量会有多大？
 
 
-[Discussions](https://discuss.d2l.ai/t/5738)
+
 

@@ -217,7 +217,7 @@ d2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),
 
 
     
-![svg](attention-scoring-functions_files/attention-scoring-functions_13_0.svg)
+![svg](chapter_attention-mechanisms/attention-scoring-functions_files/attention-scoring-functions_13_0.svg)
     
 
 
@@ -303,7 +303,7 @@ d2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),
 
 
     
-![svg](attention-scoring-functions_files/attention-scoring-functions_19_0.svg)
+![svg](chapter_attention-mechanisms/attention-scoring-functions_files/attention-scoring-functions_19_0.svg)
     
 
 
@@ -319,5 +319,5 @@ d2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),
 1. 当查询和键具有相同的矢量长度时，矢量求和作为评分函数是否比“点－积”更好？为什么？
 
 
-[Discussions](https://discuss.d2l.ai/t/5752)
+
 

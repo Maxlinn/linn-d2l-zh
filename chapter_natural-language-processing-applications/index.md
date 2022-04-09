@@ -42,12 +42,12 @@
 下面，我们从情感分析应用开始，分别解读基于循环神经网络和卷积神经网络的模型设计。
 
 :begin_tab:toc
- - [sentiment-analysis-and-dataset](sentiment-analysis-and-dataset.ipynb)
- - [sentiment-analysis-rnn](sentiment-analysis-rnn.ipynb)
- - [sentiment-analysis-cnn](sentiment-analysis-cnn.ipynb)
- - [natural-language-inference-and-dataset](natural-language-inference-and-dataset.ipynb)
- - [natural-language-inference-attention](natural-language-inference-attention.ipynb)
- - [finetuning-bert](finetuning-bert.ipynb)
- - [natural-language-inference-bert](natural-language-inference-bert.ipynb)
+ - [sentiment-analysis-and-dataset](chapter_natural-language-processing-applications/sentiment-analysis-and-dataset.ipynb)
+ - [sentiment-analysis-rnn](chapter_natural-language-processing-applications/sentiment-analysis-rnn.ipynb)
+ - [sentiment-analysis-cnn](chapter_natural-language-processing-applications/sentiment-analysis-cnn.ipynb)
+ - [natural-language-inference-and-dataset](chapter_natural-language-processing-applications/natural-language-inference-and-dataset.ipynb)
+ - [natural-language-inference-attention](chapter_natural-language-processing-applications/natural-language-inference-attention.ipynb)
+ - [finetuning-bert](chapter_natural-language-processing-applications/finetuning-bert.ipynb)
+ - [natural-language-inference-bert](chapter_natural-language-processing-applications/natural-language-inference-bert.ipynb)
 :end_tab:
 

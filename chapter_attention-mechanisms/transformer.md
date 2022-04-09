@@ -376,7 +376,7 @@ d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-![svg](transformer_files/transformer_27_1.svg)
+![svg](chapter_attention-mechanisms/transformer_files/transformer_27_1.svg)
     
 
 
@@ -430,7 +430,7 @@ d2l.show_heatmaps(
 
 
     
-![svg](transformer_files/transformer_33_0.svg)
+![svg](chapter_attention-mechanisms/transformer_files/transformer_33_0.svg)
     
 
 
@@ -471,7 +471,7 @@ d2l.show_heatmaps(
 
 
     
-![svg](transformer_files/transformer_37_0.svg)
+![svg](chapter_attention-mechanisms/transformer_files/transformer_37_0.svg)
     
 
 
@@ -488,7 +488,7 @@ d2l.show_heatmaps(
 
 
     
-![svg](transformer_files/transformer_39_0.svg)
+![svg](chapter_attention-mechanisms/transformer_files/transformer_39_0.svg)
     
 
 
@@ -511,5 +511,5 @@ d2l.show_heatmaps(
 1. 如果不使用卷积神经网络，如何设计基于transformer模型的图像分类任务？提示：可以参考Vision Transformer :cite:`Dosovitskiy.Beyer.Kolesnikov.ea.2021`。
 
 
-[Discussions](https://discuss.d2l.ai/t/5756)
+
 

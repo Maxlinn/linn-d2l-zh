@@ -307,7 +307,7 @@ train(num_gpus=1, batch_size=256, lr=0.2)
 
 
     
-![svg](multiple-gpus_files/multiple-gpus_21_1.svg)
+![svg](chapter_computational-performance/multiple-gpus_files/multiple-gpus_21_1.svg)
     
 
 
@@ -328,7 +328,7 @@ train(num_gpus=2, batch_size=256, lr=0.2)
 
 
     
-![svg](multiple-gpus_files/multiple-gpus_23_1.svg)
+![svg](chapter_computational-performance/multiple-gpus_files/multiple-gpus_23_1.svg)
     
 
 
@@ -347,5 +347,5 @@ train(num_gpus=2, batch_size=256, lr=0.2)
 1. 实现模型在多GPU下测试精度的计算。
 
 
-[Discussions](https://discuss.d2l.ai/t/2800)
+
 

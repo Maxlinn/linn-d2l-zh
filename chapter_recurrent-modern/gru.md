@@ -257,7 +257,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-![svg](gru_files/gru_9_1.svg)
+![svg](chapter_recurrent-modern/gru_files/gru_9_1.svg)
     
 
 
@@ -285,7 +285,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-![svg](gru_files/gru_11_1.svg)
+![svg](chapter_recurrent-modern/gru_files/gru_11_1.svg)
     
 
 
@@ -304,5 +304,5 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 1. 如果仅仅实现门控循环单元的一部分，例如，只有一个重置门或一个更新门会怎样？
 
 
-[Discussions](https://discuss.d2l.ai/t/2763)
+
 

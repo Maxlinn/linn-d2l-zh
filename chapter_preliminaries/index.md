@@ -28,12 +28,12 @@
 如果读者想要深入理解全部数学内容，可以进一步学习本书数学附录中给出的数学基础知识。
 
 :begin_tab:toc
- - [ndarray](ndarray.ipynb)
- - [pandas](pandas.ipynb)
- - [linear-algebra](linear-algebra.ipynb)
- - [calculus](calculus.ipynb)
- - [autograd](autograd.ipynb)
- - [probability](probability.ipynb)
- - [lookup-api](lookup-api.ipynb)
+ - [ndarray](chapter_preliminaries/ndarray.ipynb)
+ - [pandas](chapter_preliminaries/pandas.ipynb)
+ - [linear-algebra](chapter_preliminaries/linear-algebra.ipynb)
+ - [calculus](chapter_preliminaries/calculus.ipynb)
+ - [autograd](chapter_preliminaries/autograd.ipynb)
+ - [probability](chapter_preliminaries/probability.ipynb)
+ - [lookup-api](chapter_preliminaries/lookup-api.ipynb)
 :end_tab:
 

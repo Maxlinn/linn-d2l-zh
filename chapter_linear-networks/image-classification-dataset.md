@@ -120,7 +120,7 @@ show_images(X.reshape(18, 28, 28), 2, 9, titles=get_fashion_mnist_labels(y));
 
 
     
-![svg](image-classification-dataset_files/image-classification-dataset_13_0.svg)
+![svg](chapter_linear-networks/image-classification-dataset_files/image-classification-dataset_13_0.svg)
     
 
 
@@ -215,5 +215,5 @@ for X, y in train_iter:
 1. 查阅框架的在线API文档。还有哪些其他数据集可用？
 
 
-[Discussions](https://discuss.d2l.ai/t/1787)
+
 

@@ -46,7 +46,7 @@ annotate('min of risk', (1.1, -1.05), (0.95, -0.5))
 
 
     
-![svg](optimization-intro_files/optimization-intro_5_0.svg)
+![svg](chapter_optimization/optimization-intro_files/optimization-intro_5_0.svg)
     
 
 
@@ -77,7 +77,7 @@ annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 
 
     
-![svg](optimization-intro_files/optimization-intro_7_0.svg)
+![svg](chapter_optimization/optimization-intro_files/optimization-intro_7_0.svg)
     
 
 
@@ -97,7 +97,7 @@ annotate('saddle point', (0, -0.2), (-0.52, -5.0))
 
 
     
-![svg](optimization-intro_files/optimization-intro_9_0.svg)
+![svg](chapter_optimization/optimization-intro_files/optimization-intro_9_0.svg)
     
 
 
@@ -127,11 +127,11 @@ d2l.plt.ylabel('y');
 
 
     
-![svg](optimization-intro_files/optimization-intro_11_1.svg)
+![svg](chapter_optimization/optimization-intro_files/optimization-intro_11_1.svg)
     
 
 
-我们假设函数的输入是$k$维向量，其输出是标量，因此其Hessian矩阵（也称黑塞矩阵）将有$k$特征值（参考[online appendix on eigendecompositions](https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/eigendecomposition.html))。函数的解决方案可以是局部最小值、局部最大值或函数梯度为零的位置处的鞍点：
+我们假设函数的输入是$k$维向量，其输出是标量，因此其Hessian矩阵（也称黑塞矩阵）将有$k$特征值（参考)。函数的解决方案可以是局部最小值、局部最大值或函数梯度为零的位置处的鞍点：
 
 * 当函数在零梯度位置处的Hessian矩阵的特征值全部为正值时，我们有该函数的局部最小值。
 * 当函数在零梯度位置处的Hessian矩阵的特征值全部为负值时，我们有该函数的局部最大值。
@@ -153,7 +153,7 @@ annotate('vanishing gradient', (4, 1), (2, 0.0))
 
 
     
-![svg](optimization-intro_files/optimization-intro_13_0.svg)
+![svg](chapter_optimization/optimization-intro_files/optimization-intro_13_0.svg)
     
 
 
@@ -178,5 +178,5 @@ annotate('vanishing gradient', (4, 1), (2, 0.0))
     1. 你也能利用这种效应来优化算法吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/3841)
+
 

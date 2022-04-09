@@ -57,7 +57,7 @@ EC2提供了许多不同的实例配置可供选择。对于初学者来说，�
 | g4   | Turing T4   | FP16/INT8推理优化              |
 :label:`tab_ec2`
 
-所有这些服务器都有多种类型，显示了使用的GPU数量。例如，p2.xlarge有1个GPU，而p2.16xlarge有16个GPU和更多内存。有关更多详细信息，请参阅[Amazon EC2 文档](https://aws.amazon.com/ec2/instance-types/)。
+所有这些服务器都有多种类型，显示了使用的GPU数量。例如，p2.xlarge有1个GPU，而p2.16xlarge有16个GPU和更多内存。有关更多详细信息，请参阅。
 
 ![选择一个实例](img/p2x.png)
 :width:`700px`
@@ -119,7 +119,7 @@ ssh -i "D2L_key.pem" ubuntu@ec2-xx-xxx-xxx-xxx.y.compute.amazonaws.com
 sudo apt-get update && sudo apt-get install -y build-essential git libgfortran3
 ```
 
-我们在这里下载CUDA 10.1。访问NVIDIA的[官方存储库](https://developer.nvidia.com/cuda-toolkit-archive) 以找到下载链接，如 :numref:`fig_cuda`中所示。
+我们在这里下载CUDA 10.1。访问NVIDIA的 以找到下载链接，如 :numref:`fig_cuda`中所示。
 
 ![查找CUDA 10.1下载地址](img/cuda101.png)
 :width:`500px`
@@ -198,9 +198,9 @@ jupyter notebook
 
 ## 练习
 
-1. 云提供了便利，但价格并不便宜。了解如何启动[spot实例](https://aws.amazon.com/ec2/spot/)以降低成本。
+1. 云提供了便利，但价格并不便宜。了解如何启动以降低成本。
 1. 尝试使用不同的GPU服务器。它们有多快？
 1. 尝试使用多GPU服务器。你能把事情扩大到什么程度？
 
-[Discussions](https://discuss.d2l.ai/t/5733)
+
 

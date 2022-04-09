@@ -236,7 +236,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs,
 
 
     
-![svg](natural-language-inference-attention_files/natural-language-inference-attention_18_1.svg)
+![svg](chapter_natural-language-processing-applications/natural-language-inference-attention_files/natural-language-inference-attention_18_1.svg)
     
 
 
@@ -288,5 +288,5 @@ predict_snli(net, vocab, ['he', 'is', 'good', '.'], ['he', 'is', 'bad', '.'])
 1. 假设我们想要获得任何一对句子的语义相似级别（例如，0到1之间的连续值）。我们应该如何收集和标注数据集？你能设计一个有注意力机制的模型吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/5728)
+
 

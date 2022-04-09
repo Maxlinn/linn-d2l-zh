@@ -211,7 +211,7 @@ train(net, data_iter, lr, num_epochs)
 
 
     
-![svg](word2vec-pretraining_files/word2vec-pretraining_21_1.svg)
+![svg](chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_21_1.svg)
     
 
 
@@ -252,5 +252,5 @@ get_similar_tokens('chip', 3, net[0])
 1. 当训练语料库很大时，在更新模型参数时，我们经常对当前小批量的*中心词*进行上下文词和噪声词的采样。换言之，同一中心词在不同的训练迭代轮数可以有不同的上下文词或噪声词。这种方法的好处是什么？尝试实现这种训练方法。
 
 
-[Discussions](https://discuss.d2l.ai/t/5740)
+
 

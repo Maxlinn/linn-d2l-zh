@@ -214,5 +214,5 @@ net.save('my_mlp')
 1. 回顾前几章中你感兴趣的模型，你能提高它们的计算性能吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/2788)
+
 

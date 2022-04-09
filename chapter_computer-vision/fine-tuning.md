@@ -96,7 +96,7 @@ d2l.show_images(hotdogs + not_hotdogs, 2, 8, scale=1.4);
 
 
     
-![png](fine-tuning_files/fine-tuning_7_0.png)
+![png](chapter_computer-vision/fine-tuning_files/fine-tuning_7_0.png)
     
 
 
@@ -220,7 +220,7 @@ train_fine_tuning(finetune_net, 5e-5)
 
 
     
-![svg](fine-tuning_files/fine-tuning_19_1.svg)
+![svg](chapter_computer-vision/fine-tuning_files/fine-tuning_19_1.svg)
     
 
 
@@ -241,7 +241,7 @@ train_fine_tuning(scratch_net, 5e-4, param_group=False)
 
 
     
-![svg](fine-tuning_files/fine-tuning_21_1.svg)
+![svg](chapter_computer-vision/fine-tuning_files/fine-tuning_21_1.svg)
     
 
 
@@ -283,5 +283,5 @@ hotdog_w.shape
 
 
 
-[Discussions](https://discuss.d2l.ai/t/2894)
+
 

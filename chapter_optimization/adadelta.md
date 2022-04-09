@@ -81,7 +81,7 @@ d2l.train_ch11(adadelta, init_adadelta_states(feature_dim),
 
 
     
-![svg](adadelta_files/adadelta_3_1.svg)
+![svg](chapter_optimization/adadelta_files/adadelta_3_1.svg)
     
 
 
@@ -99,7 +99,7 @@ d2l.train_concise_ch11(trainer, {'rho': 0.9}, data_iter)
 
 
     
-![svg](adadelta_files/adadelta_5_1.svg)
+![svg](chapter_optimization/adadelta_files/adadelta_5_1.svg)
     
 
 
@@ -117,5 +117,5 @@ d2l.train_concise_ch11(trainer, {'rho': 0.9}, data_iter)
 1. 将Adadelta的收敛行为与AdaGrad和RMSProp进行比较。
 
 
-[Discussions](https://discuss.d2l.ai/t/5772)
+
 

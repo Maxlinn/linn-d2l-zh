@@ -414,7 +414,7 @@ print(f'{len(train_iter.dataset) / timer.stop():.1f} examples/sec on '
 
 
     
-![svg](ssd_files/ssd_35_1.svg)
+![svg](chapter_computer-vision/ssd_files/ssd_35_1.svg)
     
 
 
@@ -425,7 +425,7 @@ print(f'{len(train_iter.dataset) / timer.stop():.1f} examples/sec on '
 
 
 ```python
-X = torchvision.io.read_image('img/banana.jpg').unsqueeze(0).float()
+X = torchvision.io.read_image('../img/banana.jpg').unsqueeze(0).float()
 img = X.squeeze(0).permute(1, 2, 0).long()
 ```
 
@@ -466,7 +466,7 @@ display(img, output.cpu(), threshold=0.9)
 
 
     
-![svg](ssd_files/ssd_41_0.svg)
+![svg](chapter_computer-vision/ssd_files/ssd_41_0.svg)
     
 
 
@@ -514,7 +514,7 @@ d2l.plt.legend();
 
 
     
-![svg](ssd_files/ssd_43_0.svg)
+![svg](chapter_computer-vision/ssd_files/ssd_43_0.svg)
     
 
 
@@ -538,7 +538,7 @@ d2l.plt.legend();
 
 
     
-![svg](ssd_files/ssd_45_0.svg)
+![svg](chapter_computer-vision/ssd_files/ssd_45_0.svg)
     
 
 
@@ -549,5 +549,5 @@ d2l.plt.legend();
     1. 使用其他方法评估目标检测模型，例如单发多框检测论文 :cite:`Liu.Anguelov.Erhan.ea.2016`中的方法。
 
 
-[Discussions](https://discuss.d2l.ai/t/3204)
+
 

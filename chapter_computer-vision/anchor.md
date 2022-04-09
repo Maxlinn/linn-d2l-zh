@@ -88,7 +88,7 @@ def multibox_prior(data, sizes, ratios):
 
 
 ```python
-img = d2l.plt.imread('img/catdog.jpg')
+img = d2l.plt.imread('../img/catdog.jpg')
 h, w = img.shape[:2]
 
 print(h, w)
@@ -175,7 +175,7 @@ show_bboxes(fig.axes, boxes[250, 250, :, :] * bbox_scale,
 
 
     
-![svg](anchor_files/anchor_11_0.svg)
+![svg](chapter_computer-vision/anchor_files/anchor_11_0.svg)
     
 
 
@@ -387,7 +387,7 @@ show_bboxes(fig.axes, anchors * bbox_scale, ['0', '1', '2', '3', '4']);
 
 
     
-![svg](anchor_files/anchor_21_0.svg)
+![svg](chapter_computer-vision/anchor_files/anchor_21_0.svg)
     
 
 
@@ -588,7 +588,7 @@ show_bboxes(fig.axes, anchors * bbox_scale,
 
 
     
-![svg](anchor_files/anchor_39_0.svg)
+![svg](chapter_computer-vision/anchor_files/anchor_39_0.svg)
     
 
 
@@ -636,7 +636,7 @@ for i in output[0].detach().numpy():
 
 
     
-![svg](anchor_files/anchor_43_0.svg)
+![svg](chapter_computer-vision/anchor_files/anchor_43_0.svg)
     
 
 
@@ -659,5 +659,5 @@ for i in output[0].detach().numpy():
 1. 如果非手动，非最大限度的抑制可以被学习吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/2946)
+
 

@@ -39,15 +39,15 @@
 我们将在 :numref:`chap_nlp_app`中介绍它们。
 
 :begin_tab:toc
- - [word2vec](word2vec.ipynb)
- - [approx-training](approx-training.ipynb)
- - [word-embedding-dataset](word-embedding-dataset.ipynb)
- - [word2vec-pretraining](word2vec-pretraining.ipynb)
- - [glove](glove.ipynb)
- - [subword-embedding](subword-embedding.ipynb)
- - [similarity-analogy](similarity-analogy.ipynb)
- - [bert](bert.ipynb)
- - [bert-dataset](bert-dataset.ipynb)
- - [bert-pretraining](bert-pretraining.ipynb)
+ - [word2vec](chapter_natural-language-processing-pretraining/word2vec.ipynb)
+ - [approx-training](chapter_natural-language-processing-pretraining/approx-training.ipynb)
+ - [word-embedding-dataset](chapter_natural-language-processing-pretraining/word-embedding-dataset.ipynb)
+ - [word2vec-pretraining](chapter_natural-language-processing-pretraining/word2vec-pretraining.ipynb)
+ - [glove](chapter_natural-language-processing-pretraining/glove.ipynb)
+ - [subword-embedding](chapter_natural-language-processing-pretraining/subword-embedding.ipynb)
+ - [similarity-analogy](chapter_natural-language-processing-pretraining/similarity-analogy.ipynb)
+ - [bert](chapter_natural-language-processing-pretraining/bert.ipynb)
+ - [bert-dataset](chapter_natural-language-processing-pretraining/bert-dataset.ipynb)
+ - [bert-pretraining](chapter_natural-language-processing-pretraining/bert-pretraining.ipynb)
 :end_tab:
 

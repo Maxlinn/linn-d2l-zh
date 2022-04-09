@@ -13,19 +13,19 @@
 最后在结束本章时，我们将本章和前几章的知识应用于两个流行的计算机视觉基准数据集。
 
 :begin_tab:toc
- - [image-augmentation](image-augmentation.ipynb)
- - [fine-tuning](fine-tuning.ipynb)
- - [bounding-box](bounding-box.ipynb)
- - [anchor](anchor.ipynb)
- - [multiscale-object-detection](multiscale-object-detection.ipynb)
- - [object-detection-dataset](object-detection-dataset.ipynb)
- - [ssd](ssd.ipynb)
- - [rcnn](rcnn.ipynb)
- - [semantic-segmentation-and-dataset](semantic-segmentation-and-dataset.ipynb)
- - [transposed-conv](transposed-conv.ipynb)
- - [fcn](fcn.ipynb)
- - [neural-style](neural-style.ipynb)
- - [kaggle-cifar10](kaggle-cifar10.ipynb)
- - [kaggle-dog](kaggle-dog.ipynb)
+ - [image-augmentation](chapter_computer-vision/image-augmentation.ipynb)
+ - [fine-tuning](chapter_computer-vision/fine-tuning.ipynb)
+ - [bounding-box](chapter_computer-vision/bounding-box.ipynb)
+ - [anchor](chapter_computer-vision/anchor.ipynb)
+ - [multiscale-object-detection](chapter_computer-vision/multiscale-object-detection.ipynb)
+ - [object-detection-dataset](chapter_computer-vision/object-detection-dataset.ipynb)
+ - [ssd](chapter_computer-vision/ssd.ipynb)
+ - [rcnn](chapter_computer-vision/rcnn.ipynb)
+ - [semantic-segmentation-and-dataset](chapter_computer-vision/semantic-segmentation-and-dataset.ipynb)
+ - [transposed-conv](chapter_computer-vision/transposed-conv.ipynb)
+ - [fcn](chapter_computer-vision/fcn.ipynb)
+ - [neural-style](chapter_computer-vision/neural-style.ipynb)
+ - [kaggle-cifar10](chapter_computer-vision/kaggle-cifar10.ipynb)
+ - [kaggle-dog](chapter_computer-vision/kaggle-dog.ipynb)
 :end_tab:
 

@@ -128,7 +128,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs,
 
 
     
-![svg](sentiment-analysis-rnn_files/sentiment-analysis-rnn_14_1.svg)
+![svg](chapter_natural-language-processing-applications/sentiment-analysis-rnn_files/sentiment-analysis-rnn_14_1.svg)
     
 
 
@@ -184,5 +184,5 @@ predict_sentiment(net, vocab, 'this movie is so bad')
 1. 是否可以通过spaCy词元化来提高分类精度？你需要安装Spacy（`pip install spacy`）和英语语言包（`python -m spacy download en`）。在代码中，首先导入Spacy（`import spacy`）。然后，加载Spacy英语软件包（`spacy_en = spacy.load('en')`）。最后，定义函数`def tokenizer(text): return [tok.text for tok in spacy_en.tokenizer(text)]`并替换原来的`tokenizer`函数。请注意GloVe和spaCy中短语标记的不同形式。例如，短语标记“new york”在GloVe中的形式是“new-york”，而在spaCy词元化之后的形式是“new york”。
 
 
-[Discussions](https://discuss.d2l.ai/t/5724)
+
 

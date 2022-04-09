@@ -208,7 +208,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'relu(x)', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_3_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_3_0.svg)
     
 
 
@@ -229,7 +229,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of relu', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_5_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_5_0.svg)
     
 
 
@@ -276,7 +276,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'sigmoid(x)', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_7_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_7_0.svg)
     
 
 
@@ -299,7 +299,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of sigmoid', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_9_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_9_0.svg)
     
 
 
@@ -325,7 +325,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'tanh(x)', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_11_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_11_0.svg)
     
 
 
@@ -349,7 +349,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of tanh', figsize=(5, 2.5))
 
 
     
-![svg](mlp_files/mlp_13_0.svg)
+![svg](chapter_multilayer-perceptrons/mlp_files/mlp_13_0.svg)
     
 
 
@@ -372,5 +372,5 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of tanh', figsize=(5, 2.5))
 1. 假设我们有一个非线性单元，将它一次应用于一个小批量的数据。你认为这会导致什么样的问题？
 
 
-[Discussions](https://discuss.d2l.ai/t/1796)
+
 

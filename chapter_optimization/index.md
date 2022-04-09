@@ -8,16 +8,16 @@
 在本章中，我们深入探讨常见的深度学习优化算法。深度学习中出现的几乎所有优化问题都是*非凸*的。尽管如此，在*凸*问题背景下设计和分析算法是非常有启发性的。正是出于这个原因，本章包括了凸优化的入门，以及凸目标函数上非常简单的随机梯度下降算法的证明。
 
 :begin_tab:toc
- - [optimization-intro](optimization-intro.ipynb)
- - [convexity](convexity.ipynb)
- - [gd](gd.ipynb)
- - [sgd](sgd.ipynb)
- - [minibatch-sgd](minibatch-sgd.ipynb)
- - [momentum](momentum.ipynb)
- - [adagrad](adagrad.ipynb)
- - [rmsprop](rmsprop.ipynb)
- - [adadelta](adadelta.ipynb)
- - [adam](adam.ipynb)
- - [lr-scheduler](lr-scheduler.ipynb)
+ - [optimization-intro](chapter_optimization/optimization-intro.ipynb)
+ - [convexity](chapter_optimization/convexity.ipynb)
+ - [gd](chapter_optimization/gd.ipynb)
+ - [sgd](chapter_optimization/sgd.ipynb)
+ - [minibatch-sgd](chapter_optimization/minibatch-sgd.ipynb)
+ - [momentum](chapter_optimization/momentum.ipynb)
+ - [adagrad](chapter_optimization/adagrad.ipynb)
+ - [rmsprop](chapter_optimization/rmsprop.ipynb)
+ - [adadelta](chapter_optimization/adadelta.ipynb)
+ - [adam](chapter_optimization/adam.ipynb)
+ - [lr-scheduler](chapter_optimization/lr-scheduler.ipynb)
 :end_tab:
 

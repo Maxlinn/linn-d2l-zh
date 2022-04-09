@@ -26,12 +26,12 @@ Bahdanau注意力是深度学习中的具有突破性价值的注意力模型，
 例如语言、视觉、语音和强化学习领域。
 
 :begin_tab:toc
- - [attention-cues](attention-cues.ipynb)
- - [nadaraya-waston](nadaraya-waston.ipynb)
- - [attention-scoring-functions](attention-scoring-functions.ipynb)
- - [bahdanau-attention](bahdanau-attention.ipynb)
- - [multihead-attention](multihead-attention.ipynb)
- - [self-attention-and-positional-encoding](self-attention-and-positional-encoding.ipynb)
- - [transformer](transformer.ipynb)
+ - [attention-cues](chapter_attention-mechanisms/attention-cues.ipynb)
+ - [nadaraya-waston](chapter_attention-mechanisms/nadaraya-waston.ipynb)
+ - [attention-scoring-functions](chapter_attention-mechanisms/attention-scoring-functions.ipynb)
+ - [bahdanau-attention](chapter_attention-mechanisms/bahdanau-attention.ipynb)
+ - [multihead-attention](chapter_attention-mechanisms/multihead-attention.ipynb)
+ - [self-attention-and-positional-encoding](chapter_attention-mechanisms/self-attention-and-positional-encoding.ipynb)
+ - [transformer](chapter_attention-mechanisms/transformer.ipynb)
 :end_tab:
 

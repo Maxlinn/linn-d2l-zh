@@ -8,14 +8,14 @@
 但这本书的改进通常需要几个小时到几天的时间。
 由于版本控制和持续自动集成（CI）测试，这一切颇为高效。
 为此，你需要向gihub存储库提交一个
-[pull request](https://github.com/d2l-ai/d2l-en/pulls)。
+。
 当你的pull请求被作者合并到代码库中时，
-你将成为[贡献者](https://github.com/d2l-ai/d2l-en/graphs/contributors)。
+你将成为。
 
 ## 提交微小更改
 
 最常见的贡献是编辑一句话或修正笔误。
-我们建议你在[GitHub存储库](https://github.com/d2l-ai/d2l-en)
+我们建议你在
 中查找源文件，以定位源文件（一个markdown文件）。
 然后单击右上角的“Edit this file”按钮，在markdown文件中进行更改。
 
@@ -31,8 +31,8 @@
 ## 大量文本或代码修改
 
 如果你计划修改大量文本或代码，那么你需要更多地了解本书使用的格式。
-源文件基于[markdown格式](https://daringfireball.net/projects/markdown/syntax)，
-并通过[d2lbook](http://book.d2l.ai/user/markdown.html)包提供了一组扩展，
+源文件基于，
+并通过包提供了一组扩展，
 例如引用公式、图像、章节和引文。
 你可以使用任何markdown编辑器打开这些文件并进行更改。
 
@@ -46,7 +46,7 @@
 例如`#@tab pytorch`用于一个PyTorch代码块，
 `#@tab tensorflow`用于一个TensorFlow代码块，
 或者`#@tab all`是所有实现的共享代码块。
-你可以参考[d2lbook](http://book.d2l.ai/user/code_tabs.html)包了解更多信息。
+你可以参考包了解更多信息。
 
 ## 提交主要更改
 
@@ -62,15 +62,15 @@
 
 ### 安装Git
 
-Git开源书籍描述了[如何安装git](https://git-scm.com/book/en/v2)。
+Git开源书籍描述了。
 这通常通过Ubuntu Linux上的`apt install git`，
 在MacOS上安装Xcode开发人员工具或使用gihub的
-[桌面客户端](https://desktop.github.com)来实现。
+来实现。
 如果你没有GitHub帐户，则需要注册一个帐户。
 
 ### 登录GitHub
 
-在浏览器中输入本书代码存储库的[地址](https://github.com/d2l-ai/d2l-en/)。
+在浏览器中输入本书代码存储库的。
 单击 :numref:`fig_git_fork`右上角红色框中的`Fork`按钮，以复制本书的存储库。
 这将是你的副本，你可以随心所欲地更改它。
 
@@ -155,7 +155,7 @@ git push
 
 1. 启动并分叉`d2l-ai/d2l-en`存储库。
 1. 如果发现任何需要改进的地方（例如，缺少引用），请提交Pull请求。
-1. 通常更好的做法是使用新分支创建Pull请求。学习如何用[Git分支](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell)来做这件事。
+1. 通常更好的做法是使用新分支创建Pull请求。学习如何用来做这件事。
 
-[Discussions](https://discuss.d2l.ai/t/5730)
+
 

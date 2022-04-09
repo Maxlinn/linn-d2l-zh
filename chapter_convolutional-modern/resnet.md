@@ -240,7 +240,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](resnet_files/resnet_17_1.svg)
+![svg](chapter_convolutional-modern/resnet_files/resnet_17_1.svg)
     
 
 
@@ -260,5 +260,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 为什么即使函数类是嵌套的，我们仍然要限制增加函数的复杂性呢？
 
 
-[Discussions](https://discuss.d2l.ai/t/1877)
+
 

@@ -115,5 +115,5 @@ class EncoderDecoder(nn.Module):
 1. 除了机器翻译，你能想到其它可以适用于”编码器－解码器“架构的应用吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/2779)
+
 

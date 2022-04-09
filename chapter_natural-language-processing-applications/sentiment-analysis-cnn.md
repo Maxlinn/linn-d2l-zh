@@ -203,7 +203,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs, devices)
 
 
     
-![svg](sentiment-analysis-cnn_files/sentiment-analysis-cnn_15_1.svg)
+![svg](chapter_natural-language-processing-applications/sentiment-analysis-cnn_files/sentiment-analysis-cnn_15_1.svg)
     
 
 
@@ -248,5 +248,5 @@ d2l.predict_sentiment(net, vocab, 'this movie is so bad')
 1. 在输入表示中添加位置编码。它是否提高了分类的精度？
 
 
-[Discussions](https://discuss.d2l.ai/t/5720)
+
 

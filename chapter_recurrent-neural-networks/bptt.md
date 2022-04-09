@@ -320,5 +320,5 @@ $\partial L / \partial \mathbf{W}_{hh}$时使用。
    1. 上述结果对于循环神经网络中的梯度意味着什么？
 1. 除了梯度截断，你还能想到其他方法来应对循环神经网络中的梯度爆炸吗？
 
-[Discussions](https://discuss.d2l.ai/t/2107)
+
 

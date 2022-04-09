@@ -27,13 +27,13 @@
 “编码器－解码器”架构和束搜索，并用它们来生成序列。
 
 :begin_tab:toc
- - [gru](gru.ipynb)
- - [lstm](lstm.ipynb)
- - [deep-rnn](deep-rnn.ipynb)
- - [bi-rnn](bi-rnn.ipynb)
- - [machine-translation-and-dataset](machine-translation-and-dataset.ipynb)
- - [encoder-decoder](encoder-decoder.ipynb)
- - [seq2seq](seq2seq.ipynb)
- - [beam-search](beam-search.ipynb)
+ - [gru](chapter_recurrent-modern/gru.ipynb)
+ - [lstm](chapter_recurrent-modern/lstm.ipynb)
+ - [deep-rnn](chapter_recurrent-modern/deep-rnn.ipynb)
+ - [bi-rnn](chapter_recurrent-modern/bi-rnn.ipynb)
+ - [machine-translation-and-dataset](chapter_recurrent-modern/machine-translation-and-dataset.ipynb)
+ - [encoder-decoder](chapter_recurrent-modern/encoder-decoder.ipynb)
+ - [seq2seq](chapter_recurrent-modern/seq2seq.ipynb)
+ - [beam-search](chapter_recurrent-modern/beam-search.ipynb)
 :end_tab:
 

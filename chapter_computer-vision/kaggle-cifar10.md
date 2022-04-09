@@ -327,7 +327,7 @@ train(net, train_iter, valid_iter, num_epochs, lr, wd, devices, lr_period,
 
 
     
-![svg](kaggle-cifar10_files/kaggle-cifar10_28_1.svg)
+![svg](chapter_computer-vision/kaggle-cifar10_files/kaggle-cifar10_28_1.svg)
     
 
 
@@ -358,7 +358,7 @@ df.to_csv('submission.csv', index=False)
 
 
     
-![svg](kaggle-cifar10_files/kaggle-cifar10_30_1.svg)
+![svg](chapter_computer-vision/kaggle-cifar10_files/kaggle-cifar10_30_1.svg)
     
 
 
@@ -379,5 +379,5 @@ df.to_csv('submission.csv', index=False)
 1. 不使用图像增广时，你能获得怎样的准确度？
 
 
-[Discussions](https://discuss.d2l.ai/t/2831)
+
 

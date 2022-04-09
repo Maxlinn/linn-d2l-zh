@@ -6,7 +6,7 @@
 
 与芯片设计中工程师从放置晶体管到逻辑元件再到逻辑块的过程类似，神经网络架构的设计也逐渐变得更加抽象。研究人员开始从单个神经元的角度思考问题，发展到整个层，现在又转向块，重复层的模式。
 
-使用块的想法首先出现在牛津大学的[视觉几何组（visualgeometry group）](http://www.robots.ox.ac.uk/~vgg/)的*VGG网络*中。通过使用循环和子程序，可以很容易地在任何现代深度学习框架的代码中实现这些重复的架构。
+使用块的想法首先出现在牛津大学的的*VGG网络*中。通过使用循环和子程序，可以很容易地在任何现代深度学习框架的代码中实现这些重复的架构。
 
 ## (**VGG块**)
 
@@ -139,7 +139,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](vgg_files/vgg_12_1.svg)
+![svg](chapter_convolutional-modern/vgg_files/vgg_12_1.svg)
     
 
 
@@ -157,5 +157,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 请参考VGG论文 :cite:`Simonyan.Zisserman.2014`中的表1构建其他常见模型，如VGG-16或VGG-19。
 
 
-[Discussions](https://discuss.d2l.ai/t/1866)
+
 

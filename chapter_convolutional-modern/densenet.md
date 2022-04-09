@@ -202,7 +202,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](densenet_files/densenet_17_1.svg)
+![svg](chapter_convolutional-modern/densenet_files/densenet_17_1.svg)
     
 
 
@@ -223,5 +223,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 应用DenseNet的思想设计一个基于多层感知机的模型。将其应用于 :numref:`sec_kaggle_house`中的房价预测任务。
 
 
-[Discussions](https://discuss.d2l.ai/t/1880)
+
 

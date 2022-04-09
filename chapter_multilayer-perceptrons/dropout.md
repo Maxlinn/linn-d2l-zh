@@ -231,7 +231,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-![svg](dropout_files/dropout_9_0.svg)
+![svg](chapter_multilayer-perceptrons/dropout_files/dropout_9_0.svg)
     
 
 
@@ -274,7 +274,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-![svg](dropout_files/dropout_13_0.svg)
+![svg](chapter_multilayer-perceptrons/dropout_files/dropout_13_0.svg)
     
 
 
@@ -296,5 +296,5 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 1. 发明另一种用于在每一层注入随机噪声的技术，该技术不同于标准的暂退法技术。尝试开发一种在Fashion-MNIST数据集（对于固定架构）上性能优于暂退法的方法。
 
 
-[Discussions](https://discuss.d2l.ai/t/1813)
+
 

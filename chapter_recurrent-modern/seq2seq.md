@@ -448,7 +448,7 @@ train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-![svg](seq2seq_files/seq2seq_23_1.svg)
+![svg](chapter_recurrent-modern/seq2seq_files/seq2seq_23_1.svg)
     
 
 
@@ -601,5 +601,5 @@ for eng, fra in zip(engs, fras):
 1. 有没有其他方法来设计解码器的输出层？
 
 
-[Discussions](https://discuss.d2l.ai/t/2782)
+
 

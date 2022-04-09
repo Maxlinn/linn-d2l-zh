@@ -47,25 +47,25 @@ from torch import nn
 from d2l import torch as d2l
 
 d2l.set_figsize()
-content_img = d2l.Image.open('img/rainier.jpg')
+content_img = d2l.Image.open('../img/rainier.jpg')
 d2l.plt.imshow(content_img);
 ```
 
 
     
-![svg](neural-style_files/neural-style_1_0.svg)
+![svg](chapter_computer-vision/neural-style_files/neural-style_1_0.svg)
     
 
 
 
 ```python
-style_img = d2l.Image.open('img/autumn-oak.jpg')
+style_img = d2l.Image.open('../img/autumn-oak.jpg')
 d2l.plt.imshow(style_img);
 ```
 
 
     
-![svg](neural-style_files/neural-style_2_0.svg)
+![svg](chapter_computer-vision/neural-style_files/neural-style_2_0.svg)
     
 
 
@@ -139,7 +139,7 @@ def extract_features(X, content_layers, style_layers):
     contents = []
     styles = []
     for i in range(len(net)):
-        X = net[i](X)
+        X = net[i](chapter_computer-vision/X)
         if i in style_layers:
             styles.append(X)
         if i in content_layers:
@@ -329,7 +329,7 @@ output = train(content_X, contents_Y, styles_Y, device, 0.3, 500, 50)
 
 
     
-![svg](neural-style_files/neural-style_32_0.svg)
+![svg](chapter_computer-vision/neural-style_files/neural-style_32_0.svg)
     
 
 
@@ -349,5 +349,5 @@ output = train(content_X, contents_Y, styles_Y, device, 0.3, 500, 50)
 1. 我们可以对文本使用风格迁移吗？提示:你可以参阅调查报告 :cite:`Hu.Lee.Aggarwal.ea.2020`。
 
 
-[Discussions](https://discuss.d2l.ai/t/3300)
+
 

@@ -107,7 +107,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](nin_files/nin_7_1.svg)
+![svg](chapter_convolutional-modern/nin_files/nin_7_1.svg)
     
 
 
@@ -130,5 +130,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 一次性直接将$384 \times 5 \times 5$的表示缩减为$10 \times 5 \times 5$的表示，会存在哪些问题？
 
 
-[Discussions](https://discuss.d2l.ai/t/1869)
+
 

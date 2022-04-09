@@ -26,13 +26,13 @@ from d2l import torch as d2l
 
 ```python
 d2l.set_figsize()
-img = d2l.Image.open('img/cat1.jpg')
+img = d2l.Image.open('../img/cat1.jpg')
 d2l.plt.imshow(img);
 ```
 
 
     
-![svg](image-augmentation_files/image-augmentation_3_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_3_0.svg)
     
 
 
@@ -60,7 +60,7 @@ apply(img, torchvision.transforms.RandomHorizontalFlip())
 
 
     
-![svg](image-augmentation_files/image-augmentation_7_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_7_0.svg)
     
 
 
@@ -74,7 +74,7 @@ apply(img, torchvision.transforms.RandomVerticalFlip())
 
 
     
-![svg](image-augmentation_files/image-augmentation_9_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_9_0.svg)
     
 
 
@@ -97,7 +97,7 @@ apply(img, shape_aug)
 
 
     
-![svg](image-augmentation_files/image-augmentation_11_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_11_0.svg)
     
 
 
@@ -116,7 +116,7 @@ apply(img, torchvision.transforms.ColorJitter(
 
 
     
-![svg](image-augmentation_files/image-augmentation_13_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_13_0.svg)
     
 
 
@@ -131,7 +131,7 @@ apply(img, torchvision.transforms.ColorJitter(
 
 
     
-![svg](image-augmentation_files/image-augmentation_15_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_15_0.svg)
     
 
 
@@ -147,7 +147,7 @@ apply(img, color_aug)
 
 
     
-![svg](image-augmentation_files/image-augmentation_17_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_17_0.svg)
     
 
 
@@ -165,7 +165,7 @@ apply(img, augs)
 
 
     
-![svg](image-augmentation_files/image-augmentation_19_0.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_19_0.svg)
     
 
 
@@ -310,7 +310,7 @@ train_with_data_aug(train_augs, test_augs, net)
 
 
     
-![svg](image-augmentation_files/image-augmentation_32_1.svg)
+![svg](chapter_computer-vision/image-augmentation_files/image-augmentation_32_1.svg)
     
 
 
@@ -327,5 +327,5 @@ train_with_data_aug(train_augs, test_augs, net)
 3. 参阅深度学习框架的在线文档。它还提供了哪些其他的图像增广方法？
 
 
-[Discussions](https://discuss.d2l.ai/t/2829)
+
 

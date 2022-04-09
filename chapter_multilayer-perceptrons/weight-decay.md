@@ -216,7 +216,7 @@ train(lambd=0)
 
 
     
-![svg](weight-decay_files/weight-decay_11_1.svg)
+![svg](chapter_multilayer-perceptrons/weight-decay_files/weight-decay_11_1.svg)
     
 
 
@@ -237,7 +237,7 @@ train(lambd=3)
 
 
     
-![svg](weight-decay_files/weight-decay_13_1.svg)
+![svg](chapter_multilayer-perceptrons/weight-decay_files/weight-decay_13_1.svg)
     
 
 
@@ -299,7 +299,7 @@ train_concise(0)
 
 
     
-![svg](weight-decay_files/weight-decay_18_1.svg)
+![svg](chapter_multilayer-perceptrons/weight-decay_files/weight-decay_18_1.svg)
     
 
 
@@ -313,13 +313,13 @@ train_concise(3)
 
 
     
-![svg](weight-decay_files/weight-decay_19_1.svg)
+![svg](chapter_multilayer-perceptrons/weight-decay_files/weight-decay_19_1.svg)
     
 
 
 到目前为止，我们只接触到一个简单线性函数的概念。
 此外，由什么构成一个简单的非线性函数可能是一个更复杂的问题。
-例如，[再生核希尔伯特空间（RKHS）](https://en.wikipedia.org/wiki/Reproducing_kernel_Hilbert_space)
+例如，
 允许在非线性环境中应用为线性函数引入的工具。
 不幸的是，基于RKHS的算法往往难以应用到大型、高维的数据。
 在这本书中，我们将默认使用简单的启发式方法，即在深层网络的所有层上应用权重衰减。
@@ -341,5 +341,5 @@ train_concise(3)
 1. 在贝叶斯统计中，我们使用先验和似然的乘积，通过公式$P(w \mid x) \propto P(x \mid w) P(w)$得到后验。如何得到带正则化的$P(w)$？
 
 
-[Discussions](https://discuss.d2l.ai/t/1808)
+
 

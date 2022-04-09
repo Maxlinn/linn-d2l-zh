@@ -197,7 +197,7 @@ train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](lenet_files/lenet_12_1.svg)
+![svg](chapter_convolutional-neural-networks/lenet_files/lenet_12_1.svg)
     
 
 
@@ -223,5 +223,5 @@ train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 显示不同输入（例如毛衣和外套）时，LeNet第一层和第二层的激活值。
 
 
-[Discussions](https://discuss.d2l.ai/t/1860)
+
 

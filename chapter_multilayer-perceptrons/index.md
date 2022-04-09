@@ -14,15 +14,15 @@
 关于模型计算性能、可伸缩性和效率相关的问题，我们将放在后面的章节中讨论。
 
 :begin_tab:toc
- - [mlp](mlp.ipynb)
- - [mlp-scratch](mlp-scratch.ipynb)
- - [mlp-concise](mlp-concise.ipynb)
- - [underfit-overfit](underfit-overfit.ipynb)
- - [weight-decay](weight-decay.ipynb)
- - [dropout](dropout.ipynb)
- - [backprop](backprop.ipynb)
- - [numerical-stability-and-init](numerical-stability-and-init.ipynb)
- - [environment](environment.ipynb)
- - [kaggle-house-price](kaggle-house-price.ipynb)
+ - [mlp](chapter_multilayer-perceptrons/mlp.ipynb)
+ - [mlp-scratch](chapter_multilayer-perceptrons/mlp-scratch.ipynb)
+ - [mlp-concise](chapter_multilayer-perceptrons/mlp-concise.ipynb)
+ - [underfit-overfit](chapter_multilayer-perceptrons/underfit-overfit.ipynb)
+ - [weight-decay](chapter_multilayer-perceptrons/weight-decay.ipynb)
+ - [dropout](chapter_multilayer-perceptrons/dropout.ipynb)
+ - [backprop](chapter_multilayer-perceptrons/backprop.ipynb)
+ - [numerical-stability-and-init](chapter_multilayer-perceptrons/numerical-stability-and-init.ipynb)
+ - [environment](chapter_multilayer-perceptrons/environment.ipynb)
+ - [kaggle-house-price](chapter_multilayer-perceptrons/kaggle-house-price.ipynb)
 :end_tab:
 

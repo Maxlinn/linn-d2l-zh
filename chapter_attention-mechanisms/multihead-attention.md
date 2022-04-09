@@ -199,5 +199,5 @@ attention(X, Y, Y, valid_lens).shape
 1. 假设我们有一个完成训练的基于多头注意力的模型，现在希望修剪最不重要的注意力头以提高预测速度。如何设计实验来衡量注意力头的重要性呢？
 
 
-[Discussions](https://discuss.d2l.ai/t/5758)
+
 

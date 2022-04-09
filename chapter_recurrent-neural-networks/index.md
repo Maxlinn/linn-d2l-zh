@@ -31,12 +31,12 @@
 最后，我们描述了循环神经网络的梯度计算方法，以探讨训练此类网络时可能遇到的问题。
 
 :begin_tab:toc
- - [sequence](sequence.ipynb)
- - [text-preprocessing](text-preprocessing.ipynb)
- - [language-models-and-dataset](language-models-and-dataset.ipynb)
- - [rnn](rnn.ipynb)
- - [rnn-scratch](rnn-scratch.ipynb)
- - [rnn-concise](rnn-concise.ipynb)
- - [bptt](bptt.ipynb)
+ - [sequence](chapter_recurrent-neural-networks/sequence.ipynb)
+ - [text-preprocessing](chapter_recurrent-neural-networks/text-preprocessing.ipynb)
+ - [language-models-and-dataset](chapter_recurrent-neural-networks/language-models-and-dataset.ipynb)
+ - [rnn](chapter_recurrent-neural-networks/rnn.ipynb)
+ - [rnn-scratch](chapter_recurrent-neural-networks/rnn-scratch.ipynb)
+ - [rnn-concise](chapter_recurrent-neural-networks/rnn-concise.ipynb)
+ - [bptt](chapter_recurrent-neural-networks/bptt.ipynb)
 :end_tab:
 

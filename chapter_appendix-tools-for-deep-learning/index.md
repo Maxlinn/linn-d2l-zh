@@ -5,11 +5,11 @@
 例如如何运行这本交互式开源书籍和为本书做贡献。
 
 :begin_tab:toc
- - [jupyter](jupyter.ipynb)
- - [sagemaker](sagemaker.ipynb)
- - [aws](aws.ipynb)
- - [selecting-servers-gpus](selecting-servers-gpus.ipynb)
- - [contributing](contributing.ipynb)
- - [d2l](d2l.ipynb)
+ - [jupyter](chapter_appendix-tools-for-deep-learning/jupyter.ipynb)
+ - [sagemaker](chapter_appendix-tools-for-deep-learning/sagemaker.ipynb)
+ - [aws](chapter_appendix-tools-for-deep-learning/aws.ipynb)
+ - [selecting-servers-gpus](chapter_appendix-tools-for-deep-learning/selecting-servers-gpus.ipynb)
+ - [contributing](chapter_appendix-tools-for-deep-learning/contributing.ipynb)
+ - [d2l](chapter_appendix-tools-for-deep-learning/d2l.ipynb)
 :end_tab:
 

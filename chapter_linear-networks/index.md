@@ -9,12 +9,12 @@
 这些知识将为本书其他部分中更复杂的技术奠定基础。
 
 :begin_tab:toc
- - [linear-regression](linear-regression.ipynb)
- - [linear-regression-scratch](linear-regression-scratch.ipynb)
- - [linear-regression-concise](linear-regression-concise.ipynb)
- - [softmax-regression](softmax-regression.ipynb)
- - [image-classification-dataset](image-classification-dataset.ipynb)
- - [softmax-regression-scratch](softmax-regression-scratch.ipynb)
- - [softmax-regression-concise](softmax-regression-concise.ipynb)
+ - [linear-regression](chapter_linear-networks/linear-regression.ipynb)
+ - [linear-regression-scratch](chapter_linear-networks/linear-regression-scratch.ipynb)
+ - [linear-regression-concise](chapter_linear-networks/linear-regression-concise.ipynb)
+ - [softmax-regression](chapter_linear-networks/softmax-regression.ipynb)
+ - [image-classification-dataset](chapter_linear-networks/image-classification-dataset.ipynb)
+ - [softmax-regression-scratch](chapter_linear-networks/softmax-regression-scratch.ipynb)
+ - [softmax-regression-concise](chapter_linear-networks/softmax-regression-concise.ipynb)
 :end_tab:
 

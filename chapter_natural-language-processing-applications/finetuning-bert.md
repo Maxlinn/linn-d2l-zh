@@ -64,5 +64,5 @@
 1. 我们如何利用BERT来训练语言模型？
 1. 我们能在机器翻译中利用BERT吗？
 
-[Discussions](https://discuss.d2l.ai/t/5729)
+
 

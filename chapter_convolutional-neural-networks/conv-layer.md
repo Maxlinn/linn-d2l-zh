@@ -275,5 +275,5 @@ conv2d.weight.data.reshape((1, 2))
     1. 得到$d$次导数的最小核的大小是多少？
 
 
-[Discussions](https://discuss.d2l.ai/t/1848)
+
 

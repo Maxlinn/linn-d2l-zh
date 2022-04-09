@@ -174,7 +174,7 @@ d2l.plot(torch.arange(num_steps), P[0, :, 6:10].T, xlabel='Row (position)',
 
 
     
-![svg](self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_8_0.svg)
+![svg](chapter_attention-mechanisms/self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_8_0.svg)
     
 
 
@@ -216,7 +216,7 @@ d2l.show_heatmaps(P, xlabel='Column (encoding dimension)',
 
 
     
-![svg](self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_12_0.svg)
+![svg](chapter_attention-mechanisms/self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_12_0.svg)
     
 
 
@@ -255,5 +255,5 @@ $2\times 2$投影矩阵不依赖于任何位置的索引$i$。
 1. 你能设计一种可学习的位置编码方法吗？
 
 
-[Discussions](https://discuss.d2l.ai/t/5762)
+
 

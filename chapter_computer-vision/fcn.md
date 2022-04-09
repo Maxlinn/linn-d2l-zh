@@ -155,7 +155,7 @@ conv_trans.weight.data.copy_(bilinear_kernel(3, 3, 4));
 
 
 ```python
-img = torchvision.transforms.ToTensor()(d2l.Image.open('img/catdog.jpg'))
+img = torchvision.transforms.ToTensor()(d2l.Image.open('../img/catdog.jpg'))
 X = img.unsqueeze(0)
 Y = conv_trans(X)
 out_img = Y[0].permute(1, 2, 0).detach()
@@ -180,7 +180,7 @@ d2l.plt.imshow(out_img);
 
 
     
-![svg](fcn_files/fcn_17_1.svg)
+![svg](chapter_computer-vision/fcn_files/fcn_17_1.svg)
     
 
 
@@ -232,7 +232,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs, devices)
 
 
     
-![svg](fcn_files/fcn_23_1.svg)
+![svg](chapter_computer-vision/fcn_files/fcn_23_1.svg)
     
 
 
@@ -287,7 +287,7 @@ d2l.show_images(imgs[::3] + imgs[1::3] + imgs[2::3], 3, n, scale=2);
 
 
     
-![svg](fcn_files/fcn_29_0.svg)
+![svg](chapter_computer-vision/fcn_files/fcn_29_0.svg)
     
 
 
@@ -304,5 +304,5 @@ d2l.show_images(imgs[::3] + imgs[1::3] + imgs[2::3], 3, n, scale=2);
 1. 最初的全卷积网络的论文中 :cite:`Long.Shelhamer.Darrell.2015`还使用了某些卷积神经网络中间层的输出。试着实现这个想法。
 
 
-[Discussions](https://discuss.d2l.ai/t/3297)
+
 

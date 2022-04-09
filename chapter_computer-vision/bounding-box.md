@@ -28,13 +28,13 @@ from d2l import torch as d2l
 
 ```python
 d2l.set_figsize()
-img = d2l.plt.imread('img/catdog.jpg')
+img = d2l.plt.imread('../img/catdog.jpg')
 d2l.plt.imshow(img);
 ```
 
 
     
-![svg](bounding-box_files/bounding-box_3_0.svg)
+![svg](chapter_computer-vision/bounding-box_files/bounding-box_3_0.svg)
     
 
 
@@ -128,7 +128,7 @@ fig.axes.add_patch(bbox_to_rect(cat_bbox, 'red'));
 
 
     
-![svg](bounding-box_files/bounding-box_13_0.svg)
+![svg](chapter_computer-vision/bounding-box_files/bounding-box_13_0.svg)
     
 
 
@@ -143,5 +143,5 @@ fig.axes.add_patch(bbox_to_rect(cat_bbox, 'red'));
 1. 为什么`box_corner_to_center`和`box_center_to_corner`的输入参数的最内层维度总是4？
 
 
-[Discussions](https://discuss.d2l.ai/t/2944)
+
 

@@ -23,11 +23,11 @@
 在下一章中，我们将深入研究一些流行的、相对较新的卷积神经网络架构的完整实现，这些网络架构涵盖了现代从业者通常使用的大多数经典技术。
 
 :begin_tab:toc
- - [why-conv](why-conv.ipynb)
- - [conv-layer](conv-layer.ipynb)
- - [padding-and-strides](padding-and-strides.ipynb)
- - [channels](channels.ipynb)
- - [pooling](pooling.ipynb)
- - [lenet](lenet.ipynb)
+ - [why-conv](chapter_convolutional-neural-networks/why-conv.ipynb)
+ - [conv-layer](chapter_convolutional-neural-networks/conv-layer.ipynb)
+ - [padding-and-strides](chapter_convolutional-neural-networks/padding-and-strides.ipynb)
+ - [channels](chapter_convolutional-neural-networks/channels.ipynb)
+ - [pooling](chapter_convolutional-neural-networks/pooling.ipynb)
+ - [lenet](chapter_convolutional-neural-networks/lenet.ipynb)
 :end_tab:
 

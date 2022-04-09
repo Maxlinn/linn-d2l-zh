@@ -89,7 +89,7 @@ for ax, func in zip(axes, [f, g, h]):
 
 
     
-![svg](convexity_files/convexity_3_0.svg)
+![svg](chapter_optimization/convexity_files/convexity_3_0.svg)
     
 
 
@@ -158,7 +158,7 @@ d2l.plot([x, segment], [f(x), f(segment)], 'x', 'f(x)')
 
 
     
-![svg](convexity_files/convexity_5_0.svg)
+![svg](chapter_optimization/convexity_files/convexity_5_0.svg)
     
 
 
@@ -365,5 +365,5 @@ ii.你能无须反复试错就找到$\lambda$的“正确”值吗？
 9. 给定一个凸集$\mathcal{X}$和两个向量$\mathbf{X}$和$\mathbf{y}$证明了投影不会增加距离，即$\|\mathbf{x} - \mathbf{y}\| \geq \|\mathrm{Proj}_\mathcal{X}(\mathbf{x}) - \mathrm{Proj}_\mathcal{X}(\mathbf{y})\|$。
 
 
-[Discussions](https://discuss.d2l.ai/t/3815)
+
 

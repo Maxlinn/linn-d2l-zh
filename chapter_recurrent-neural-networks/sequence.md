@@ -181,7 +181,7 @@ d2l.plot(time, [x], 'time', 'x', xlim=[1, 1000], figsize=(6, 3))
 
 
     
-![svg](sequence_files/sequence_2_0.svg)
+![svg](chapter_recurrent-neural-networks/sequence_files/sequence_2_0.svg)
     
 
 
@@ -281,7 +281,7 @@ d2l.plot([time, time[tau:]],
 
 
     
-![svg](sequence_files/sequence_11_0.svg)
+![svg](chapter_recurrent-neural-networks/sequence_files/sequence_11_0.svg)
     
 
 
@@ -326,7 +326,7 @@ d2l.plot([time, time[tau:], time[n_train + tau:]],
 
 
     
-![svg](sequence_files/sequence_14_0.svg)
+![svg](chapter_recurrent-neural-networks/sequence_files/sequence_14_0.svg)
     
 
 
@@ -374,7 +374,7 @@ d2l.plot([time[tau + i - 1: T - max_steps + i] for i in steps],
 
 
     
-![svg](sequence_files/sequence_18_0.svg)
+![svg](chapter_recurrent-neural-networks/sequence_files/sequence_18_0.svg)
     
 
 
@@ -400,5 +400,5 @@ d2l.plot([time[tau + i - 1: T - max_steps + i] for i in steps],
 1. 举例说明什么时候可能需要隐变量自回归模型来捕捉数据的动力学模型。
 
 
-[Discussions](https://discuss.d2l.ai/t/2091)
+
 

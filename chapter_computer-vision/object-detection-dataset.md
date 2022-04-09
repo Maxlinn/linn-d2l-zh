@@ -141,7 +141,7 @@ for ax, label in zip(axes, batch[1][0:10]):
 
 
     
-![png](object-detection-dataset_files/object-detection-dataset_12_0.png)
+![png](chapter_computer-vision/object-detection-dataset_files/object-detection-dataset_12_0.png)
     
 
 
@@ -156,5 +156,5 @@ for ax, label in zip(axes, batch[1][0:10]):
 1. 假设我们想要将数据增强（例如随机裁剪）应用于目标检测。它与图像分类中的有什么不同？提示：如果裁剪的图像只包含物体的一小部分会怎样？
 
 
-[Discussions](https://discuss.d2l.ai/t/3202)
+
 
