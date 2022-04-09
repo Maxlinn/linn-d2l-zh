@@ -37,6 +37,9 @@ jobs:
       - name: Ignore Error
         run: true
 
+      - name: Fix Relative References
+        run: python3 fix_relative_references.py
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
