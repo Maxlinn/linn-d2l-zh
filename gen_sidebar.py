@@ -73,6 +73,7 @@ def process_level(dst: List):
         process_level(dst)
         os.chdir(cwd)
 
+
 toc = []
 process_level(toc)
 
@@ -86,13 +87,16 @@ for item in toc:
 
 f = open('_sidebar.md', 'w')
 
-to_str = lambda tp: f'- [{tp[0]}]({tp[1]})'
+
+def to_str(tp): return f'- [{tp[0]}]({tp[1]})'
+
+
 for root, lz in d.items():
     if root == '':
         for item in lz:
             f.write(f'{to_str(item)}\n')
     else:
-        f.write(f'- [{root}]({root})\n')
+        f.write(f'- {root}\n')
         for item in lz:
             f.write(f'\t{to_str(item)}\n')
 
