@@ -28,7 +28,7 @@
 该检测器将图像分割成多个区域，并为每个区域包含沃尔多的可能性打分。
 卷积神经网络正是将*空间不变性*（spatial invariance）的这一概念系统化，从而基于这个模型使用较少的参数来学习有用的表示。
 
-![沃尔多游戏示例图。](../img/where-wally-walker-books.jpg)
+![沃尔多游戏示例图。](img/where-wally-walker-books.jpg)
 :width:`400px`
 :label:`img_waldo`
 
@@ -102,7 +102,7 @@ $$(f * g)(i, j) = \sum_a\sum_b f(a, b) g(i-a, j-b).$$
 
 回到上面的“沃尔多在哪里”游戏，让我们看看它到底是什么样子。卷积层根据滤波器$\mathbf{V}$选取给定大小的窗口，并加权处理图片，如 :numref:`fig_waldo_mask`中所示。我们的目标是学习一个模型，以便探测出在“沃尔多”最可能出现的地方。
 
-![发现沃尔多。](../img/waldo-mask.jpg)
+![发现沃尔多。](img/waldo-mask.jpg)
 :width:`400px`
 :label:`fig_waldo_mask`
 

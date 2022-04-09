@@ -239,7 +239,7 @@ $$\hat{y}= \sum_{i=0}^d x^i w_i$$
 我们直观地描述了多项式的阶数和欠拟合与过拟合之间的关系。
 
 
-![模型复杂度对欠拟合和过拟合的影响](../img/capacity-vs-error.svg)
+![模型复杂度对欠拟合和过拟合的影响](img/capacity-vs-error.svg)
 :label:`fig_capacity_vs_error`
 
 ### 数据集大小

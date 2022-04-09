@@ -109,7 +109,7 @@ with d2l.Benchmark('在GPU1上运行并复制到CPU'):
 
 最后，我们给出了一个简单的两层多层感知机在CPU和两个GPU上训练时的计算图及其依赖关系的例子，如 :numref:`fig_twogpu`所示。手动调度由此产生的并行程序将是相当痛苦的。这就是基于图的计算后端进行优化的优势所在。
 
-![在一个CPU和两个GPU上的两层的多层感知机的计算图及其依赖关系](../img/twogpu.svg)
+![在一个CPU和两个GPU上的两层的多层感知机的计算图及其依赖关系](img/twogpu.svg)
 :label:`fig_twogpu`
 
 ## 小结

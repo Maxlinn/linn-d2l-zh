@@ -19,7 +19,7 @@
 中查找源文件，以定位源文件（一个markdown文件）。
 然后单击右上角的“Edit this file”按钮，在markdown文件中进行更改。
 
-![在Github上编辑文件](../img/edit-file.png)
+![在Github上编辑文件](img/edit-file.png)
 :width:`300px`
 :label:`fig_edit_file`
 
@@ -53,7 +53,7 @@
 我们建议你使用标准的Git流程提交大量修改。
 简而言之，该过程的工作方式如 :numref:`fig_contribute`中所述。
 
-![为这本书作贡献](../img/contribute.svg)
+![为这本书作贡献](img/contribute.svg)
 :label:`fig_contribute`
 
 我们将向你详细介绍这些步骤。
@@ -74,14 +74,14 @@ Git开源书籍描述了[如何安装git](https://git-scm.com/book/en/v2)。
 单击 :numref:`fig_git_fork`右上角红色框中的`Fork`按钮，以复制本书的存储库。
 这将是你的副本，你可以随心所欲地更改它。
 
-![代码存储库页面](../img/git-fork.png)
+![代码存储库页面](img/git-fork.png)
 :width:`700px`
 :label:`fig_git_fork`
 
 现在，本书的代码库将被分叉（即复制）到你的用户名，
 例如`astonzhang/d2l-en`显示在 :numref:`fig_git_forked`的左上角。
 
-![分叉代码存储库](../img/git-forked.png)
+![分叉代码存储库](img/git-forked.png)
 :width:`700px`
 :label:`fig_git_forked`
 
@@ -93,7 +93,7 @@ Git开源书籍描述了[如何安装git](https://git-scm.com/book/en/v2)。
 现在，只需按照 :ref:`chap_installation`中的说明开始。
 主要区别在于，你现在下载的是你自己的存储库分支。
 
-![克隆存储库](../img/git-clone.png)
+![克隆存储库](img/git-clone.png)
 :width:`700px`
 :label:`fig_git_clone`
 
@@ -134,13 +134,13 @@ git push
 
 如 :numref:`fig_git_newpr`所示，进入gihub上的存储库分支，选择“New pull request”。这将打开一个页面，显示你的编辑与本书主存储库中的当前内容之间的更改。
 
-![新的Pull请求](../img/git-newpr.png)
+![新的Pull请求](img/git-newpr.png)
 :width:`700px`
 :label:`fig_git_newpr`
 
 最后，单击按钮提交Pull请求，如 :numref:`fig_git_createpr`所示。请务必描述你在Pull请求中所做的更改。这将使作者更容易审阅它，并将其与本书合并。根据更改的不同，这可能会立即被接受，也可能会被拒绝，或者更有可能的是，你会收到一些关于更改的反馈。一旦你把它们合并了，你就做完了。
 
-![创建Pull请求](../img/git-createpr.png)
+![创建Pull请求](img/git-createpr.png)
 :width:`700px`
 :label:`fig_git_createpr`
 

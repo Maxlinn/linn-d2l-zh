@@ -19,7 +19,7 @@ NiN块以一个普通卷积层开始，后面是两个$1 \times 1$的卷积层�
 第一层的卷积窗口形状通常由用户设置。
 随后的卷积窗口形状固定为$1 \times 1$。
 
-![对比 VGG 和 NiN 及它们的块之间主要架构差异。](../img/nin.svg)
+![对比 VGG 和 NiN 及它们的块之间主要架构差异。](img/nin.svg)
 :width:`600px`
 :label:`fig_nin`
 

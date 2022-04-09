@@ -133,7 +133,7 @@ $\mathbf{W}_{xh} \in \mathbb{R}^{d \times h}, \mathbf{W}_{hh} \in \mathbb{R}^{h 
 而且$\mathbf{H}_t$还将送入全连接输出层，
 用于计算当前时间步$t$的输出$\mathbf{O}_t$。
 
-![具有隐状态的循环神经网络](../img/rnn.svg)
+![具有隐状态的循环神经网络](img/rnn.svg)
 :label:`fig_rnn`
 
 我们刚才提到，隐状态中
@@ -207,7 +207,7 @@ Bengio等人首先提出使用神经网络进行语言建模
 如何通过基于字符级语言建模的循环神经网络，
 使用当前的和先前的字符预测下一个字符。
 
-![基于循环神经网络的字符级语言模型：输入序列和标签序列分别为“machin”和“achine”](../img/rnn-train.svg)
+![基于循环神经网络的字符级语言模型：输入序列和标签序列分别为“machin”和“achine”](img/rnn-train.svg)
 :label:`fig_rnn_train`
 
 在训练过程中，我们对每个时间步的输出层的输出进行softmax操作，

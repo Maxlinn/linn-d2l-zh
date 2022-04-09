@@ -19,7 +19,7 @@
 这听起来可能很简单，但对于机器却可能是一个艰巨的挑战。
 首先，问题的难度可能取决于图像的分辨率。
 
-![不同分辨率的图像 ($10 \times 10$, $20 \times 20$, $40 \times 40$, $80 \times 80$, 和 $160 \times 160$ pixels)](../img/cat-dog-pixels.png)
+![不同分辨率的图像 ($10 \times 10$, $20 \times 20$, $40 \times 40$, $80 \times 80$, 和 $160 \times 160$ pixels)](img/cat-dog-pixels.png)
 :width:`300px`
 :label:`fig_cat_dog`
 

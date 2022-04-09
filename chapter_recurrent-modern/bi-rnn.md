@@ -39,7 +39,7 @@
 这个概率图模型就是一个*隐马尔可夫模型*（hidden Markov model，HMM），
 如 :numref:`fig_hmm`所示。
 
-![隐马尔可夫模型](../img/hmm.svg)
+![隐马尔可夫模型](img/hmm.svg)
 :label:`fig_hmm`
 
 因此，对于有$T$个观测值的序列，
@@ -131,7 +131,7 @@ $$P(x_j \mid x_{-j}) \propto \sum_{h_j} \pi_j(h_j) \rho_j(h_j) P(x_j \mid h_j).$
 添加了反向传递信息的隐藏层，以便更灵活地处理此类信息。
  :numref:`fig_birnn`描述了具有单个隐藏层的双向循环神经网络的架构。
 
-![双向循环神经网络架构](../img/birnn.svg)
+![双向循环神经网络架构](img/birnn.svg)
 :label:`fig_birnn`
 
 事实上，这与隐马尔可夫模型中的动态规划的前向和后向递归没有太大区别。

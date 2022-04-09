@@ -18,7 +18,7 @@
 由于注意力权重是概率分布，
 因此加权和其本质上是加权平均值。
 
-![计算注意力汇聚的输出为值的加权和](../img/attention-output.svg)
+![计算注意力汇聚的输出为值的加权和](img/attention-output.svg)
 :label:`fig_attention_output`
 
 用数学语言描述，假设有一个查询

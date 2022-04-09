@@ -9,7 +9,7 @@
 这个数据集实际上是著名的ImageNet的数据集子集。与 :numref:`sec_kaggle_cifar10`中CIFAR-10数据集中的图像不同，
 ImageNet数据集中的图像更高更宽，且尺寸不一。
 
-![狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。](../img/kaggle-dog.jpg)
+![狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。](img/kaggle-dog.jpg)
 :width:`400px`
 :label:`fig_kaggle_dog`
 

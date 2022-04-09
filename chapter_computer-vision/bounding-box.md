@@ -28,7 +28,7 @@ from d2l import torch as d2l
 
 ```python
 d2l.set_figsize()
-img = d2l.plt.imread('../img/catdog.jpg')
+img = d2l.plt.imread('img/catdog.jpg')
 d2l.plt.imshow(img);
 ```
 

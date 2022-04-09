@@ -32,7 +32,7 @@ $$y_{t'} = \operatorname*{argmax}_{y \in \mathcal{Y}} P(y \mid y_1, \ldots, y_{t
 
 一旦输出序列包含了“&lt;eos&gt;”或者达到其最大长度$T'$，则输出完成。
 
-![在每个时间步，贪心搜索选择具有最高条件概率的词元](../img/s2s-prob1.svg)
+![在每个时间步，贪心搜索选择具有最高条件概率的词元](img/s2s-prob1.svg)
 :label:`fig_s2s-prob1`
 
 如 :numref:`fig_s2s-prob1`中，
@@ -51,7 +51,7 @@ $\prod_{t'=1}^{T'} P(y_{t'} \mid y_1, \ldots, y_{t'-1}, \mathbf{c})$
 值的输出序列，这是基于输入序列生成输出序列的条件概率。
 然而，贪心搜索无法保证得到最优序列。
 
-![在时间步2，选择具有第二高条件概率的词元“C”（而非最高条件概率的词元）](../img/s2s-prob2.svg)
+![在时间步2，选择具有第二高条件概率的词元“C”（而非最高条件概率的词元）](img/s2s-prob2.svg)
 :label:`fig_s2s-prob2`
 
  :numref:`fig_s2s-prob2`中的另一个例子阐述了这个问题。
@@ -108,7 +108,7 @@ $\mathcal{O}(\left|\mathcal{Y}\right|T')$
 我们将继续从$k\left|\mathcal{Y}\right|$个可能的选择中
 挑出具有最高条件概率的$k$个候选输出序列。
 
-![束搜索过程（束宽：2，输出序列的最大长度：3）。候选输出序列是$A$、$C$、$AB$、$CE$、$ABD$和$CED$](../img/beam-search.svg)
+![束搜索过程（束宽：2，输出序列的最大长度：3）。候选输出序列是$A$、$C$、$AB$、$CE$、$ABD$和$CED$](img/beam-search.svg)
 :label:`fig_beam-search`
 
  :numref:`fig_beam-search`演示了束搜索的过程。

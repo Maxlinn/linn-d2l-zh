@@ -69,7 +69,7 @@ $$
 所有输入$x_1$、$x_2$、$x_3$和$x_4$，
 所以softmax回归的输出层也是全连接层。
 
-![softmax回归是一种单层神经网络](../img/softmaxreg.svg)
+![softmax回归是一种单层神经网络](img/softmaxreg.svg)
 :label:`fig_softmaxreg`
 
 为了更简洁地表达模型，我们仍然使用线性代数符号。

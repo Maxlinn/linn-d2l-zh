@@ -31,7 +31,7 @@
 在本章中，我们将重点讨论如何预训练文本的这种表示，
 如 :numref:`fig_nlp-map-pretrain`中所强调的那样。
 
-![预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务（本章主要研究上游文本的预训练）](../img/nlp-map-pretrain.svg)
+![预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务（本章主要研究上游文本的预训练）](img/nlp-map-pretrain.svg)
 :label:`fig_nlp-map-pretrain`
 
  :numref:`fig_nlp-map-pretrain`显示了

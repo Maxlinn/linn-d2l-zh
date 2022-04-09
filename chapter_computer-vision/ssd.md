@@ -19,7 +19,7 @@
 由于接近 :numref:`fig_ssd`顶部的多尺度特征图较小，但具有较大的感受野，它们适合检测较少但较大的物体。
 简而言之，通过多尺度特征块，单发多框检测生成不同大小的锚框，并通过预测边界框的类别和偏移量来检测大小不同的目标，因此这是一个多尺度目标检测模型。
 
-![单发多框检测模型主要由一个基础网络块和若干多尺度特征块串联而成。](../img/ssd.svg)
+![单发多框检测模型主要由一个基础网络块和若干多尺度特征块串联而成。](img/ssd.svg)
 :label:`fig_ssd`
 
 在下面，我们将介绍 :numref:`fig_ssd`中不同块的实施细节。
@@ -425,7 +425,7 @@ print(f'{len(train_iter.dataset) / timer.stop():.1f} examples/sec on '
 
 
 ```python
-X = torchvision.io.read_image('../img/banana.jpg').unsqueeze(0).float()
+X = torchvision.io.read_image('img/banana.jpg').unsqueeze(0).float()
 img = X.squeeze(0).permute(1, 2, 0).long()
 ```
 

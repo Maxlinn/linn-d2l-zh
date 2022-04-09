@@ -44,7 +44,7 @@
 处理序列数据需要统计工具和新的深度神经网络架构。
 为了简单起见，我们以 :numref:`fig_ftse100`所示的股票价格（富时100指数）为例。
 
-![近30年的富时100指数](../img/ftse100.png)
+![近30年的富时100指数](img/ftse100.png)
 :width:`400px`
 :label:`fig_ftse100`
 
@@ -84,7 +84,7 @@ $x_{t-1}, \ldots, x_1$可能是不必要的，
 由于$h_t$从未被观测到，这类模型也被称为
 *隐变量自回归模型*（latent autoregressive models）。
 
-![隐变量自回归模型](../img/sequence-model.svg)
+![隐变量自回归模型](img/sequence-model.svg)
 :label:`fig_sequence-model`
 
 这两种情况都有一个显而易见的问题：如何生成训练数据？

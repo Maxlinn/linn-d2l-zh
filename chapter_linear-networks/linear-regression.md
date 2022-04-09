@@ -119,7 +119,7 @@ $$l^{(i)}(\mathbf{w}, b) = \frac{1}{2} \left(\hat{y}^{(i)} - y^{(i)}\right)^2.$$
 为了进一步说明，来看下面的例子。
 我们为一维情况下的回归问题绘制图像，如 :numref:`fig_fit_linreg`所示。
 
-![用线性模型拟合数据。](../img/fit-linreg.svg)
+![用线性模型拟合数据。](img/fit-linreg.svg)
 :label:`fig_fit_linreg`
 
 由于平方误差函数中的二次方项，
@@ -407,7 +407,7 @@ $$-\log P(\mathbf y \mid \mathbf X) = \sum_{i=1}^n \frac{1}{2} \log(2 \pi \sigma
 在 :numref:`fig_single_neuron`中，我们将线性回归模型描述为一个神经网络。
 需要注意的是，该图只显示连接模式，即只显示每个输入如何连接到输出，隐去了权重和偏置的值。
 
-![线性回归是一个单层神经网络。](../img/singleneuron.svg)
+![线性回归是一个单层神经网络。](img/singleneuron.svg)
 :label:`fig_single_neuron`
 
 在 :numref:`fig_single_neuron`所示的神经网络中，输入为$x_1, \ldots, x_d$，
@@ -434,7 +434,7 @@ $$-\log P(\mathbf y \mid \mathbf X) = \sum_{i=1}^n \frac{1}{2} \log(2 \pi \sigma
 *轴突*（axon，输出线）和*轴突端子*（axon terminal，输出端子）
 通过*突触*（synapse）与其他神经元连接。
 
-![真实的神经元。](../img/neuron.svg)
+![真实的神经元。](img/neuron.svg)
 :label:`fig_Neuron`
 
 树突中接收到来自其他神经元（或视网膜等环境传感器）的信息$x_i$。

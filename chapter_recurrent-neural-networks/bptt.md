@@ -149,7 +149,7 @@ $$z_t= \frac{\partial f(x_{t},h_{t-1},w_h)}{\partial w_h} +\xi_t \frac{\partial 
 
 ### 比较策略
 
-![比较RNN中计算梯度的策略，3行自上而下分别为：随机截断、常规截断、完整计算](../img/truncated-bptt.svg)
+![比较RNN中计算梯度的策略，3行自上而下分别为：随机截断、常规截断、完整计算](img/truncated-bptt.svg)
 :label:`fig_truncated_bptt`
 
  :numref:`fig_truncated_bptt`说明了
@@ -201,7 +201,7 @@ $$L = \frac{1}{T} \sum_{t=1}^T l(\mathbf{o}_t, y_t).$$
 以及最终时间步的隐状态$\mathbf{h}_2$
 以及当前时间步的输入$\mathbf{x}_3$。
 
-![上图表示具有三个时间步的循环神经网络模型依赖关系的计算图。未着色的方框表示变量，着色的方框表示参数，圆表示运算符](../img/rnn-bptt.svg)
+![上图表示具有三个时间步的循环神经网络模型依赖关系的计算图。未着色的方框表示变量，着色的方框表示参数，圆表示运算符](img/rnn-bptt.svg)
 :label:`fig_rnn_bptt`
 
 正如刚才所说， :numref:`fig_rnn_bptt`中的模型参数是
