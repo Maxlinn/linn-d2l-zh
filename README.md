@@ -4,39 +4,31 @@
 
 [linn-d2l-zh](https://maxlinn.github.io/linn-d2l-zh)
 
-```eval_rst
-.. raw:: html
-   :file: frontpage.html
-```
+## 引言
 
-:begin_tab:toc
- - [chapter_preface](chapter_preface)
- - [chapter_installation](chapter_installation)
- - [chapter_notation](chapter_notation)
- 
-:end_tab:
+- [chapter_preface/index](chapter_preface/index)
+- [chapter_installation/index](chapter_installation/index)
+- [chapter_notation/index](chapter_notation/index)
 
-:begin_tab:toc
- - [chapter_introduction](chapter_introduction)
- - [chapter_preliminaries](chapter_preliminaries)
- - [chapter_linear-networks](chapter_linear-networks)
- - [chapter_multilayer-perceptrons](chapter_multilayer-perceptrons)
- - [chapter_deep-learning-computation](chapter_deep-learning-computation)
- - [chapter_convolutional-neural-networks](chapter_convolutional-neural-networks)
- - [chapter_convolutional-modern](chapter_convolutional-modern)
- - [chapter_recurrent-neural-networks](chapter_recurrent-neural-networks)
- - [chapter_recurrent-modern](chapter_recurrent-modern)
- - [chapter_attention-mechanisms](chapter_attention-mechanisms)
- - [chapter_optimization](chapter_optimization)
- - [chapter_computational-performance](chapter_computational-performance)
- - [chapter_computer-vision](chapter_computer-vision)
- - [chapter_natural-language-processing-pretraining](chapter_natural-language-processing-pretraining)
- - [chapter_natural-language-processing-applications](chapter_natural-language-processing-applications)
- - [chapter_appendix-tools-for-deep-learning](chapter_appendix-tools-for-deep-learning)
- 
-:end_tab:
+## 内容
 
-:begin_tab:toc
- - [chapter_references/zreferences](chapter_references/zreferences)
+- [chapter_introduction/index](chapter_introduction/index)
+- [chapter_preliminaries/index](chapter_preliminaries/index)
+- [chapter_linear-networks/index](chapter_linear-networks/index)
+- [chapter_multilayer-perceptrons/index](chapter_multilayer-perceptrons/index)
+- [chapter_deep-learning-computation/index](chapter_deep-learning-computation/index)
+- [chapter_convolutional-neural-networks/index](chapter_convolutional-neural-networks/index)
+- [chapter_convolutional-modern/index](chapter_convolutional-modern/index)
+- [chapter_recurrent-neural-networks/index](chapter_recurrent-neural-networks/index)
+- [chapter_recurrent-modern/index](chapter_recurrent-modern/index)
+- [chapter_attention-mechanisms/index](chapter_attention-mechanisms/index)
+- [chapter_optimization/index](chapter_optimization/index)
+- [chapter_computational-performance/index](chapter_computational-performance/index)
+- [chapter_computer-vision/index](chapter_computer-vision/index)
+- [chapter_natural-language-processing-pretraining/index](chapter_natural-language-processing-pretraining/index)
+- [chapter_natural-language-processing-applications/index](chapter_natural-language-processing-applications/index)
+- [chapter_appendix-tools-for-deep-learning/index](chapter_appendix-tools-for-deep-learning/index)
 
-:end_tab:
+## 引用
+
+- [chapter_references/zreferences](chapter_references/zreferences)
