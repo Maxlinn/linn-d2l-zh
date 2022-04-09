@@ -27,8 +27,9 @@
       // OK, that's all, enjoy!
       // Change followings if you what you are doing.
 
+      // some syntax in d2l.ai just like emoji, but won't make sense
       noEmoji: true,
-      loadNavbar: true,
+      loadNavbar: false,
       loadSidebar: true,
       loadFooter: true,
       mergeNavbar: true, // navbar will be merged with the sidebar on smaller screens
@@ -66,9 +67,12 @@
         function (hook, vm) {
           hook.beforeEach(function (html) {
             let candidates = html.match(/==(.+?)==/g);
-            for (var i = 0; i < candidates.length; i++) {
-              html = html.replace(candidates[i],
-                `<mark>` + candidates[i].replace(/==/g, "") + `</mark>`);
+            // without if, error occurs when there's no match
+            if (candidates) {
+              for (var i = 0; i < candidates.length; i++) {
+                html = html.replace(candidates[i],
+                  `<mark>` + candidates[i].replace(/==/g, "") + `</mark>`);
+              }
             }
             return html;
           })
