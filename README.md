@@ -1,9 +1,8 @@
-《动手学深度学习》
-========================
+# 林知来动手学深度学习
 
-林知的学习笔记，教材是《动手学深度学习》。
+林知的学习笔记，教材是《动手学深度学习》，链接是
 
-链接：[linn-d2l-zh](https://maxlinn.github.io/linn-d2l-zh)
+[linn-d2l-zh](https://maxlinn.github.io/linn-d2l-zh)
 
 ```eval_rst
 .. raw:: html
@@ -41,4 +40,3 @@
  - [chapter_references/zreferences](chapter_references/zreferences)
 
 :end_tab:
-
