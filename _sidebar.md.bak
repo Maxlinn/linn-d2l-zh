@@ -1,28 +1,5 @@
 - [README](README)
 
-- [自然语言处理：预训练](chapter_natural-language-processing-pretraining\index)
-	- ✔ [词嵌入Word2Vec](chapter_natural-language-processing-pretraining\word2vec)
-	- [近似训练](chapter_natural-language-processing-pretraining\approx-training)
-	- [词嵌入训练数据集](chapter_natural-language-processing-pretraining\word-embedding-dataset)
-	- [Word2Vec预训练](chapter_natural-language-processing-pretraining\word2vec-pretraining)
-	- [Glove](chapter_natural-language-processing-pretraining\glove)
-	- [子词嵌入](chapter_natural-language-processing-pretraining\subword-embedding)
-	- [词相似与类比](chapter_natural-language-processing-pretraining\similarity-analogy)
-	- [BERT](chapter_natural-language-processing-pretraining\bert)
-	- [BERT预训练数据集](chapter_natural-language-processing-pretraining\bert-dataset)
-	- [BERT预训练](chapter_natural-language-processing-pretraining\bert-pretraining)
-
-- natural-language-processing-applications
-	- [finetuning-bert](chapter_natural-language-processing-applications\finetuning-bert)
-	- [index](chapter_natural-language-processing-applications\index)
-	- [natural-language-inference-and-dataset](chapter_natural-language-processing-applications\natural-language-inference-and-dataset)
-	- [natural-language-inference-attention](chapter_natural-language-processing-applications\natural-language-inference-attention)
-	- [natural-language-inference-bert](chapter_natural-language-processing-applications\natural-language-inference-bert)
-	- [sentiment-analysis-and-dataset](chapter_natural-language-processing-applications\sentiment-analysis-and-dataset)
-	- [sentiment-analysis-cnn](chapter_natural-language-processing-applications\sentiment-analysis-cnn)
-	- [sentiment-analysis-rnn](chapter_natural-language-processing-applications\sentiment-analysis-rnn)
-
-
 - preface
 	- [index](chapter_preface\index)
 
@@ -176,6 +153,29 @@
 	- [jupyter](chapter_appendix-tools-for-deep-learning\jupyter)
 	- [sagemaker](chapter_appendix-tools-for-deep-learning\sagemaker)
 	- [selecting-servers-gpus](chapter_appendix-tools-for-deep-learning\selecting-servers-gpus)
+
+- natural-language-processing-pretraining
+	- [approx-training](chapter_natural-language-processing-pretraining\approx-training)
+	- [bert-dataset](chapter_natural-language-processing-pretraining\bert-dataset)
+	- [bert-pretraining](chapter_natural-language-processing-pretraining\bert-pretraining)
+	- [bert](chapter_natural-language-processing-pretraining\bert)
+	- [glove](chapter_natural-language-processing-pretraining\glove)
+	- [index](chapter_natural-language-processing-pretraining\index)
+	- [similarity-analogy](chapter_natural-language-processing-pretraining\similarity-analogy)
+	- [subword-embedding](chapter_natural-language-processing-pretraining\subword-embedding)
+	- [word-embedding-dataset](chapter_natural-language-processing-pretraining\word-embedding-dataset)
+	- [word2vec-pretraining](chapter_natural-language-processing-pretraining\word2vec-pretraining)
+	- [word2vec](chapter_natural-language-processing-pretraining\word2vec)
+
+- natural-language-processing-applications
+	- [finetuning-bert](chapter_natural-language-processing-applications\finetuning-bert)
+	- [index](chapter_natural-language-processing-applications\index)
+	- [natural-language-inference-and-dataset](chapter_natural-language-processing-applications\natural-language-inference-and-dataset)
+	- [natural-language-inference-attention](chapter_natural-language-processing-applications\natural-language-inference-attention)
+	- [natural-language-inference-bert](chapter_natural-language-processing-applications\natural-language-inference-bert)
+	- [sentiment-analysis-and-dataset](chapter_natural-language-processing-applications\sentiment-analysis-and-dataset)
+	- [sentiment-analysis-cnn](chapter_natural-language-processing-applications\sentiment-analysis-cnn)
+	- [sentiment-analysis-rnn](chapter_natural-language-processing-applications\sentiment-analysis-rnn)
 
 - references
 	- [zreferences](chapter_references\zreferences)
