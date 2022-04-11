@@ -61,26 +61,27 @@ $$P(\textrm{"the"}\mid\textrm{"loves"})\cdot P(\textrm{"man"}\mid\textrm{"loves"
 > 
 > 下标o表示out(side)，即条件概率中作为输出的词，**即窗口内的词**。
 >
-> 下标i表示任意一个词。
+> 下标i表示任意一个词（包括窗口内、窗口外、本身）。
+
+> 其实就是out词作为近邻、在center词出现时的条件概率。
+>
+> 任意一个词i在center词的近邻出现时的分数用$u_i^T*v_c$来计算，也就是向量的点积
+>
+> out词的概率也不例外，是$u_o^T*v_c$，然后softmax将分数转换成概率即可。
 
 $$P(w_o \mid w_c) = \frac{\text{exp}(\mathbf{u}_o^\top \mathbf{v}_c)}{ \sum_{i \in \mathcal{V}} \text{exp}(\mathbf{u}_i^\top \mathbf{v}_c)},$$
 :eqlabel:`eq_skip-gram-softmax`
 
-> 这个公司两边取对数化简一下就是
+> 这个公式两边取对数化简一下就是
 > $$
 \log P(w_o \mid w_c) =\mathbf{u}_o^\top \mathbf{v}_c - \log\left(\sum_{i \in \mathcal{V}} \text{exp}(\mathbf{u}_i^\top \mathbf{v}_c)\right)
 $$
 
-
 其中词表索引集$\mathcal{V} = \{0, 1, \ldots, |\mathcal{V}|-1\}$。
 
-> 其实就是out词作为近邻、在center词出现时的条件概率。
->
-> 任意一个词i在center词的近邻出现时的分数为 $u_i^T*v_c$ ，也就是向量的点积
->
-> out词的概率也不例外，是 $u_o^T*v_c$，然后softmax将分数转换成概率即可。
-
 给定长度为$T$的文本序列，其中时间步$t$处的词表示为$w^{(t)}$。假设上下文词是在给定任何中心词的情况下独立生成的。对于上下文窗口$m$，跳元模型的似然函数是在给定任何中心词的情况下生成所有上下文词的概率：
+
+> 也就是目标函数(objective function)
 
 $$ \prod_{t=1}^{T} \prod_{-m \leq j \leq m,\ j \neq 0} P(w^{(t+j)} \mid w^{(t)}),$$
 
@@ -125,15 +126,15 @@ $$\begin{aligned}\frac{\partial \text{log}\, P(w_o \mid w_c)}{\partial \mathbf{v
 $$P(\textrm{"loves"}\mid\textrm{"the"},\textrm{"man"},\textrm{"his"},\textrm{"son"}).$$
 
 ![连续词袋模型考虑了给定周围上下文词生成中心词条件概率](img/cbow.svg)
-:label:`fig_cbow`
 
+:label:`fig_cbow`
 
 由于连续词袋模型中存在多个上下文词，==因此在计算条件概率时对这些上下文词向量进行平均==。具体地说，对于字典中索引$i$的任意词，分别用$\mathbf{v}_i\in\mathbb{R}^d$和$\mathbf{u}_i\in\mathbb{R}^d$表示用作*上下文*词和*中心*词的两个向量==（注意现在上下文词是$v$，中心词是$u$，因为是用上下文词）==。给定上下文词$w_{o_1}, \ldots, w_{o_{2m}}$（在词表中索引是$o_1, \ldots, o_{2m}$）生成任意中心词$w_c$（在词表中索引是$c$）的条件概率可以由以下公式建模:
 
 $$P(w_c \mid w_{o_1}, \ldots, w_{o_{2m}}) = \frac{\text{exp}\left(\frac{1}{2m}\mathbf{u}_c^\top (\mathbf{v}_{o_1} + \ldots, + \mathbf{v}_{o_{2m}}) \right)}{ \sum_{i \in \mathcal{V}} \text{exp}\left(\frac{1}{2m}\mathbf{u}_i^\top (\mathbf{v}_{o_1} + \ldots, + \mathbf{v}_{o_{2m}}) \right)}.$$
 :eqlabel:`fig_cbow-full`
 
-> 中心词(u)乘以上下文词向量们的平均($\frac{1}{2m}$*(v + v + v...)
+> 中心词(u)乘以上下文词向量们的平均($\frac{1}{2m}$*(v + v + v...))
 > 
 > 2m指的是窗口大小，窗口内的下标偏移是$[-m, 0)\cup (0, m]$.
 
@@ -173,7 +174,6 @@ $$\frac{\partial \log\, P(w_c \mid \mathcal{W}_o)}{\partial \mathbf{v}_{o_i}} = 
 1. 计算每个梯度的计算复杂度是多少？如果词表很大，会有什么问题呢？
 1. 英语中的一些固定短语由多个单词组成，例如“new york”。如何训练它们的词向量？提示:查看word2vec论文的第四节 :cite:`Mikolov.Sutskever.Chen.ea.2013`。
 1. 让我们以跳元模型为例来思考word2vec设计。跳元模型中两个词向量的点积与余弦相似度之间有什么关系？对于语义相似的一对词，为什么它们的词向量（由跳元模型训练）的余弦相似度可能很高？
-
 
 
 

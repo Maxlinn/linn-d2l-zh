@@ -4,16 +4,33 @@
 我们继续实现 :numref:`sec_word2vec`中定义的跳元语法模型。然后，我们将在PTB数据集上使用负采样预训练word2vec。首先，让我们通过调用`d2l.load_data_ptb`函数来获得该数据集的数据迭代器和词表，该函数在 :numref:`sec_word2vec_data`中进行了描述。
 
 
+> PTB(Penn Tree Bank)数据集介绍：http://www.lysblog.cn:8080/blog/65
+>
+> 包含很多文件，但是我们只关心 data 文件夹下面的三个文件：ptb.test.txt、ptb.train.txt、ptb.valid.txt (如下图所示)。
+>
+> 这三个文件中的数据已经经过预处理，相邻单词之间用空格隔开，数据集中包括 9998 个不同的单词词汇，加上特殊符号 (稀有词语) 和语句结束标记符 (换行符) 在内，一共是 10000 个词汇。近年来关于语言模型方面的论文大多采用了 Mikolov 提供的这一预处理后的数据版本，由此保证论文之间具有比较性。
+
 
 ```python
 import math
 import torch
 from torch import nn
 from d2l import torch as d2l
+```
 
+
+```python
+# 遇到d2l的bug，要把num_workers返回0
+# http://zh-v2.d2l.ai/chapter_natural-language-processing-pretraining/word-embedding-dataset.html
+d2l.get_dataloader_workers = lambda: 0
+```
+
+
+```python
 batch_size, max_window_size, num_noise_words = 512, 5, 5
 data_iter, vocab = d2l.load_data_ptb(batch_size, max_window_size,
                                      num_noise_words)
+# 这个download完毕后不会发消息的，不要看着老是在Downloading
 ```
 
 ## 跳元模型
@@ -25,8 +42,10 @@ data_iter, vocab = d2l.load_data_ptb(batch_size, max_window_size,
 如 :numref:`sec_seq2seq`中所述，嵌入层将词元的索引映射到其特征向量。该层的权重是一个矩阵，其行数等于字典大小（`input_dim`），列数等于每个标记的向量维数（`output_dim`）。在词嵌入模型训练之后，这个权重就是我们所需要的。
 
 
-
 ```python
+# num_beddings表示，embedding_dim是嵌入的维数
+# Embedding层是一个单层的MLP，本质上是**封装过的**矩阵（和它的梯度），访问矩阵需要用.weight
+# 没有初始化时，里面的参数是乱的
 embed = nn.Embedding(num_embeddings=20, embedding_dim=4)
 print(f'Parameter embedding_weight ({embed.weight.shape}, '
       f'dtype={embed.weight.dtype})')
@@ -42,18 +61,21 @@ print(f'Parameter embedding_weight ({embed.weight.shape}, '
 ```python
 x = torch.tensor([[1, 2, 3], [4, 5, 6]])
 embed(x)
+# embed的operator()会elemwise地索引它的embedding
+# 因此要求传入的矩阵是一个整型的矩阵
+# 所以最后的维度是[*x.shape, embedding_size]
 ```
 
 
 
 
-    tensor([[[-0.0414, -0.0560, -0.1431, -0.3236],
-             [-0.5849, -0.1760, -0.1668, -2.2849],
-             [ 1.7805, -1.9495, -0.4418,  0.1963]],
+    tensor([[[-1.2000,  0.4314,  1.1021, -0.8156],
+             [-2.2387, -0.7568,  0.5548,  0.1025],
+             [-0.8358,  0.6318, -0.5014,  0.0929]],
     
-            [[-2.2289,  0.4505,  0.3169,  2.1053],
-             [-0.5231, -0.1289, -1.7388,  0.8305],
-             [ 1.0247,  0.3996, -0.3093, -0.5596]]], grad_fn=<EmbeddingBackward0>)
+            [[-1.7980,  0.8309, -1.3820,  0.5327],
+             [ 0.0254, -1.3058,  0.4520, -0.6496],
+             [ 1.7147, -1.2924,  3.0739,  0.8969]]], grad_fn=<EmbeddingBackward0>)
 
 
 
@@ -62,12 +84,23 @@ embed(x)
 在前向传播中，跳元语法模型的输入包括形状为（批量大小，1）的中心词索引`center`和形状为（批量大小，`max_len`）的上下文与噪声词索引`contexts_and_negatives`，其中`max_len`在 :numref:`subsec_word2vec-minibatch-loading`中定义。这两个变量首先通过嵌入层从词元索引转换成向量，然后它们的批量矩阵相乘（在 :numref:`subsec_batch_dot`中描述）返回形状为（批量大小，1，`max_len`）的输出。输出中的每个元素是中心词向量和上下文或噪声词向量的点积。
 
 
+> 注意这里的center是索引，而不是词本身
+
+> u.permute(dims) 表示将维度进行调换，生成一个新的Tensor
+> 
+> 关于矩阵乘法：https://blog.csdn.net/leo_95/article/details/89946318
+> 
+> - torch.mm(mat1, mat2)是最基础的矩阵乘法(matrix multiplication)，**只能实现两个二维矩阵相乘**
+> - torch.bmm(mat1, mat2)的b表示batched，只能传入两个三维矩阵并且第一维必须一样，后面两维将会进行矩阵相乘
+> - torch.matmal()表示张量相乘，定义有些复杂
+
 
 ```python
 def skip_gram(center, contexts_and_negatives, embed_v, embed_u):
-    v = embed_v(center)
-    u = embed_u(contexts_and_negatives)
-    pred = torch.bmm(v, u.permute(0, 2, 1))
+    # 这里并没有生成ground_truth
+    v = embed_v(center) # center.shape = [batch_size, 1], v = [batch_size, 1, embedding_size]
+    u = embed_u(contexts_and_negatives) # u.shape = [batch_size, max_len, embedding_size]
+    pred = torch.bmm(v, u.permute(0, 2, 1))# 
     return pred
 ```
 
@@ -76,6 +109,8 @@ def skip_gram(center, contexts_and_negatives, embed_v, embed_u):
 
 
 ```python
+# 只是为了测试形状，没有实际意义
+# 传入的都是索引，每个元素都是1
 skip_gram(torch.ones((2, 1), dtype=torch.long),
           torch.ones((2, 4), dtype=torch.long), embed, embed).shape
 ```
@@ -96,6 +131,18 @@ skip_gram(torch.ones((2, 1), dtype=torch.long),
 根据 :numref:`subsec_negative-sampling`中负采样损失函数的定义，我们将使用二元交叉熵损失。
 
 
+> - 自定义loss也是继承nn.Module，和自定义网络模块一样
+> - forward方法就是operator()
+> - nn.functional是函数，不包含梯度和副作用，有时也写成`import torch.nn.functional as F`
+> - 默认创建的torch.Tensor（或者torch.ones, zeros是**不带梯度的**），需要指定`requires_grad=True`
+
+> 关于cross_entropy_loss和sigmoid的区别：https://blog.csdn.net/Just_do_myself/article/details/123393900
+> !
+
+> BCELoss
+> 
+> BCE指的是Binary Cross Entropy: https://zhuanlan.zhihu.com/p/89391305
+
 
 ```python
 class SigmoidBCELoss(nn.Module):
@@ -104,21 +151,39 @@ class SigmoidBCELoss(nn.Module):
         super().__init__()
 
     def forward(self, inputs, target, mask=None):
+        # with_logits的意思是，传入的inputs可以直接是全连接层输出，而不是归一化的概率，内部会用sigmoid和softmax自己归一化
+        # sigmoid就是个函数，返回的Tensor是带有SigmoidBackward的
+        # 等价于nn.functional.binary_cross_entropy(inputs=torch.sigmoid(inputs))
+        
+        # 每个pred对应一个
+        # 按行就是dim=0，按列就是dim=1
+        # https://pytorch.org/docs/stable/generated/torch.nn.functional.binary_cross_entropy_with_logits.html
+        # 输出的结果是没有归一化的
         out = nn.functional.binary_cross_entropy_with_logits(
             inputs, target, weight=mask, reduction="none")
-        return out.mean(dim=1)
+        ret = out.mean(dim=1)
+        return ret
 
 loss = SigmoidBCELoss()
 ```
+
+> 一组数据：
+> ```python
+out is tensor([[0.2873, 0.1051, 3.3362, 0.0122],
+        [1.3873, 2.3051, 0.0000, 0.0000]])
+ret is tensor([0.9352, 0.9231])
+> ```
+
 
 回想一下我们在 :numref:`subsec_word2vec-minibatch-loading`中对掩码变量和标签变量的描述。下面计算给定变量的二进制交叉熵损失。
 
 
 
 ```python
-pred = torch.tensor([[1.1, -2.2, 3.3, -4.4]] * 2)
-label = torch.tensor([[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0]])
-mask = torch.tensor([[1, 1, 1, 1], [1, 1, 0, 0]])
+pred = torch.tensor([[1.1, -2.2, 3.3, -4.4]] * 2) # list的乘法，最后得到[[...], [...]]，表示两组预测结果
+label = torch.tensor([[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0]]) # 两组真实分布
+mask = torch.tensor([[1, 1, 1, 1], [1, 1, 0, 0]]) # mask表示组内哪些有效
+# 相当于除以 mask_1_count / total_count，按mask的比例将loss还原为total_count的分数
 loss(pred, label, mask) * mask.shape[1] / mask.sum(axis=1)
 ```
 
@@ -134,6 +199,9 @@ loss(pred, label, mask) * mask.shape[1] / mask.sum(axis=1)
 
 
 ```python
+# sigmoid将变量映射到[0, 1]，原始公式是1/(1+math.exp(-x))
+# 防止概率相乘下溢，取了对数
+# 由于概率值的对数是负的，取了反
 def sigmd(x):
     return -math.log(1 / (1 + math.exp(-x)))
 
@@ -169,7 +237,7 @@ net = nn.Sequential(nn.Embedding(num_embeddings=len(vocab),
 def train(net, data_iter, lr, num_epochs, device=d2l.try_gpu()):
     def init_weights(m):
         if type(m) == nn.Embedding:
-            nn.init.xavier_uniform_(m.weight)
+            nn.init.xavier_uniform_(m.weight) # 使用xavier_uniform来原地初始化embedding.weight
     net.apply(init_weights)
     net = net.to(device)
     optimizer = torch.optim.Adam(net.parameters(), lr=lr)
@@ -202,16 +270,17 @@ def train(net, data_iter, lr, num_epochs, device=d2l.try_gpu()):
 
 
 ```python
+# d2l可以根据epoch绘制loss的图形
 lr, num_epochs = 0.002, 5
 train(net, data_iter, lr, num_epochs)
 ```
 
-    loss 0.410, 381794.3 tokens/sec on cuda:0
+    loss 0.410, 170086.4 tokens/sec on cuda:0
 
 
 
     
-![svg](chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_21_1.svg)
+![svg](chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_31_1.svg)
     
 
 
@@ -230,15 +299,15 @@ def get_similar_tokens(query_token, k, embed):
     cos = torch.mv(W, x) / torch.sqrt(torch.sum(W * W, dim=1) *
                                       torch.sum(x * x) + 1e-9)
     topk = torch.topk(cos, k=k+1)[1].cpu().numpy().astype('int32')
-    for i in topk[1:]:  # 删除输入词
+    for i in topk[1:]:  # 删除输入词，概率最高的肯定是自己
         print(f'cosine sim={float(cos[i]):.3f}: {vocab.to_tokens(i)}')
 
 get_similar_tokens('chip', 3, net[0])
 ```
 
-    cosine sim=0.761: microprocessor
-    cosine sim=0.754: intel
-    cosine sim=0.669: chips
+    cosine sim=0.727: intel
+    cosine sim=0.691: microprocessor
+    cosine sim=0.674: motorola
 
 
 ## 小结
