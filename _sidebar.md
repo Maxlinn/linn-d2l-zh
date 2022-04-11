@@ -1,7 +1,7 @@
 - [README](README)
 
 - [自然语言处理：预训练](chapter_natural-language-processing-pretraining\index)
-	- ✔ [词嵌入Word2Vec](chapter_natural-language-processing-pretraining\word2vec)
+	- [✔词嵌入Word2Vec](chapter_natural-language-processing-pretraining\word2vec)
 	- [近似训练](chapter_natural-language-processing-pretraining\approx-training)
 	- [词嵌入训练数据集](chapter_natural-language-processing-pretraining\word-embedding-dataset)
 	- [Word2Vec预训练](chapter_natural-language-processing-pretraining\word2vec-pretraining)
