@@ -322,5 +322,5 @@ with open('submission.csv', 'w') as f:
 1. 如果你使用更深的预训练模型，会得到更好的结果吗？如何调整超参数？能进一步改善结果吗？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2833]
 

@@ -869,7 +869,7 @@ torch.norm(torch.ones((4, 9)))
 我们相信，一旦你开始动手尝试并在真实数据集上应用了有效的机器学习模型，你会更倾向于学习更多数学。
 因此，这一节到此结束，我们保留在后面介绍更多数学知识的权利。
 
-如果你渴望了解有关线性代数的更多信息，你可以参考或其他优秀资源 :cite:`Strang.1993,Kolter.2008,Petersen.Pedersen.ea.2008`。
+如果你渴望了解有关线性代数的更多信息，你可以参考[线性代数运算的在线附录][https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/geometry-linear-algebraic-ops.html]或其他优秀资源 :cite:`Strang.1993,Kolter.2008,Petersen.Pedersen.ea.2008`。
 
 ## 小结
 
@@ -893,5 +893,5 @@ torch.norm(torch.ones((4, 9)))
 1. 为`linalg.norm`函数提供3个或更多轴的张量，并观察其输出。对于任意形状的张量这个函数计算得到什么?
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1751]
 

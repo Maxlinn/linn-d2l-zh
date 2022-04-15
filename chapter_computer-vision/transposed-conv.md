@@ -261,5 +261,5 @@ Z == torch.matmul(W.T, Y.reshape(-1)).reshape(3, 3)
 1. 使用矩阵乘法来实现卷积是否有效率？为什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/3302]
 

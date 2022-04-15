@@ -146,5 +146,5 @@ d2l.predict_ch3(net, test_iter)
 1. 如果要构建多个超参数的搜索方法，你能想到的最聪明的策略是什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1804]
 

@@ -311,5 +311,5 @@ Ali Rahimi在接受2017年NeurIPS大会的“接受时间考验奖”（Test of 
 1. 研究思路：想想你可以应用的其他“规范化”转换？你可以应用概率积分变换吗？全秩协方差估计可以么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1874]
 

@@ -659,5 +659,5 @@ for i in output[0].detach().numpy():
 1. 如果非手动，非最大限度的抑制可以被学习吗？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2946]
 

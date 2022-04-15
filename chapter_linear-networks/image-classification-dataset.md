@@ -215,5 +215,5 @@ for X, y in train_iter:
 1. 查阅框架的在线API文档。还有哪些其他数据集可用？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1787]
 

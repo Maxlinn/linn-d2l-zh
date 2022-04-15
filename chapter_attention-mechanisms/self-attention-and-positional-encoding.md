@@ -255,5 +255,5 @@ $2\times 2$投影矩阵不依赖于任何位置的索引$i$。
 1. 你能设计一种可学习的位置编码方法吗？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/5762]
 

@@ -379,5 +379,5 @@ df.to_csv('submission.csv', index=False)
 1. 不使用图像增广时，你能获得怎样的准确度？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2831]
 

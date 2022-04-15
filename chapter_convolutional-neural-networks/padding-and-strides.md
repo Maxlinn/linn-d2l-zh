@@ -157,5 +157,5 @@ comp_conv2d(conv2d, X).shape
 1. 步幅大于$1$的计算优势是什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1851]
 

@@ -405,5 +405,5 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 1. 你能把优化和采样联系起来吗？首先，在随机梯度朗之万动力学上使用 :cite:`Welling.Teh.2011`的结果。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/4334]
 

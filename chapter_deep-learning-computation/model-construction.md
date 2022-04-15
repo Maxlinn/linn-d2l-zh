@@ -334,7 +334,7 @@ chimera(X)
 你可能会开始担心操作效率的问题。
 毕竟，我们在一个高性能的深度学习库中进行了大量的字典查找、
 代码执行和许多其他的Python代码。
-Python的问题
+Python的问题[全局解释器锁][https://wiki.python.org/moin/GlobalInterpreterLock]
 是众所周知的。
 在深度学习环境中，我们担心速度极快的GPU可能要等到CPU运行Python代码后才能运行另一个作业。
 
@@ -353,5 +353,5 @@ Python的问题
 1. 假设你想要连接同一网络的多个实例。实现一个函数，该函数生成同一个块的多个实例，并在此基础上构建更大的网络。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1827]
 

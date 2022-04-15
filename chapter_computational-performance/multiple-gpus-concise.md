@@ -153,5 +153,5 @@ train(net, num_gpus=2, batch_size=512, lr=0.2)
 1. 有时候不同的设备提供了不同的计算能力，我们可以同时使用GPU和CPU，那应该如何分配工作？为什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2803]
 

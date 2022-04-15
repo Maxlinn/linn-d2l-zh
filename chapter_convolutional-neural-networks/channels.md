@@ -185,5 +185,5 @@ assert float(torch.abs(Y1 - Y2).sum()) < 1e-6
 1. 当卷积窗口不是$1\times 1$时，如何使用矩阵乘法实现卷积？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1854]
 

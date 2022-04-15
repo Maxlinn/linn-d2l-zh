@@ -283,5 +283,5 @@ hotdog_w.shape
 
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2894]
 

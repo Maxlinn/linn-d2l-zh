@@ -248,5 +248,5 @@ d2l.show_heatmaps(
 1. 修改实验以将加性注意力打分函数替换为缩放点积注意力，它如何影响训练效率？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/5754]
 

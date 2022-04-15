@@ -91,7 +91,7 @@ $$
 **)
 
 分母或规范化常数，有时也称为*配分函数*（其对数称为对数-配分函数）。
-该名称来自)中一个模拟粒子群分布的方程。
+该名称来自[统计物理学][https://en.wikipedia.org/wiki/Partition_function_(statistical_mechanics])中一个模拟粒子群分布的方程。
 
 
 
@@ -472,5 +472,5 @@ predict_ch3(net, test_iter)
 1. 假设我们使用softmax回归来预测下一个单词，可选取的单词数目过多可能会带来哪些问题?
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1789]
 

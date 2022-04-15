@@ -286,5 +286,5 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 1. 实现一个能够基于时间序列进行预测而不是基于字符序列进行预测的长短期记忆网络模型。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2768]
 

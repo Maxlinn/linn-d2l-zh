@@ -81,10 +81,10 @@
 
 由于泛化是机器学习中的基本问题，
 许多数学家和理论家毕生致力于研究描述这一现象的形式理论。
-在中，
+在[同名定理（eponymous theorem）][https://en.wikipedia.org/wiki/Glivenko%E2%80%93Cantelli_theorem]中，
 格里文科和坎特利推导出了训练误差收敛到泛化误差的速率。
 在一系列开创性的论文中，
-
+[Vapnik和Chervonenkis][https://en.wikipedia.org/wiki/Vapnik%E2%80%93Chervonenkis_theory]
 将这一理论扩展到更一般种类的函数。
 这项工作为统计学习理论奠定了基础。
 
@@ -477,5 +477,5 @@ train(poly_features[:n_train, :], poly_features[n_train:, :],
 1. 你能期待看到泛化误差为零吗？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1806]
 

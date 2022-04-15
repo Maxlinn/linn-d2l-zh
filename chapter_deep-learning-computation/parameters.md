@@ -407,5 +407,5 @@ print(net[2].weight.data[0] == net[4].weight.data[0])
 1. 为什么共享参数是个好主意？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1829]
 

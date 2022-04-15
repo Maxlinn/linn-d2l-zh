@@ -163,5 +163,5 @@ net(torch.rand(2, 64))
 1. 设计一个返回输入数据的傅立叶系数前半部分的层。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1835]
 

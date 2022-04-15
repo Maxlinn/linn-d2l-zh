@@ -20,7 +20,7 @@
 
 ## Pascal VOC2012 语义分割数据集
 
-。**]
+[**最重要的语义分割数据集之一是[Pascal VOC2012][http://host.robots.ox.ac.uk/pascal/VOC/voc2012/]。**]
 下面我们深入了解一下这个数据集。
 
 
@@ -317,5 +317,5 @@ def load_data_voc(batch_size, crop_size):
 1. 回想一下 :numref:`sec_image_augmentation`中对数据增强的描述。图像分类中使用的哪种图像增强方法是难以用于语义分割的？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/3295]
 

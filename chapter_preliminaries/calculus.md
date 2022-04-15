@@ -301,5 +301,5 @@ $$\frac{dy}{dx_i} = \frac{dy}{du_1} \frac{du_1}{dx_i} + \frac{dy}{du_2} \frac{du
 1. 你可以写出函数$u = f(x, y, z)$，其中$x = x(a, b)$，$y = y(a, b)$，$z = z(a, b)$的链式法则吗?
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1756]
 

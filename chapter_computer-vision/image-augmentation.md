@@ -327,5 +327,5 @@ train_with_data_aug(train_augs, test_augs, net)
 3. 参阅深度学习框架的在线文档。它还提供了哪些其他的图像增广方法？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2829]
 

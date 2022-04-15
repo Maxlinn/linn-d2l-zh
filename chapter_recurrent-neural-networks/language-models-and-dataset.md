@@ -49,7 +49,7 @@ $$P(\text{deep}, \text{learning}, \text{is}, \text{fun}) =  P(\text{deep}) P(\te
 
 这里，我们假设训练数据集是一个大型的文本语料库。
 比如，维基百科的所有条目、
-，
+[古登堡计划][https://en.wikipedia.org/wiki/Project_Gutenberg]，
 或者所有发布在网络上的文本。
 训练数据集中词的概率可以根据给定词的相对词频来计算。
 例如，可以将估计值$\hat{P}(\text{deep})$
@@ -484,5 +484,5 @@ def load_data_time_machine(batch_size, num_steps,  #@save
 1. 如果我们希望一个序列样本是一个完整的句子，那么这在小批量抽样中会带来怎样的问题？如何解决？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2097]
 

@@ -187,5 +187,5 @@ d2l.train_ch11(yogi, init_adam_states(feature_dim),
 1. 尝试构造一个使用Adam算法会发散而Yogi会收敛的例子。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/4331]
 

@@ -177,5 +177,5 @@ d2l.train_concise_ch11(trainer, {'lr': 0.01, 'alpha': 0.9},
 1. 随着优化的进展，需要调整$\gamma$吗？RMSProp算法对此有多敏感？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/4322]
 

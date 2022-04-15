@@ -372,5 +372,5 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of tanh', figsize=(5, 2.5))
 1. 假设我们有一个非线性单元，将它一次应用于一个小批量的数据。你认为这会导致什么样的问题？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1796]
 

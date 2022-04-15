@@ -248,5 +248,5 @@ d2l.predict_sentiment(net, vocab, 'this movie is so bad')
 1. 在输入表示中添加位置编码。它是否提高了分类的精度？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/5720]
 

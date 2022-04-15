@@ -27,7 +27,7 @@
 因此读取单个字节会导致由于更宽的存取而产生的代价。
 
 其次，第一次存取的额外开销很大，而按序存取（sequential access）或突发读取（burst read）相对开销较小。
-有关更深入的讨论，请参阅此。
+有关更深入的讨论，请参阅此[维基百科文章][https://en.wikipedia.org/wiki/Cache_hierarchy]。
 
 减轻这些限制的方法是使用足够快的CPU缓存层次结构来为处理器提供数据。
 这是深度学习中批量处理背后的推动力。
@@ -173,7 +173,7 @@ print(f'performance in Gigaflops: block {2 / timer.times[3]:.3f}')
 ## 读取数据集
 
 让我们来看看如何从数据中有效地生成小批量。
-下面我们使用NASA开发的测试机翼的数据集来比较这些优化算法。
+下面我们使用NASA开发的测试机翼的数据集[不同飞行器产生的噪声][https://archive.ics.uci.edu/ml/datasets/Airfoil+Self-Noise]来比较这些优化算法。
 为方便起见，我们只使用前$1,500$样本。
 数据已作预处理：我们移除了均值并将方差重新缩放到每个坐标为$1$。
 
@@ -420,5 +420,5 @@ train_concise_ch11(trainer, {'lr': 0.01}, data_iter)
 1. 一个邪恶的精灵在没通知你的情况下复制了你的数据集（即每个观测发生两次，你的数据集增加到原始大小的两倍，但没有人告诉你）。随机梯度下降、小批量随机梯度下降和梯度下降的表现将如何变化？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/4325]
 

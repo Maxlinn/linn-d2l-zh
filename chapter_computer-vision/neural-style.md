@@ -349,5 +349,5 @@ output = train(content_X, contents_Y, styles_Y, device, 0.3, 500, 50)
 1. 我们可以对文本使用风格迁移吗？提示:你可以参阅调查报告 :cite:`Hu.Lee.Aggarwal.ea.2020`。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/3300]
 

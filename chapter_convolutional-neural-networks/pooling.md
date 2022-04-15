@@ -235,5 +235,5 @@ pool2d(X)
 1. 除了平均汇聚层和最大汇聚层，是否有其它函数可以考虑（提示：回想一下`softmax`）？为什么它不流行？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/1857]
 

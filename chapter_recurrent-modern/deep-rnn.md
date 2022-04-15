@@ -138,5 +138,5 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 1. 在为文本建模时，是否可以将不同作者的源数据合并？有何优劣呢？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2770]
 

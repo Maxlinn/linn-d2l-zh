@@ -549,5 +549,5 @@ d2l.plt.legend();
     1. 使用其他方法评估目标检测模型，例如单发多框检测论文 :cite:`Liu.Anguelov.Erhan.ea.2016`中的方法。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/3204]
 

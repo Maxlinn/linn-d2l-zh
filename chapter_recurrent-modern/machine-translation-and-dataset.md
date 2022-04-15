@@ -40,7 +40,7 @@ from d2l import torch as d2l
 
 ## [**下载和预处理数据集**]
 
-首先，下载一个由
+首先，下载一个由[Tatoeba项目的双语句子对][http://www.manythings.org/anki/]
 组成的“英－法”数据集，数据集中的每一行都是制表符分隔的文本序列对，
 序列对由英文文本序列和翻译后的法语文本序列组成。
 请注意，每个文本序列可以是一个句子，
@@ -338,5 +338,5 @@ for X, X_valid_len, Y, Y_valid_len in train_iter:
 1. 某些语言（例如中文和日语）的文本没有单词边界指示符（例如空格）。对于这种情况，单词级词元化仍然是个好主意吗？为什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2776]
 

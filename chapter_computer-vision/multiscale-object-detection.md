@@ -152,5 +152,5 @@ display_anchors(fmap_w=1, fmap_h=1, s=[0.8])
 1. 给定形状为$1 \times c \times h \times w$的特征图变量，其中$c$、$h$和$w$分别是特征图的通道数、高度和宽度。你怎样才能将这个变量转换为锚框类别和偏移量？输出的形状是什么？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2948]
 

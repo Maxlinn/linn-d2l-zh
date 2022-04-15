@@ -165,5 +165,5 @@ show_heatmaps(attention_weights, xlabel='Keys', ylabel='Queries')
 1. 随机生成一个$10 \times 10$矩阵并使用`softmax`运算来确保每行都是有效的概率分布，然后可视化输出注意力权重。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/5764]
 

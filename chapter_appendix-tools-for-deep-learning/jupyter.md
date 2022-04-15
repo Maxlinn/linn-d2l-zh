@@ -1,7 +1,7 @@
 # 使用Jupyter Notebooks
 :label:`sec_jupyter`
 
-本节介绍如何使用Jupyter Notebook编辑和运行本书各章中的代码。确保你已按照 :ref:`chap_installation`中的说明安装了Jupyter并下载了代码。如果你想了解更多关于Jupyter的信息，请参阅其中的优秀教程。 
+本节介绍如何使用Jupyter Notebook编辑和运行本书各章中的代码。确保你已按照 :ref:`chap_installation`中的说明安装了Jupyter并下载了代码。如果你想了解更多关于Jupyter的信息，请参阅其[文档][https://jupyter.readthedocs.io/en/latest/]中的优秀教程。 
 
 ## 在本地编辑和运行代码
 
@@ -109,5 +109,5 @@ jupyter nbextension enable execute_time/ExecuteTime
 1. 使用Jupyter Notebook通过端口转发来远程编辑和运行本书中的代码。
 1. 对于两个方矩阵，测量$\mathbf{A}^\top \mathbf{B}$与$\mathbf{A} \mathbf{B}$在$\mathbb{R}^{1024 \times 1024}$中的运行时间。哪一个更快？
 
-
+[Discussions][https://discuss.d2l.ai/t/5731]
 

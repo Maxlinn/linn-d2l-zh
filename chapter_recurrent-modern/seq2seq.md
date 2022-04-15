@@ -601,5 +601,5 @@ for eng, fra in zip(engs, fras):
 1. 有没有其他方法来设计解码器的输出层？
 
 
-
+[Discussions][https://discuss.d2l.ai/t/2782]
 

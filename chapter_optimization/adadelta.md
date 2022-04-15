@@ -117,5 +117,5 @@ d2l.train_concise_ch11(trainer, {'rho': 0.9}, data_iter)
 1. 将Adadelta的收敛行为与AdaGrad和RMSProp进行比较。
 
 
-
+[Discussions][https://discuss.d2l.ai/t/5772]
 
