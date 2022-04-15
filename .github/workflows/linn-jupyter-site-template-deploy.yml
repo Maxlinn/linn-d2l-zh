@@ -40,8 +40,8 @@ jobs:
         # this book used parent references(../), docsify has problem deal with it
         # so handcraft evaluate those references and replace them
         # only .md and .ipynb will be checked
-      - name: Fix Relative References
-        run: python3 fix_relative_references.py
+      - name: Fix Local Link
+        run: python3 manage.py --fix-local-link
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
