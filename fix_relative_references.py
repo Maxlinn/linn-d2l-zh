@@ -2,6 +2,10 @@ import os
 import re
 from urllib.parse import urlparse
 
+## 递归遍历根目录下的.md和.ipynb文件，找出其中链到本地文件的[]()结构，并将其改成由
+## docsify能解析同目录下的文件夹(assets/img.png)，但是不能解析相对于父目录的引用
+## 而d2l-ai经常使用父目录引用，不改会显示不出来图片
+
 base = os.getcwd()
 
 # 默认DFS
