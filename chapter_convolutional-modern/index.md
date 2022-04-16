@@ -19,12 +19,12 @@
 例如，本章介绍的批量规范化（batch normalization）和残差网络（ResNet）为设计和训练深度神经网络提供了重要思想指导。
 
 :begin_tab:toc
- - [alexnet](chapter_convolutional-modern/alexnet.ipynb)
- - [vgg](chapter_convolutional-modern/vgg.ipynb)
- - [nin](chapter_convolutional-modern/nin.ipynb)
- - [googlenet](chapter_convolutional-modern/googlenet.ipynb)
- - [batch-norm](chapter_convolutional-modern/batch-norm.ipynb)
- - [resnet](chapter_convolutional-modern/resnet.ipynb)
- - [densenet](chapter_convolutional-modern/densenet.ipynb)
+ - <img src="chapter_convolutional-modern/alexnet.ipynb" alt="alexnet">
+ - <img src="chapter_convolutional-modern/vgg.ipynb" alt="vgg">
+ - <img src="chapter_convolutional-modern/nin.ipynb" alt="nin">
+ - <img src="chapter_convolutional-modern/googlenet.ipynb" alt="googlenet">
+ - <img src="chapter_convolutional-modern/batch-norm.ipynb" alt="batch-norm">
+ - <img src="chapter_convolutional-modern/resnet.ipynb" alt="resnet">
+ - <img src="chapter_convolutional-modern/densenet.ipynb" alt="densenet">
 :end_tab:
 

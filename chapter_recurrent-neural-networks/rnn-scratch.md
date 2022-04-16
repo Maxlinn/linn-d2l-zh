@@ -429,7 +429,7 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu())
 
 
     
-![svg](chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_28_1.svg)
+!<img src="chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_28_1.svg" alt="svg">
     
 
 
@@ -451,7 +451,7 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu(),
 
 
     
-![svg](chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_30_1.svg)
+!<img src="chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_30_1.svg" alt="svg">
     
 
 
@@ -476,7 +476,7 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu(),
     * 你能将困惑度降到多少？
     * 用可学习的嵌入表示替换独热编码，是否会带来更好的表现？
     * 如果用H.G.Wells的其他书作为数据集时效果如何，
-      例如[*世界大战*][http://www.gutenberg.org/ebooks/36]？
+      例如<img src="http://www.gutenberg.org/ebooks/36" alt="*世界大战*">？
 1. 修改预测函数，例如使用采样，而不是选择最有可能的下一个字符。
     * 会发生什么？
     * 调整模型使之偏向更可能的输出，例如，当$\alpha > 1$，从$q(x_t \mid x_{t-1}, \ldots, x_1) \propto P(x_t \mid x_{t-1}, \ldots, x_1)^\alpha$中采样。
@@ -485,5 +485,5 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu(),
 1. 用ReLU替换本节中使用的激活函数，并重复本节中的实验。我们还需要梯度裁剪吗？为什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/2103]
+<img src="https://discuss.d2l.ai/t/2103" alt="Discussions">
 

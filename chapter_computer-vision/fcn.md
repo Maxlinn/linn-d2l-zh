@@ -23,7 +23,7 @@ from d2l import torch as d2l
 如 :numref:`fig_fcn`所示，全卷积网络先使用卷积神经网络抽取图像特征，然后通过$1\times 1$卷积层将通道数变换为类别个数，最后在 :numref:`sec_transposed_conv`中通过转置卷积层将特征图的高和宽变换为输入图像的尺寸。
 因此，模型输出与输入图像的高和宽相同，且最终输出通道包含了该空间位置像素的类别预测。
 
-![全卷积网络](img/fcn.svg)
+!<img src="img/fcn.svg" alt="全卷积网络">
 :label:`fig_fcn`
 
 下面，我们[**使用在ImageNet数据集上预训练的ResNet-18模型来提取图像特征**]，并将该网络记为`pretrained_net`。
@@ -180,7 +180,7 @@ d2l.plt.imshow(out_img);
 
 
     
-![svg](chapter_computer-vision/fcn_files/fcn_17_1.svg)
+!<img src="chapter_computer-vision/fcn_files/fcn_17_1.svg" alt="svg">
     
 
 
@@ -232,7 +232,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs, devices)
 
 
     
-![svg](chapter_computer-vision/fcn_files/fcn_23_1.svg)
+!<img src="chapter_computer-vision/fcn_files/fcn_23_1.svg" alt="svg">
     
 
 
@@ -287,7 +287,7 @@ d2l.show_images(imgs[::3] + imgs[1::3] + imgs[2::3], 3, n, scale=2);
 
 
     
-![svg](chapter_computer-vision/fcn_files/fcn_29_0.svg)
+!<img src="chapter_computer-vision/fcn_files/fcn_29_0.svg" alt="svg">
     
 
 
@@ -304,5 +304,5 @@ d2l.show_images(imgs[::3] + imgs[1::3] + imgs[2::3], 3, n, scale=2);
 1. 最初的全卷积网络的论文中 :cite:`Long.Shelhamer.Darrell.2015`还使用了某些卷积神经网络中间层的输出。试着实现这个想法。
 
 
-[Discussions][https://discuss.d2l.ai/t/3297]
+<img src="https://discuss.d2l.ai/t/3297" alt="Discussions">
 

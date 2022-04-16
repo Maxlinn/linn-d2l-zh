@@ -109,7 +109,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device)
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_3_1.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_3_1.svg" alt="svg">
     
 
 
@@ -155,7 +155,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_9_0.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_9_0.svg" alt="svg">
     
 
 
@@ -176,7 +176,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_11_1.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_11_1.svg" alt="svg">
     
 
 
@@ -213,7 +213,7 @@ d2l.plot(torch.arange(50), [scheduler(t) for t in range(50)])
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_13_0.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_13_0.svg" alt="svg">
     
 
 
@@ -244,7 +244,7 @@ d2l.plot(torch.arange(num_epochs), [get_lr(trainer, scheduler)
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_15_0.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_15_0.svg" alt="svg">
     
 
 
@@ -264,7 +264,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_17_1.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_17_1.svg" alt="svg">
     
 
 
@@ -313,7 +313,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_19_0.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_19_0.svg" alt="svg">
     
 
 
@@ -334,7 +334,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_21_1.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_21_1.svg" alt="svg">
     
 
 
@@ -359,7 +359,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_23_0.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_23_0.svg" alt="svg">
     
 
 
@@ -379,7 +379,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-![svg](chapter_optimization/lr-scheduler_files/lr-scheduler_25_1.svg)
+!<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_25_1.svg" alt="svg">
     
 
 
@@ -405,5 +405,5 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 1. 你能把优化和采样联系起来吗？首先，在随机梯度朗之万动力学上使用 :cite:`Welling.Teh.2011`的结果。
 
 
-[Discussions][https://discuss.d2l.ai/t/4334]
+<img src="https://discuss.d2l.ai/t/4334" alt="Discussions">
 

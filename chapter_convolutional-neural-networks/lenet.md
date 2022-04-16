@@ -24,7 +24,7 @@ LeNet被广泛用于自动取款机（ATM）机中，帮助识别处理支票的
 
 该架构如 :numref:`img_lenet`所示。
 
-![LeNet中的数据流。输入是手写数字，输出为10种可能结果的概率。](img/lenet.svg)
+!<img src="img/lenet.svg" alt="LeNet中的数据流。输入是手写数字，输出为10种可能结果的概率。">
 :label:`img_lenet`
 
 每个卷积块中的基本单元是一个卷积层、一个sigmoid激活函数和平均汇聚层。请注意，虽然ReLU和最大汇聚层更有效，但它们在20世纪90年代还没有出现。每个卷积层使用$5\times 5$卷积核和一个sigmoid激活函数。这些层将输入映射到多个二维特征输出，通常同时增加通道的数量。第一卷积层有6个输出通道，而第二个卷积层有16个输出通道。每个$2\times2$池操作（步骤2）通过空间下采样将维数减少4倍。卷积的输出形状由批量大小、通道数、高度、宽度决定。
@@ -55,7 +55,7 @@ net = nn.Sequential(
 
 下面，我们将一个大小为$28 \times 28$的单通道（黑白）图像通过LeNet。通过在每一层打印输出的形状，我们可以[**检查模型**]，以确保其操作与我们期望的 :numref:`img_lenet_vert`一致。
 
-![LeNet 的简化版。](img/lenet-vert.svg)
+!<img src="img/lenet-vert.svg" alt="LeNet 的简化版。">
 :label:`img_lenet_vert`
 
 
@@ -197,7 +197,7 @@ train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](chapter_convolutional-neural-networks/lenet_files/lenet_12_1.svg)
+!<img src="chapter_convolutional-neural-networks/lenet_files/lenet_12_1.svg" alt="svg">
     
 
 
@@ -223,5 +223,5 @@ train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 显示不同输入（例如毛衣和外套）时，LeNet第一层和第二层的激活值。
 
 
-[Discussions][https://discuss.d2l.ai/t/1860]
+<img src="https://discuss.d2l.ai/t/1860" alt="Discussions">
 

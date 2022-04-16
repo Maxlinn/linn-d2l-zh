@@ -1,7 +1,7 @@
 # 选择服务器和GPU
 :label:`sec_buy_gpu`
 
-深度学习训练通常需要大量的计算。目前，GPU是深度学习最具成本效益的硬件加速器。与CPU相比，GPU更便宜，性能更高，通常超过一个数量级。此外，一台服务器可以支持多个GPU，高端服务器最多支持8个GPU。更典型的数字是工程工作站最多4个GPU，这是因为热量、冷却和电源需求会迅速增加，超出办公楼所能支持的范围。对于更大的部署，云计算（例如亚马逊的[P3][https://aws.amazon.com/ec2/instance-types/p3/]和[G4][https://aws.amazon.com/blogs/aws/in-the-works-ec2-instances-g4-with-nvidia-t4-gpus/]实例）是一个更实用的解决方案。
+深度学习训练通常需要大量的计算。目前，GPU是深度学习最具成本效益的硬件加速器。与CPU相比，GPU更便宜，性能更高，通常超过一个数量级。此外，一台服务器可以支持多个GPU，高端服务器最多支持8个GPU。更典型的数字是工程工作站最多4个GPU，这是因为热量、冷却和电源需求会迅速增加，超出办公楼所能支持的范围。对于更大的部署，云计算（例如亚马逊的<img src="https://aws.amazon.com/ec2/instance-types/p3/" alt="P3">和<img src="https://aws.amazon.com/blogs/aws/in-the-works-ec2-instances-g4-with-nvidia-t4-gpus/" alt="G4">实例）是一个更实用的解决方案。
 
 ## 选择服务器
 
@@ -38,7 +38,7 @@ GPU供应商通常每一到两年发布一代，例如2017年发布的GTX 1000�
 
 :numref:`fig_flopsvsprice`比较了各种GTX 900、GTX 1000和RTX 2000系列的（GFlops）和价格（Price）。价格是维基百科上的建议价格。
 
-![浮点计算能力和价格比较](img/flopsvsprice.svg)
+!<img src="img/flopsvsprice.svg" alt="浮点计算能力和价格比较">
 :label:`fig_flopsvsprice`
 
 我们可以看到很多事情：
@@ -47,7 +47,7 @@ GPU供应商通常每一到两年发布一代，例如2017年发布的GTX 1000�
 2. GTX 1000系列的性价比大约是900系列的两倍。
 3. 对于RTX 2000系列，浮点计算能力是价格的“仿射”函数。
 
-![浮点计算能力和能耗](img/wattvsprice.svg)
+!<img src="img/wattvsprice.svg" alt="浮点计算能力和能耗">
 :label:`fig_wattvsprice`
 
 :numref:`fig_wattvsprice`显示了能耗与计算量基本成线性关系。其次，后一代更有效率。这似乎与对应于RTX 2000系列的图表相矛盾。然而，这是TensorCore不成比例的大能耗的结果。

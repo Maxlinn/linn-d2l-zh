@@ -19,7 +19,7 @@
  :numref:`fig_seq2seq`演示了
 如何在机器翻译中使用两个循环神经网络进行序列到序列学习。
 
-![使用循环神经网络编码器和循环神经网络解码器的序列到序列学习](img/seq2seq.svg)
+!<img src="img/seq2seq.svg" alt="使用循环神经网络编码器和循环神经网络解码器的序列到序列学习">
 :label:`fig_seq2seq`
 
 在 :numref:`fig_seq2seq`中，
@@ -261,7 +261,7 @@ output.shape, state.shape
 总之，上述循环神经网络“编码器－解码器”模型中的各层如
  :numref:`fig_seq2seq_details`所示。
 
-![循环神经网络编码器-解码器模型中的层](img/seq2seq-details.svg)
+!<img src="img/seq2seq-details.svg" alt="循环神经网络编码器-解码器模型中的层">
 :label:`fig_seq2seq_details`
 
 ## 损失函数
@@ -448,7 +448,7 @@ train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-![svg](chapter_recurrent-modern/seq2seq_files/seq2seq_23_1.svg)
+!<img src="chapter_recurrent-modern/seq2seq_files/seq2seq_23_1.svg" alt="svg">
     
 
 
@@ -461,7 +461,7 @@ train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 该预测过程如 :numref:`fig_seq2seq_predict`所示，
 当输出序列的预测遇到序列结束词元（“&lt;eos&gt;”）时，预测就结束了。
 
-![使用循环神经网络编码器-解码器逐词元地预测输出序列。](img/seq2seq-predict.svg)
+!<img src="img/seq2seq-predict.svg" alt="使用循环神经网络编码器-解码器逐词元地预测输出序列。">
 :label:`fig_seq2seq_predict`
 
 我们将在 :numref:`sec_beam-search`中介绍不同的序列生成策略。
@@ -601,5 +601,5 @@ for eng, fra in zip(engs, fras):
 1. 有没有其他方法来设计解码器的输出层？
 
 
-[Discussions][https://discuss.d2l.ai/t/2782]
+<img src="https://discuss.d2l.ai/t/2782" alt="Discussions">
 

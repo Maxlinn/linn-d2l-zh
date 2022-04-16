@@ -175,7 +175,7 @@ show_bboxes(fig.axes, boxes[250, 250, :, :] * bbox_scale,
 
 
     
-![svg](chapter_computer-vision/anchor_files/anchor_11_0.svg)
+!<img src="chapter_computer-vision/anchor_files/anchor_11_0.svg" alt="svg">
     
 
 
@@ -194,7 +194,7 @@ $$J(\mathcal{A},\mathcal{B}) = \frac{\left|\mathcal{A} \cap \mathcal{B}\right|}{
 对于两个边界框，我们通常将它们的杰卡德系数称为*交并比*（intersection over union，IoU），即两个边界框相交面积与相并面积之比，如 :numref:`fig_iou`所示。
 交并比的取值范围在0和1之间：0表示两个边界框无重合像素，1表示两个边界框完全重合。
 
-![交并比是两个边界框相交面积与相并面积之比。](img/iou.svg)
+!<img src="img/iou.svg" alt="交并比是两个边界框相交面积与相并面积之比。">
 :label:`fig_iou`
 
 在接下来部分中，我们将使用交并比来衡量锚框和真实边界框之间、以及不同锚框之间的相似度。
@@ -255,7 +255,7 @@ def box_iou(boxes1, boxes2):
 最后，如 :numref:`fig_anchor_label`（右）所示，丢弃矩阵第5行和第4列中的所有元素，在剩余元素（阴影区域）中找到最大的$x_{92}$，然后将真实边界框$B_2$分配给锚框$A_9$。
 之后，我们只需要遍历剩余的锚框$A_1, A_3, A_4, A_6, A_8$，然后根据阈值确定是否为它们分配真实边界框。
 
-![将真实边界框分配给锚框。](img/anchor-label.svg)
+!<img src="img/anchor-label.svg" alt="将真实边界框分配给锚框。">
 :label:`fig_anchor_label`
 
 此算法在下面的`assign_anchor_to_bbox`函数中实现。
@@ -387,7 +387,7 @@ show_bboxes(fig.axes, anchors * bbox_scale, ['0', '1', '2', '3', '4']);
 
 
     
-![svg](chapter_computer-vision/anchor_files/anchor_21_0.svg)
+!<img src="chapter_computer-vision/anchor_files/anchor_21_0.svg" alt="svg">
     
 
 
@@ -588,7 +588,7 @@ show_bboxes(fig.axes, anchors * bbox_scale,
 
 
     
-![svg](chapter_computer-vision/anchor_files/anchor_39_0.svg)
+!<img src="chapter_computer-vision/anchor_files/anchor_39_0.svg" alt="svg">
     
 
 
@@ -636,7 +636,7 @@ for i in output[0].detach().numpy():
 
 
     
-![svg](chapter_computer-vision/anchor_files/anchor_43_0.svg)
+!<img src="chapter_computer-vision/anchor_files/anchor_43_0.svg" alt="svg">
     
 
 
@@ -659,5 +659,5 @@ for i in output[0].detach().numpy():
 1. 如果非手动，非最大限度的抑制可以被学习吗？
 
 
-[Discussions][https://discuss.d2l.ai/t/2946]
+<img src="https://discuss.d2l.ai/t/2946" alt="Discussions">
 

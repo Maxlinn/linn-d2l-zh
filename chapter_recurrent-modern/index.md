@@ -27,13 +27,13 @@
 “编码器－解码器”架构和束搜索，并用它们来生成序列。
 
 :begin_tab:toc
- - [gru](chapter_recurrent-modern/gru.ipynb)
- - [lstm](chapter_recurrent-modern/lstm.ipynb)
- - [deep-rnn](chapter_recurrent-modern/deep-rnn.ipynb)
- - [bi-rnn](chapter_recurrent-modern/bi-rnn.ipynb)
- - [machine-translation-and-dataset](chapter_recurrent-modern/machine-translation-and-dataset.ipynb)
- - [encoder-decoder](chapter_recurrent-modern/encoder-decoder.ipynb)
- - [seq2seq](chapter_recurrent-modern/seq2seq.ipynb)
- - [beam-search](chapter_recurrent-modern/beam-search.ipynb)
+ - <img src="chapter_recurrent-modern/gru.ipynb" alt="gru">
+ - <img src="chapter_recurrent-modern/lstm.ipynb" alt="lstm">
+ - <img src="chapter_recurrent-modern/deep-rnn.ipynb" alt="deep-rnn">
+ - <img src="chapter_recurrent-modern/bi-rnn.ipynb" alt="bi-rnn">
+ - <img src="chapter_recurrent-modern/machine-translation-and-dataset.ipynb" alt="machine-translation-and-dataset">
+ - <img src="chapter_recurrent-modern/encoder-decoder.ipynb" alt="encoder-decoder">
+ - <img src="chapter_recurrent-modern/seq2seq.ipynb" alt="seq2seq">
+ - <img src="chapter_recurrent-modern/beam-search.ipynb" alt="beam-search">
 :end_tab:
 

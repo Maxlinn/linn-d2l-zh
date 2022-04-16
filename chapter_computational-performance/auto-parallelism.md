@@ -109,7 +109,7 @@ with d2l.Benchmark('在GPU1上运行并复制到CPU'):
 
 最后，我们给出了一个简单的两层多层感知机在CPU和两个GPU上训练时的计算图及其依赖关系的例子，如 :numref:`fig_twogpu`所示。手动调度由此产生的并行程序将是相当痛苦的。这就是基于图的计算后端进行优化的优势所在。
 
-![在一个CPU和两个GPU上的两层的多层感知机的计算图及其依赖关系](img/twogpu.svg)
+!<img src="img/twogpu.svg" alt="在一个CPU和两个GPU上的两层的多层感知机的计算图及其依赖关系">
 :label:`fig_twogpu`
 
 ## 小结
@@ -123,9 +123,9 @@ with d2l.Benchmark('在GPU1上运行并复制到CPU'):
 1. 在本节定义的`run`函数中执行了八个操作，并且操作之间没有依赖关系。设计一个实验，看看深度学习框架是否会自动地并行地执行它们。
 1. 当单个操作符的工作量足够小，即使在单个CPU或GPU上，并行化也会有所帮助。设计一个实验来验证这一点。
 1. 设计一个实验，在CPU和GPU这两种设备上使用并行计算和通信。
-1. 使用诸如NVIDIA的[Nsight][https://developer.nvidia.com/nsight-compute-2019_5] 之类的调试器来验证你的代码是否有效。
+1. 使用诸如NVIDIA的<img src="https://developer.nvidia.com/nsight-compute-2019_5" alt="Nsight"> 之类的调试器来验证你的代码是否有效。
 1. 设计并实验具有更加复杂的数据依赖关系的计算任务，以查看是否可以在提高性能的同时获得正确的结果。
 
 
-[Discussions][https://discuss.d2l.ai/t/2794]
+<img src="https://discuss.d2l.ai/t/2794" alt="Discussions">
 

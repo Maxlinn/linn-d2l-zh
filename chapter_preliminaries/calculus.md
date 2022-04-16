@@ -6,7 +6,7 @@
 如 :numref:`fig_circle_area`所示，内接多边形的等长边越多，就越接近圆。
 这个过程也被称为*逼近法*（method of exhaustion）。
 
-![用逼近法求圆的面积](img/polygon-circle.svg)
+!<img src="img/polygon-circle.svg" alt="用逼近法求圆的面积">
 :label:`fig_circle_area`
 
 事实上，逼近法就是*积分*（integral calculus）的起源，
@@ -224,7 +224,7 @@ plot(x, [f(x), 2 * x - 3], 'x', 'f(x)', legend=['f(x)', 'Tangent line (x=1)'])
 
 
     
-![svg](chapter_preliminaries/calculus_files/calculus_13_1.svg)
+!<img src="chapter_preliminaries/calculus_files/calculus_13_1.svg" alt="svg">
     
 
 
@@ -301,5 +301,5 @@ $$\frac{dy}{dx_i} = \frac{dy}{du_1} \frac{du_1}{dx_i} + \frac{dy}{du_2} \frac{du
 1. 你可以写出函数$u = f(x, y, z)$，其中$x = x(a, b)$，$y = y(a, b)$，$z = z(a, b)$的链式法则吗?
 
 
-[Discussions][https://discuss.d2l.ai/t/1756]
+<img src="https://discuss.d2l.ai/t/1756" alt="Discussions">
 

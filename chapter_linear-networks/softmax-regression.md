@@ -69,7 +69,7 @@ $$
 所有输入$x_1$、$x_2$、$x_3$和$x_4$，
 所以softmax回归的输出层也是全连接层。
 
-![softmax回归是一种单层神经网络](img/softmaxreg.svg)
+!<img src="img/softmaxreg.svg" alt="softmax回归是一种单层神经网络">
 :label:`fig_softmaxreg`
 
 为了更简洁地表达模型，我们仍然使用线性代数符号。
@@ -228,7 +228,7 @@ $$
 从这个意义上讲，这与我们在回归中看到的非常相似，
 其中梯度是观测值$y$和估计值$\hat{y}$之间的差异。
 这不是巧合，在任何指数族分布模型中
-（参见[本书附录中关于数学分布的一节][https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/distributions.html]），
+（参见<img src="https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/distributions.html" alt="本书附录中关于数学分布的一节">），
 对数似然的梯度正是由此得出的。
 这使梯度计算在实践中变得容易很多。
 
@@ -243,7 +243,7 @@ $$
 此损失称为*交叉熵损失*（cross-entropy loss），它是分类问题最常用的损失之一。
 本节我们将通过介绍信息论基础来理解交叉熵损失。
 如果你想了解更多信息论的细节，你可以进一步参考
-[本书附录中关于信息论的一节][https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/information-theory.html]。
+<img src="https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/information-theory.html" alt="本书附录中关于信息论的一节">。
 
 ## 信息论基础
 :label:`subsec_info_theory_basics`
@@ -319,5 +319,5 @@ $$H[P] = \sum_j - P(j) \log P(j).$$
     1. soft-min会是什么样子？
     1. 将其扩展到两个以上的数字。
 
-[Discussions][https://discuss.d2l.ai/t/1785]
+<img src="https://discuss.d2l.ai/t/1785" alt="Discussions">
 

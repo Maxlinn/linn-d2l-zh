@@ -34,7 +34,7 @@ $$\lambda  a + (1-\lambda)  b \in \mathcal{X} \text{ 当 } a, b \in \mathcal{X}.
 这听起来有点抽象，那我们来看一下 :numref:`fig_pacman`里的例子。
 第一组存在不包含在集合内部的线段，所以该集合是非凸的，而另外两组则没有这样的问题。
 
-![第一组是非凸的，另外两组是凸的。](img/pacman.svg)
+!<img src="img/pacman.svg" alt="第一组是非凸的，另外两组是凸的。">
 :label:`fig_pacman`
 
 有了定义做什么呢？
@@ -45,7 +45,7 @@ $$\lambda  a + (1-\lambda)  b \in \mathcal{X} \text{ 当 } a, b \in \mathcal{X}.
 所以连接$a$和$b$的线段包含在$\mathcal{X}$和$\mathcal{Y}$中。
 鉴于此，它们也需要包含在$\mathcal {X} \cap \mathcal{Y}$中，从而证明我们的定理。
 
-![两个凸集的交集是凸的。](img/convex-intersect.svg)
+!<img src="img/convex-intersect.svg" alt="两个凸集的交集是凸的。">
 :label:`fig_convex_intersect`
 
 我们可以毫不费力地进一步得到这样的结果：
@@ -56,7 +56,7 @@ $$\lambda  a + (1-\lambda)  b \in \mathcal{X} \text{ 当 } a, b \in \mathcal{X}.
 在 :numref:`fig_nonconvex`中连接$a$和$b$的线段需要包含一部分既不在$\mathcal{X}$也不在$\mathcal{Y}$中。
 因此线段也不在$\mathcal{X} \cup \mathcal{Y}$中，因此证明了凸集的并集不一定是凸的，即*非凸*（nonconvex）的。
 
-![两个凸集的并集不一定是凸的。](img/nonconvex.svg)
+!<img src="img/nonconvex.svg" alt="两个凸集的并集不一定是凸的。">
 :label:`fig_nonconvex`
 
 通常，深度学习中的问题是在凸集上定义的。
@@ -89,7 +89,7 @@ for ax, func in zip(axes, [f, g, h]):
 
 
     
-![svg](chapter_optimization/convexity_files/convexity_3_0.svg)
+!<img src="chapter_optimization/convexity_files/convexity_3_0.svg" alt="svg">
     
 
 
@@ -158,7 +158,7 @@ d2l.plot([x, segment], [f(x), f(segment)], 'x', 'f(x)')
 
 
     
-![svg](chapter_optimization/convexity_files/convexity_5_0.svg)
+!<img src="chapter_optimization/convexity_files/convexity_5_0.svg" alt="svg">
     
 
 
@@ -317,7 +317,7 @@ $$\mathrm{Proj}_\mathcal{X}(\mathbf{x}) = \mathop{\mathrm{argmin}}_{\mathbf{x}' 
 
 它是$\mathcal{X}$中离$\mathbf{X}$最近的点。
 
-![Convex Projections.](img/projections.svg)
+!<img src="img/projections.svg" alt="Convex Projections.">
 :label:`fig_projections`
 
 投影的数学定义听起来可能有点抽象，为了解释得更清楚一些，请看 :numref:`fig_projections`。
@@ -365,5 +365,5 @@ ii.你能无须反复试错就找到$\lambda$的“正确”值吗？
 9. 给定一个凸集$\mathcal{X}$和两个向量$\mathbf{X}$和$\mathbf{y}$证明了投影不会增加距离，即$\|\mathbf{x} - \mathbf{y}\| \geq \|\mathrm{Proj}_\mathcal{X}(\mathbf{x}) - \mathrm{Proj}_\mathcal{X}(\mathbf{y})\|$。
 
 
-[Discussions][https://discuss.d2l.ai/t/3815]
+<img src="https://discuss.d2l.ai/t/3815" alt="Discussions">
 

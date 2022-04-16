@@ -7,7 +7,7 @@
  :numref:`fig_segmentation`展示了语义分割中图像有关狗、猫和背景的标签。
 与目标检测相比，语义分割标注的像素级的边框显然更加精细。
 
-![语义分割中图像有关狗、猫和背景的标签](img/segmentation.svg)
+!<img src="img/segmentation.svg" alt="语义分割中图像有关狗、猫和背景的标签">
 :label:`fig_segmentation`
 
 ## 图像分割和实例分割
@@ -20,7 +20,7 @@
 
 ## Pascal VOC2012 语义分割数据集
 
-[**最重要的语义分割数据集之一是[Pascal VOC2012][http://host.robots.ox.ac.uk/pascal/VOC/voc2012/]。**]
+<img src="http://host.robots.ox.ac.uk/pascal/VOC/voc2012/" alt="**最重要的语义分割数据集之一是[Pascal VOC2012">。**]
 下面我们深入了解一下这个数据集。
 
 
@@ -91,7 +91,7 @@ d2l.show_images(imgs, 2, n);
 
 
     
-![png](chapter_computer-vision/semantic-segmentation-and-dataset_files/semantic-segmentation-and-dataset_7_0.png)
+!<img src="chapter_computer-vision/semantic-segmentation-and-dataset_files/semantic-segmentation-and-dataset_7_0.png" alt="png">
     
 
 
@@ -198,7 +198,7 @@ d2l.show_images(imgs[::2] + imgs[1::2], 2, n);
 
 
     
-![png](chapter_computer-vision/semantic-segmentation-and-dataset_files/semantic-segmentation-and-dataset_16_0.png)
+!<img src="chapter_computer-vision/semantic-segmentation-and-dataset_files/semantic-segmentation-and-dataset_16_0.png" alt="png">
     
 
 
@@ -317,5 +317,5 @@ def load_data_voc(batch_size, crop_size):
 1. 回想一下 :numref:`sec_image_augmentation`中对数据增强的描述。图像分类中使用的哪种图像增强方法是难以用于语义分割的？
 
 
-[Discussions][https://discuss.d2l.ai/t/3295]
+<img src="https://discuss.d2l.ai/t/3295" alt="Discussions">
 

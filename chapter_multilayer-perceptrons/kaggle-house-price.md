@@ -7,7 +7,7 @@ Kaggle的房价预测比赛是一个很好的起点。
 此数据集由Bart de Cock于2011年收集 :cite:`De-Cock.2011`，
 涵盖了2006-2010年期间亚利桑那州埃姆斯市的房价。
 这个数据集是相当通用的，不会需要使用复杂模型架构。
-它比哈里森和鲁宾菲尔德的[波士顿房价][https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names]
+它比哈里森和鲁宾菲尔德的<img src="https://archive.ics.uci.edu/ml/machine-learning-databases/housing/housing.names" alt="波士顿房价">
 数据集要大得多，也有更多的特征。
 
 本节我们将详细介绍数据预处理、模型设计和超参数选择。
@@ -97,7 +97,7 @@ def download_all():  #@save
 
 ## Kaggle
 
-[Kaggle][https://www.kaggle.com]是一个当今流行举办机器学习比赛的平台，
+<img src="https://www.kaggle.com" alt="Kaggle">是一个当今流行举办机器学习比赛的平台，
 每场比赛都以至少一个数据集为中心。
 许多比赛有赞助方，他们为获胜的解决方案提供奖金。
 该平台帮助用户通过论坛和共享代码进行互动，促进协作和竞争。
@@ -107,7 +107,7 @@ def download_all():  #@save
 这便于每个人都可以学习哪些方法起作用，哪些没有起作用。
 如果你想参加Kaggle比赛，你首先需要注册一个账户（见 :numref:`fig_kaggle`）。
 
-![Kaggle网站](img/kaggle.png)
+!<img src="img/kaggle.png" alt="Kaggle网站">
 :width:`400px`
 :label:`fig_kaggle`
 
@@ -117,7 +117,7 @@ def download_all():  #@save
 
 >https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
-![房价预测比赛页面](img/house-pricing.png)
+!<img src="img/house-pricing.png" alt="房价预测比赛页面">
 :width:`400px`
 :label:`fig_house_pricing`
 
@@ -443,7 +443,7 @@ print(f'{k}-折验证: 平均训练log rmse: {float(train_l):f}, '
 
 
     
-![svg](chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_35_1.svg)
+!<img src="chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_35_1.svg" alt="svg">
     
 
 
@@ -496,7 +496,7 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 
 
     
-![svg](chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_39_1.svg)
+!<img src="chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_39_1.svg" alt="svg">
     
 
 
@@ -509,7 +509,7 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 * 点击页面底部虚线框中的“Upload Submission File”按钮，选择你要上传的预测文件。
 * 点击页面底部的“Make Submission”按钮，即可查看你的结果。
 
-![向Kaggle提交数据](img/kaggle-submit2.png)
+!<img src="img/kaggle-submit2.png" alt="向Kaggle提交数据">
 :width:`400px`
 :label:`fig_kaggle_submit2`
 
@@ -531,5 +531,5 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 1. 如果我们没有像本节所做的那样标准化连续的数值特征，会发生什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/1824]
+<img src="https://discuss.d2l.ai/t/1824" alt="Discussions">
 

@@ -49,7 +49,7 @@ $$P(\text{deep}, \text{learning}, \text{is}, \text{fun}) =  P(\text{deep}) P(\te
 
 这里，我们假设训练数据集是一个大型的文本语料库。
 比如，维基百科的所有条目、
-[古登堡计划][https://en.wikipedia.org/wiki/Project_Gutenberg]，
+<img src="https://en.wikipedia.org/wiki/Project_Gutenberg" alt="古登堡计划">，
 或者所有发布在网络上的文本。
 训练数据集中词的概率可以根据给定词的相对词频来计算。
 例如，可以将估计值$\hat{P}(\text{deep})$
@@ -177,7 +177,7 @@ d2l.plot(freqs, xlabel='token: x', ylabel='frequency: n(x)',
 
 
     
-![svg](chapter_recurrent-neural-networks/language-models-and-dataset_files/language-models-and-dataset_4_0.svg)
+!<img src="chapter_recurrent-neural-networks/language-models-and-dataset_files/language-models-and-dataset_4_0.svg" alt="svg">
     
 
 
@@ -266,7 +266,7 @@ d2l.plot([freqs, bigram_freqs, trigram_freqs], xlabel='token: x',
 
 
     
-![svg](chapter_recurrent-neural-networks/language-models-and-dataset_files/language-models-and-dataset_10_0.svg)
+!<img src="chapter_recurrent-neural-networks/language-models-and-dataset_files/language-models-and-dataset_10_0.svg" alt="svg">
     
 
 
@@ -302,7 +302,7 @@ d2l.plot([freqs, bigram_freqs, trigram_freqs], xlabel='token: x',
 其中$n=5$，并且每个时间步的词元对应于一个字符。
 请注意，因为我们可以选择任意偏移量来指示初始位置，所以我们有相当大的自由度。
 
-![分割文本时，不同的偏移量会导致不同的子序列](img/timemachine-5gram.svg)
+!<img src="img/timemachine-5gram.svg" alt="分割文本时，不同的偏移量会导致不同的子序列">
 :label:`fig_timemachine_5gram`
 
 因此，我们应该从 :numref:`fig_timemachine_5gram`中选择哪一个呢？
@@ -484,5 +484,5 @@ def load_data_time_machine(batch_size, num_steps,  #@save
 1. 如果我们希望一个序列样本是一个完整的句子，那么这在小批量抽样中会带来怎样的问题？如何解决？
 
 
-[Discussions][https://discuss.d2l.ai/t/2097]
+<img src="https://discuss.d2l.ai/t/2097" alt="Discussions">
 

@@ -182,5 +182,5 @@ print(segment_BPE(tokens, symbols))
 1. 如何扩展字节对编码的思想来提取短语？
 
 
-[Discussions][https://discuss.d2l.ai/t/5748]
+<img src="https://discuss.d2l.ai/t/5748" alt="Discussions">
 

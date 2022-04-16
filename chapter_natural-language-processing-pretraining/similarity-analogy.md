@@ -14,7 +14,7 @@ from d2l import torch as d2l
 
 ## 加载预训练词向量
 
-以下列出维度为50、100和300的预训练GloVe嵌入，可从[GloVe网站][https://nlp.stanford.edu/projects/glove/]下载。预训练的fastText嵌入有多种语言。这里我们使用可以从[fastText网站][https://fasttext.cc/]下载300维度的英文版本（“wiki.en”）。
+以下列出维度为50、100和300的预训练GloVe嵌入，可从<img src="https://nlp.stanford.edu/projects/glove/" alt="GloVe网站">下载。预训练的fastText嵌入有多种语言。这里我们使用可以从<img src="https://fasttext.cc/" alt="fastText网站">下载300维度的英文版本（“wiki.en”）。
 
 
 
@@ -279,5 +279,5 @@ get_analogy('do', 'did', 'go', glove_6b50d)
 1. 当词表非常大时，我们怎样才能更快地找到相似的词或完成一个词的类比呢？
 
 
-[Discussions][https://discuss.d2l.ai/t/5746]
+<img src="https://discuss.d2l.ai/t/5746" alt="Discussions">
 

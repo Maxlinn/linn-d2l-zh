@@ -29,7 +29,7 @@
 1. 向目标模型添加输出层，其输出数是目标数据集中的类别数。然后随机初始化该层的模型参数。
 1. 在目标数据集（如椅子数据集）上训练目标模型。输出层将从头开始进行训练，而所有其他层的参数将根据源模型的参数进行微调。
 
-![微调。](img/finetune.svg)
+!<img src="img/finetune.svg" alt="微调。">
 :label:`fig_finetune`
 
 当目标数据集比源数据集小得多时，微调有助于提高模型的泛化能力。
@@ -96,7 +96,7 @@ d2l.show_images(hotdogs + not_hotdogs, 2, 8, scale=1.4);
 
 
     
-![png](chapter_computer-vision/fine-tuning_files/fine-tuning_7_0.png)
+!<img src="chapter_computer-vision/fine-tuning_files/fine-tuning_7_0.png" alt="png">
     
 
 
@@ -220,7 +220,7 @@ train_fine_tuning(finetune_net, 5e-5)
 
 
     
-![svg](chapter_computer-vision/fine-tuning_files/fine-tuning_19_1.svg)
+!<img src="chapter_computer-vision/fine-tuning_files/fine-tuning_19_1.svg" alt="svg">
     
 
 
@@ -241,7 +241,7 @@ train_fine_tuning(scratch_net, 5e-4, param_group=False)
 
 
     
-![svg](chapter_computer-vision/fine-tuning_files/fine-tuning_21_1.svg)
+!<img src="chapter_computer-vision/fine-tuning_files/fine-tuning_21_1.svg" alt="svg">
     
 
 
@@ -283,5 +283,5 @@ hotdog_w.shape
 
 
 
-[Discussions][https://discuss.d2l.ai/t/2894]
+<img src="https://discuss.d2l.ai/t/2894" alt="Discussions">
 

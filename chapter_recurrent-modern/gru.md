@@ -58,7 +58,7 @@
 输入是由当前时间步的输入和前一时间步的隐状态给出。
 两个门的输出是由使用sigmoid激活函数的两个全连接层给出。
 
-![在门控循环单元模型中计算重置门和更新门](img/gru-1.svg)
+!<img src="img/gru-1.svg" alt="在门控循环单元模型中计算重置门和更新门">
 :label:`fig_gru_1`
 
 我们来看一下门控循环单元的数学表达。
@@ -114,7 +114,7 @@ $\mathbf{b}_h \in \mathbb{R}^{1 \times h}$是偏置项，
 
  :numref:`fig_gru_2`说明了应用重置门之后的计算流程。
 
-![在门控循环单元模型中计算候选隐状态](img/gru-2.svg)
+!<img src="img/gru-2.svg" alt="在门控循环单元模型中计算候选隐状态">
 :label:`fig_gru_2`
 
 ### 隐状态
@@ -142,7 +142,7 @@ $$\mathbf{H}_t = \mathbf{Z}_t \odot \mathbf{H}_{t-1}  + (1 - \mathbf{Z}_t) \odot
 
  :numref:`fig_gru_3`说明了更新门起作用后的计算流。
 
-![计算门控循环单元模型中的隐状态](img/gru-3.svg)
+!<img src="img/gru-3.svg" alt="计算门控循环单元模型中的隐状态">
 :label:`fig_gru_3`
 
 总之，门控循环单元具有以下两个显著特征：
@@ -257,7 +257,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-![svg](chapter_recurrent-modern/gru_files/gru_9_1.svg)
+!<img src="chapter_recurrent-modern/gru_files/gru_9_1.svg" alt="svg">
     
 
 
@@ -285,7 +285,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-![svg](chapter_recurrent-modern/gru_files/gru_11_1.svg)
+!<img src="chapter_recurrent-modern/gru_files/gru_11_1.svg" alt="svg">
     
 
 
@@ -304,5 +304,5 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 1. 如果仅仅实现门控循环单元的一部分，例如，只有一个重置门或一个更新门会怎样？
 
 
-[Discussions][https://discuss.d2l.ai/t/2763]
+<img src="https://discuss.d2l.ai/t/2763" alt="Discussions">
 

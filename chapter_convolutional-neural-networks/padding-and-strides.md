@@ -18,7 +18,7 @@
 例如，在 :numref:`img_conv_pad`中，我们将$3 \times 3$输入填充到$5 \times 5$，那么它的输出就增加为$4 \times 4$。阴影部分是第一个输出元素以及用于输出计算的输入和核张量元素：
 $0\times0+0\times1+0\times2+0\times3=0$。
 
-![带填充的二维互相关。](img/conv-pad.svg)
+!<img src="img/conv-pad.svg" alt="带填充的二维互相关。">
 :label:`img_conv_pad`
 
 通常，如果我们添加$p_h$行填充（大约一半在顶部，一半在底部）和$p_w$列填充（左侧大约一半，右侧一半），则输出形状将为
@@ -99,7 +99,7 @@ comp_conv2d(conv2d, X).shape
 
 可以看到，为了计算输出中第一列的第二个元素和第一行的第二个元素，卷积窗口分别向下滑动三行和向右滑动两列。但是，当卷积窗口继续向右滑动两列时，没有输出，因为输入元素无法填充窗口（除非我们添加另一列填充）。
 
-![垂直步幅为 $3$，水平步幅为 $2$ 的二维互相关运算。](img/conv-stride.svg)
+!<img src="img/conv-stride.svg" alt="垂直步幅为 $3$，水平步幅为 $2$ 的二维互相关运算。">
 :label:`img_conv_stride`
 
 通常，当垂直步幅为$s_h$、水平步幅为$s_w$时，输出形状为
@@ -157,5 +157,5 @@ comp_conv2d(conv2d, X).shape
 1. 步幅大于$1$的计算优势是什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/1851]
+<img src="https://discuss.d2l.ai/t/1851" alt="Discussions">
 

@@ -137,7 +137,7 @@ skip_gram(torch.ones((2, 1), dtype=torch.long),
 > - 默认创建的torch.Tensor（或者torch.ones, zeros是**不带梯度的**），需要指定`requires_grad=True`
 
 > 关于cross_entropy_loss和sigmoid的区别：https://blog.csdn.net/Just_do_myself/article/details/123393900
-> ![image.png][attachment:image.png]
+> !<img src="attachment:image.png" alt="image.png">
 
 > BCELoss
 > 
@@ -280,7 +280,7 @@ train(net, data_iter, lr, num_epochs)
 
 
     
-![svg](chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_31_1.svg)
+!<img src="chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_31_1.svg" alt="svg">
     
 
 
@@ -321,5 +321,5 @@ get_similar_tokens('chip', 3, net[0])
 1. 当训练语料库很大时，在更新模型参数时，我们经常对当前小批量的*中心词*进行上下文词和噪声词的采样。换言之，同一中心词在不同的训练迭代轮数可以有不同的上下文词或噪声词。这种方法的好处是什么？尝试实现这种训练方法。
 
 
-[Discussions][https://discuss.d2l.ai/t/5740]
+<img src="https://discuss.d2l.ai/t/5740" alt="Discussions">
 

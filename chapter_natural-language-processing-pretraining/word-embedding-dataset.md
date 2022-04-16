@@ -15,7 +15,7 @@ from d2l import torch as d2l
 
 ## 正在读取数据集
 
-我们在这里使用的数据集是[Penn Tree Bank（PTB）][https://catalog.ldc.upenn.edu/LDC99T42]。该语料库取自“华尔街日报”的文章，分为训练集、验证集和测试集。在原始格式中，文本文件的每一行表示由空格分隔的一句话。在这里，我们将每个单词视为一个词元。
+我们在这里使用的数据集是<img src="https://catalog.ldc.upenn.edu/LDC99T42" alt="Penn Tree Bank（PTB）">。该语料库取自“华尔街日报”的文章，分为训练集、验证集和测试集。在原始格式中，文本文件的每一行表示由空格分隔的一句话。在这里，我们将每个单词视为一个词元。
 
 
 
@@ -106,7 +106,7 @@ d2l.show_list_len_pair_hist(
 
 
     
-![svg](chapter_natural-language-processing-pretraining/word-embedding-dataset_files/word-embedding-dataset_9_0.svg)
+!<img src="chapter_natural-language-processing-pretraining/word-embedding-dataset_files/word-embedding-dataset_9_0.svg" alt="svg">
     
 
 
@@ -422,5 +422,5 @@ for batch in data_iter:
 1. 本节代码中的哪些其他超参数可能会影响数据加载速度？
 
 
-[Discussions][https://discuss.d2l.ai/t/5735]
+<img src="https://discuss.d2l.ai/t/5735" alt="Discussions">
 

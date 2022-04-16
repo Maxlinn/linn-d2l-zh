@@ -548,5 +548,5 @@ a, a.item(), float(a), int(a)
 1. 用其他形状（例如三维张量）替换广播机制中按元素操作的两个张量。结果是否与预期相同？
 
 
-[Discussions][https://discuss.d2l.ai/t/1747]
+<img src="https://discuss.d2l.ai/t/1747" alt="Discussions">
 

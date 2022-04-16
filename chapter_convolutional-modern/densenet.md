@@ -17,7 +17,7 @@ $$f(\mathbf{x}) = \mathbf{x} + g(\mathbf{x}).$$
 那么再向前拓展一步，如果我们想将$f$拓展成超过两部分的信息呢？
 一种方案便是DenseNet。
 
-![ResNet（左）与 DenseNet（右）在跨层连接上的主要区别：使用相加和使用连结。](img/densenet-block.svg)
+!<img src="img/densenet-block.svg" alt="ResNet（左）与 DenseNet（右）在跨层连接上的主要区别：使用相加和使用连结。">
 :label:`fig_densenet_block`
 
 如 :numref:`fig_densenet_block`所示，ResNet和DenseNet的关键区别在于，DenseNet输出是*连接*（用图中的$[,]$表示）而不是如ResNet的简单相加。
@@ -33,7 +33,7 @@ f_2([\mathbf{x}, f_1(\mathbf{x})]), f_3([\mathbf{x}, f_1(\mathbf{x}), f_2([\math
 DenseNet这个名字由变量之间的“稠密连接”而得来，最后一层与之前的所有层紧密相连。
 稠密连接如 :numref:`fig_densenet`所示。
 
-![稠密连接。](img/densenet.svg)
+!<img src="img/densenet.svg" alt="稠密连接。">
 :label:`fig_densenet`
 
 稠密网络主要由2部分构成：*稠密块*（dense block）和*过渡层*（transition layer）。
@@ -202,7 +202,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-![svg](chapter_convolutional-modern/densenet_files/densenet_17_1.svg)
+!<img src="chapter_convolutional-modern/densenet_files/densenet_17_1.svg" alt="svg">
     
 
 
@@ -223,5 +223,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 应用DenseNet的思想设计一个基于多层感知机的模型。将其应用于 :numref:`sec_kaggle_house`中的房价预测任务。
 
 
-[Discussions][https://discuss.d2l.ai/t/1880]
+<img src="https://discuss.d2l.ai/t/1880" alt="Discussions">
 

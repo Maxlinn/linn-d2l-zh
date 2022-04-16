@@ -19,7 +19,7 @@
 由于接近 :numref:`fig_ssd`顶部的多尺度特征图较小，但具有较大的感受野，它们适合检测较少但较大的物体。
 简而言之，通过多尺度特征块，单发多框检测生成不同大小的锚框，并通过预测边界框的类别和偏移量来检测大小不同的目标，因此这是一个多尺度目标检测模型。
 
-![单发多框检测模型主要由一个基础网络块和若干多尺度特征块串联而成。](img/ssd.svg)
+!<img src="img/ssd.svg" alt="单发多框检测模型主要由一个基础网络块和若干多尺度特征块串联而成。">
 :label:`fig_ssd`
 
 在下面，我们将介绍 :numref:`fig_ssd`中不同块的实施细节。
@@ -414,7 +414,7 @@ print(f'{len(train_iter.dataset) / timer.stop():.1f} examples/sec on '
 
 
     
-![svg](chapter_computer-vision/ssd_files/ssd_35_1.svg)
+!<img src="chapter_computer-vision/ssd_files/ssd_35_1.svg" alt="svg">
     
 
 
@@ -466,7 +466,7 @@ display(img, output.cpu(), threshold=0.9)
 
 
     
-![svg](chapter_computer-vision/ssd_files/ssd_41_0.svg)
+!<img src="chapter_computer-vision/ssd_files/ssd_41_0.svg" alt="svg">
     
 
 
@@ -514,7 +514,7 @@ d2l.plt.legend();
 
 
     
-![svg](chapter_computer-vision/ssd_files/ssd_43_0.svg)
+!<img src="chapter_computer-vision/ssd_files/ssd_43_0.svg" alt="svg">
     
 
 
@@ -538,7 +538,7 @@ d2l.plt.legend();
 
 
     
-![svg](chapter_computer-vision/ssd_files/ssd_45_0.svg)
+!<img src="chapter_computer-vision/ssd_files/ssd_45_0.svg" alt="svg">
     
 
 
@@ -549,5 +549,5 @@ d2l.plt.legend();
     1. 使用其他方法评估目标检测模型，例如单发多框检测论文 :cite:`Liu.Anguelov.Erhan.ea.2016`中的方法。
 
 
-[Discussions][https://discuss.d2l.ai/t/3204]
+<img src="https://discuss.d2l.ai/t/3204" alt="Discussions">
 

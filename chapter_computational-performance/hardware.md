@@ -3,10 +3,10 @@
 
 很好地理解算法和模型才可以捕获统计方面的问题，构建出具有出色性能的系统。同时，至少对底层硬件有一定的了解也是必不可少的。本节不能替代硬件和系统设计的相关课程。相反，本节的内容可以作为理解某些算法为什么比其他算法更高效以及如何实现良好吞吐量的起点。一个好的设计可以很容易地在性能上造就数量级的差异，这也是后续产生的能够训练网络（例如，训练时间为$1$周）和无法训练网络（训练时间为$3$个月，导致错过截止期）之间的差异。我们先从计算机的研究开始。然后深入查看CPU和GPU。最后，再查看数据中心或云中的多台计算机的连接方式。
 
-![每个程序员都应该知道的延迟数字](img/latencynumbers.png)
+!<img src="img/latencynumbers.png" alt="每个程序员都应该知道的延迟数字">
 :label:`fig_latencynumbers`
 
-你也可以通过 :numref:`fig_latencynumbers`进行简单的了解，图片源自科林·斯科特的[互动帖子][https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html]，在帖子中很好地概述了过去十年的进展。原始的数字是取自于杰夫迪恩的[Stanford讲座][https://static.googleusercontent.com/media/research.google.com/en//people/jeff/Stanford-DL-Nov-2010.pdf]。下面的讨论解释了这些数字的一些基本原理，以及它们如何指导我们去设计算法。下面的讨论是非常笼统和粗略的。很显然，它并不能代替一门完整的课程，而只是为了给统计建模者提供足够的信息，让他们做出合适的设计决策。对于计算机体系结构的深入概述，我们建议读者参考 :cite:`Hennessy.Patterson.2011`或关于该主题的最新课程，例如[Arste Asanovic][http://inst.eecs.berkeley.edu/~cs152/sp19/]。
+你也可以通过 :numref:`fig_latencynumbers`进行简单的了解，图片源自科林·斯科特的<img src="https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html" alt="互动帖子">，在帖子中很好地概述了过去十年的进展。原始的数字是取自于杰夫迪恩的<img src="https://static.googleusercontent.com/media/research.google.com/en//people/jeff/Stanford-DL-Nov-2010.pdf" alt="Stanford讲座">。下面的讨论解释了这些数字的一些基本原理，以及它们如何指导我们去设计算法。下面的讨论是非常笼统和粗略的。很显然，它并不能代替一门完整的课程，而只是为了给统计建模者提供足够的信息，让他们做出合适的设计决策。对于计算机体系结构的深入概述，我们建议读者参考 :cite:`Hennessy.Patterson.2011`或关于该主题的最新课程，例如<img src="http://inst.eecs.berkeley.edu/~cs152/sp19/" alt="Arste Asanovic">。
 
 ## 计算机
 
@@ -18,7 +18,7 @@
 * 高速扩展总线（PCIe）用于系统连接一个或多个GPU。服务器最多有$8$个加速卡，通常以更高级的拓扑方式连接，而桌面系统则有$1$个或$2$个加速卡，具体取决于用户的预算和电源负载的大小。
 * 持久性存储设备，如磁盘驱动器、固态驱动器，在许多情况下使用高速扩展总线连接。它为系统需要的训练数据和中间检查点需要的存储提供了足够的传输速度。
 
-![计算机组件的连接](img/mobo-symbol.svg)
+!<img src="img/mobo-symbol.svg" alt="计算机组件的连接">
 :label:`fig_mobo-symbol`
 
 如 :numref:`fig_mobo-symbol`所示，高速扩展总线由直接连接到CPU的多个通道组成，将CPU与大多数组件（网络、GPU和存储）连接在一起。例如，AMD的Threadripper3有$64$个PCIe4.0通道，每个通道都能够双向传输16Gbit/s的数据。内存直接连接到CPU，总带宽高达100GB/s。
@@ -27,15 +27,15 @@
 
 ## 内存
 
-最基本的内存主要用于存储需要随时访问的数据。目前，CPU的内存通常为[DDR4][https://en.wikipedia.org/wiki/DDR4_SDRAM]类型，每个模块提供20-25Gb/s的带宽。每个模块都有一条$64$位宽的总线。通常使用成对的内存模块来允许多个通道。CPU有$2$到$4$个内存通道，也就是说，它们内存带宽的峰值在40GB/s到100GB/s之间。一般每个通道有两个物理存储体（bank）。例如AMD的Zen 3 Threadripper有$8$个插槽。
+最基本的内存主要用于存储需要随时访问的数据。目前，CPU的内存通常为<img src="https://en.wikipedia.org/wiki/DDR4_SDRAM" alt="DDR4">类型，每个模块提供20-25Gb/s的带宽。每个模块都有一条$64$位宽的总线。通常使用成对的内存模块来允许多个通道。CPU有$2$到$4$个内存通道，也就是说，它们内存带宽的峰值在40GB/s到100GB/s之间。一般每个通道有两个物理存储体（bank）。例如AMD的Zen 3 Threadripper有$8$个插槽。
 
 虽然这些数字令人印象深刻，但实际上它们只能说明了一部分故事。当我们想要从内存中读取一部分内容时，我们需要先告诉内存模块在哪里可以找到信息。也就是说，我们需要先将*地址*（address）发送到RAM。然后我们可以选择只读取一条$64$位记录还是一长串记录。后者称为*突发读取*（burst read）。概括地说，向内存发送地址并设置传输大约需要100ns（细节取决于所用内存芯片的特定定时系数），每个后续传输只需要0.2ns。总之，第一次读取的成本是后续读取的500倍！请注意，我们每秒最多可以执行一千万次随机读取。这说明应该尽可能地避免随机内存访问，而是使用突发模式读取和写入。
 
-当考虑到我们拥有多个物理存储体时，事情就更加复杂了。每个存储体大部分时候都可以独立地读取内存。这意味着两件事。一方面，如果随机读操作均匀分布在内存中，那么有效的随机读操作次数将高达4倍。这也意味着执行随机读取仍然不是一个好主意，因为突发读取的速度也快了4倍。另一方面，由于内存对齐是$64$位边界，因此最好将任何数据结构与相同的边界对齐。当设置了适当的标志时，编译器基本上就是[自动化][https://en.wikipedia.org/wiki/Data_structure_alignment]地执行对齐操作。我们鼓励好奇的读者回顾一下[Zeshan Chishti关于DRAM的讲座][http://web.cecs.pdx.edu/~zeshan/ece585_lec5.pdf]。
+当考虑到我们拥有多个物理存储体时，事情就更加复杂了。每个存储体大部分时候都可以独立地读取内存。这意味着两件事。一方面，如果随机读操作均匀分布在内存中，那么有效的随机读操作次数将高达4倍。这也意味着执行随机读取仍然不是一个好主意，因为突发读取的速度也快了4倍。另一方面，由于内存对齐是$64$位边界，因此最好将任何数据结构与相同的边界对齐。当设置了适当的标志时，编译器基本上就是<img src="https://en.wikipedia.org/wiki/Data_structure_alignment" alt="自动化">地执行对齐操作。我们鼓励好奇的读者回顾一下<img src="http://web.cecs.pdx.edu/~zeshan/ece585_lec5.pdf" alt="Zeshan Chishti关于DRAM的讲座">。
 
-因为GPU的处理单元比CPU多得多，因此它对内存带宽的需要也更高。解决这种问题大体上有两种选择。首要方法是使内存总线变得更宽。例如：NVIDIA的RTX 2080Ti有一条$352$位宽的总线，这样就可以同时传输更多的信息。再有方法就是在GPU中使用特定的高性能内存。一种选择是如NVIDIA的消费级设备RTX和Titan系列中通常使用[GDDR6][https://en.wikipedia.org/wiki/GDDR6_SDRAM）芯片，其总带宽超过500GB/s。另一种选择是使用HBM（高带宽存储器]模块。这些模块使用截然不同的接口在专用硅片上与GPU直接连在一起。这导致其非常昂贵，通常仅限于在高端服务器的芯片上使用，如NVIDIA Volta V100系列的加速卡。
+因为GPU的处理单元比CPU多得多，因此它对内存带宽的需要也更高。解决这种问题大体上有两种选择。首要方法是使内存总线变得更宽。例如：NVIDIA的RTX 2080Ti有一条$352$位宽的总线，这样就可以同时传输更多的信息。再有方法就是在GPU中使用特定的高性能内存。一种选择是如NVIDIA的消费级设备RTX和Titan系列中通常使用<img src="https://en.wikipedia.org/wiki/GDDR6_SDRAM）芯片，其总带宽超过500GB/s。另一种选择是使用HBM（高带宽存储器" alt="GDDR6">模块。这些模块使用截然不同的接口在专用硅片上与GPU直接连在一起。这导致其非常昂贵，通常仅限于在高端服务器的芯片上使用，如NVIDIA Volta V100系列的加速卡。
 
-GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得多。总的来说，解决这些问题有两种选择。首先是使内存总线变得更宽。例如，NVIDIA的RTX 2080Ti有一条352位宽的总线。这样就可以同时传输更多的信息。其次，GPU使用特定的高性能内存。消费级设备，如NVIDIA的RTX和Titan系列，通常使用[GDDR6][https://en.wikipedia.org/wiki/GDDR6_SDRAM）芯片，总带宽超过500GB/s。另一种选择是使用HBM（高带宽存储器]模块。它们使用截然不同的接口，直接与专用硅片上的GPU连接。这使得它们非常昂贵，通常仅限于高端服务器芯片，如NVIDIA Volta V100系列加速卡。毫不意外的是GPU的内存通常比CPU的内存小得多，因为前者的成本更高。就目的而言，它们的性能与特征大体上是相似的，只是GPU的速度更快。就本书而言，我们完全可以忽略细节，因为这些技术只在调整GPU核心以获得高吞吐量时才起作用。
+GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得多。总的来说，解决这些问题有两种选择。首先是使内存总线变得更宽。例如，NVIDIA的RTX 2080Ti有一条352位宽的总线。这样就可以同时传输更多的信息。其次，GPU使用特定的高性能内存。消费级设备，如NVIDIA的RTX和Titan系列，通常使用<img src="https://en.wikipedia.org/wiki/GDDR6_SDRAM）芯片，总带宽超过500GB/s。另一种选择是使用HBM（高带宽存储器" alt="GDDR6">模块。它们使用截然不同的接口，直接与专用硅片上的GPU连接。这使得它们非常昂贵，通常仅限于高端服务器芯片，如NVIDIA Volta V100系列加速卡。毫不意外的是GPU的内存通常比CPU的内存小得多，因为前者的成本更高。就目的而言，它们的性能与特征大体上是相似的，只是GPU的速度更快。就本书而言，我们完全可以忽略细节，因为这些技术只在调整GPU核心以获得高吞吐量时才起作用。
 
 ## 存储器
 
@@ -63,7 +63,7 @@ GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得�
 
 中央处理器（central processing unit，CPU）是任何计算机的核心。它们由许多关键组件组成：*处理器核心*（processor cores）用于执行机器代码的、*总线*（bus）用于连接不同组件（注意，总线会因为处理器型号、各代产品和供应商之间的特定拓扑结构有明显不同）和*缓存*（cach）相比主内存实现更高的读取带宽和更低的延迟内存访问。最后，因为高性能线性代数和卷积运算常见于媒体处理和机器学习中，所以几乎所有的现代CPU都包含*向量处理单元*（vector processing unit）为这些计算提供辅助。
 
-![Intel Skylake消费级四核CPU](img/skylake.svg)
+!<img src="img/skylake.svg" alt="Intel Skylake消费级四核CPU">
 :label:`fig_skylake`
 
  :numref:`fig_skylake`描述了Intel Skylake消费级四核CPU。它包含一个集成GPU、缓存和一个连接四个核心的环总线。例如：以太网、WiFi、蓝牙、SSD控制器和USB这些外围设备要么是芯片组的一部分，要么通过PCIe直接连接到CPU。
@@ -72,19 +72,19 @@ GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得�
 
 每个处理器核心都由一组相当复杂的组件组成。虽然不同时代的产品和供应商的细节有所不同，但基本功能都是标准的。前端加载指令并尝试预测将采用哪条路径（例如，为了控制流），然后将指令从汇编代码解码为微指令。汇编代码通常不是处理器执行的最低级别代码，而复杂的微指令却可以被解码成一组更低级的操作，然后由实际的执行核心处理。通常执行核心能够同时执行许多操作，例如， :numref:`fig_cortexa77`的ARM Cortex A77核心可以同时执行多达$8$个操作。
 
-![ARM Cortex A77微体系结构](img/a77.svg)
+!<img src="img/a77.svg" alt="ARM Cortex A77微体系结构">
 :label:`fig_cortexa77`
 
 这意味着高效的程序可以在每个时钟周期内执行多条指令，前提是这些指令可以独立执行。不是所有的处理单元都是平等的。一些专用于处理整数指令，而另一些则针对浮点性能进行了优化。为了提高吞吐量，处理器还可以在分支指令中同时执行多条代码路径，然后丢弃未选择分支的结果。这就是为什么前端的分支预测单元很重要，因为只有最有希望的路径才会被继续执行。
 
 ### 矢量化
 
-深度学习的计算量非常大。因此，为了满足机器学习的需要，CPU需要在一个时钟周期内执行许多操作。这种执行方式是通过向量处理单元实现的。这些处理单元有不同的名称:在ARM上叫做NEON,在x86上被称为[AVX2][https://en.wikipedia.org/wiki/Advanced_Vector_Extensions]。一个常见的功能是它们能够执行单指令多数据（single instruction multiple data，SIMD）操作。 :numref:`fig_neon128`显示了如何在ARM上的一个时钟周期中完成$8$个整数加法。
+深度学习的计算量非常大。因此，为了满足机器学习的需要，CPU需要在一个时钟周期内执行许多操作。这种执行方式是通过向量处理单元实现的。这些处理单元有不同的名称:在ARM上叫做NEON,在x86上被称为<img src="https://en.wikipedia.org/wiki/Advanced_Vector_Extensions" alt="AVX2">。一个常见的功能是它们能够执行单指令多数据（single instruction multiple data，SIMD）操作。 :numref:`fig_neon128`显示了如何在ARM上的一个时钟周期中完成$8$个整数加法。
 
-![128位NEON矢量化](img/neon128.svg)
+!<img src="img/neon128.svg" alt="128位NEON矢量化">
 :label:`fig_neon128`
 
-根据体系结构的选择，此类寄存器最长可达$512$位，最多可组合$64$对数字。例如，我们可能会将两个数字相乘，然后与第三个数字相加，这也称为乘加融合（fused multiply-add）。Intel的[OpenVino][https://01.org/openvinotoolkit]就是使用这些处理器来获得可观的吞吐量，以便在服务器级CPU上进行深度学习。不过请注意，这个数字与GPU的能力相比则相形见绌。例如，NVIDIA的RTX 2080Ti拥有$4352$个CUDA核心，每个核心都能够在任何时候处理这样的操作。
+根据体系结构的选择，此类寄存器最长可达$512$位，最多可组合$64$对数字。例如，我们可能会将两个数字相乘，然后与第三个数字相加，这也称为乘加融合（fused multiply-add）。Intel的<img src="https://01.org/openvinotoolkit" alt="OpenVino">就是使用这些处理器来获得可观的吞吐量，以便在服务器级CPU上进行深度学习。不过请注意，这个数字与GPU的能力相比则相形见绌。例如，NVIDIA的RTX 2080Ti拥有$4352$个CUDA核心，每个核心都能够在任何时候处理这样的操作。
 
 ### 缓存
 
@@ -99,47 +99,47 @@ GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得�
 
 添加缓存是一把双刃剑。一方面，它能确保处理器核心不缺乏数据。但同时，它也增加了芯片尺寸，消耗了原本可以用来提高处理能力的面积。此外，*缓存未命中* 的代价可能会很昂贵。考虑最坏的情况，如 :numref:`fig_falsesharing`所示的*错误共享*（false sharing）。当处理器$1$上的线程请求数据时，内存位置缓存在处理器$0$上。为了满足获取需要，处理器$0$需要停止它正在做的事情，将信息写回主内存，然后让处理器$1$从内存中读取它。在此操作期间，两个处理器都需要等待。与高效的单处理器实现相比，这种代码在多个处理器上运行的速度可能要慢得多。这就是为什么缓存大小（除了物理大小之外）有实际限制的另一个原因。
 
-![错误共享（图片由英特尔提供）](img/falsesharing.svg)
+!<img src="img/falsesharing.svg" alt="错误共享（图片由英特尔提供）">
 :label:`fig_falsesharing`
 
 ## GPU和其他加速卡
 
 毫不夸张地说，如果没有GPU，深度学习就不会成功。基于同样的原因，有理由认为GPU制造商的财富由于深度学习而显著增加。这种硬件和算法的协同进化导致了这样一种情况：无论好坏，深度学习都是更可取的统计建模范式。因此，了解GPU和其他加速卡（如TPU :cite:`Jouppi.Young.Patil.ea.2017`）的具体好处是值得的。
 
-值得注意的是，在实践中经常会有这样一个判别：加速卡是为训练还是推断而优化的。对于后者，我们只需要计算网络中的前向传播。而反向传播不需要存储中间数据。还有，我们可能不需要非常精确的计算（FP16或INT8通常就足够了）。对于前者，即训练过程中需要存储所有的中间结果用来计算梯度。而且，累积梯度也需要更高的精度，以避免数值下溢（或溢出）。这意味着最低要求也是FP16（或FP16与FP32的混合精度）。所有这些都需要更快、更大的内存（HBM2或者GDDR6）和更高的处理能力。例如，NVIDIA优化了[Turing][https://devblogs.nvidia.com/nvidia-turing-architecture-in-depth/] T4 GPU用于推断和V100 GPU用于训练。
+值得注意的是，在实践中经常会有这样一个判别：加速卡是为训练还是推断而优化的。对于后者，我们只需要计算网络中的前向传播。而反向传播不需要存储中间数据。还有，我们可能不需要非常精确的计算（FP16或INT8通常就足够了）。对于前者，即训练过程中需要存储所有的中间结果用来计算梯度。而且，累积梯度也需要更高的精度，以避免数值下溢（或溢出）。这意味着最低要求也是FP16（或FP16与FP32的混合精度）。所有这些都需要更快、更大的内存（HBM2或者GDDR6）和更高的处理能力。例如，NVIDIA优化了<img src="https://devblogs.nvidia.com/nvidia-turing-architecture-in-depth/" alt="Turing"> T4 GPU用于推断和V100 GPU用于训练。
 
 回想一下如 :numref:`fig_neon128`所示的矢量化。处理器核心中添加向量处理单元可以显著提高吞吐量。例如，在 :numref:`fig_neon128`的例子中，我们能够同时执行$16$个操作。首先，如果我们添加的运算不仅优化了向量运算，而且优化了矩阵运算，会有什么好处？稍后我们将讨论基于这个策略引入的张量核（tensor cores）。第二，如果我们增加更多的核心呢？简而言之，以上就是GPU设计决策中的两种策略。 :numref:`fig_turing_processing_block`给出了基本处理块的概述。它包含$16$个整数单位和$16$个浮点单位。除此之外，两个张量核加速了与深度学习相关的附加操作的狭窄的子集。每个流式多处理器都由这样的四个块组成。
 
-![NVIDIA Turing处理块（图片由英伟达提供）](img/turing-processing-block.png)
+!<img src="img/turing-processing-block.png" alt="NVIDIA Turing处理块（图片由英伟达提供）">
 :width:`150px`
 :label:`fig_turing_processing_block`
 
 接下来，将$12$ 个流式多处理器分组为图形处理集群，这些集群构成了高端TU102处理器。充足的内存通道和二级缓存完善了配置。 :numref:`fig_turing`有相关的细节。设计这种设备的原因之一是可以根据需要独立地添加或删除模块，从而满足设计更紧凑的芯片和处理良品率问题（故障模块可能无法激活）的需要。幸运的是，在CUDA和框架代码层之下，这类设备的编程对深度学习的临时研究员隐藏得很好。特别是，只要有可用的资源GPU上就可以同时执行多个程序。尽管如此，了解设备的局限性是值得的，以避免对应的设备内存的型号不合适。
 
-![NVIDIA Turing架构（图片由英伟达提供）](img/turing.png)
+!<img src="img/turing.png" alt="NVIDIA Turing架构（图片由英伟达提供）">
 :width:`350px`
 :label:`fig_turing`
 
 最后值得一提的是*张量核*（tensor core）。它们是最近增加更多优化电路趋势的一个例子，这些优化电路对深度学习特别有效。例如，TPU添加了用于快速矩阵乘法的脉动阵列 :cite:`Kung.1988`，这种设计是为了支持非常小数量（第一代TPU支持数量为1）的大型操作。而张量核是另一个极端。它们针对$4 \times 4$和$16 \times 16$矩阵之间的小型运算进行了优化，具体取决于它们的数值精度。 :numref:`fig_tensorcore`给出了优化的概述。
 
-![NVIDIA Turing架构中的张量核心（图片由英伟达提供）](img/tensorcore.jpg)
+!<img src="img/tensorcore.jpg" alt="NVIDIA Turing架构中的张量核心（图片由英伟达提供）">
 :width:`400px`
 :label:`fig_tensorcore`
 
-显然，我们最终会在优化计算时做出某些妥协。其中之一是GPU不太擅长处理稀疏数据和中断。尽管有一些明显的例外，如[Gunrock][https://github.com/gunrock/gunrock] :cite:`Wang.Davidson.Pan.ea.2016`，但GPU擅长的高带宽突发读取操作并不适合稀疏的矩阵和向量的访问模式。访问稀疏数据和处理中断这两个目标是一个积极研究的领域。例如：[DGL][http://dgl.ai]，一个专为图深度学习而设计的库。
+显然，我们最终会在优化计算时做出某些妥协。其中之一是GPU不太擅长处理稀疏数据和中断。尽管有一些明显的例外，如<img src="https://github.com/gunrock/gunrock" alt="Gunrock"> :cite:`Wang.Davidson.Pan.ea.2016`，但GPU擅长的高带宽突发读取操作并不适合稀疏的矩阵和向量的访问模式。访问稀疏数据和处理中断这两个目标是一个积极研究的领域。例如：<img src="http://dgl.ai" alt="DGL">，一个专为图深度学习而设计的库。
 
 ## 网络和总线
 
 每当单个设备不足以进行优化时，我们就需要来回传输数据以实现同步处理，于是网络和总线就派上了用场。我们有许多设计参数：带宽、成本、距离和灵活性。应用的末端我们有WiFi，它有非常好的使用范围，非常容易使用（毕竟没有线缆），而且还便宜，但它提供的带宽和延迟相对一般。头脑正常的机器学习研究人员都不会用它来构建服务器集群。在接下来的内容中，我们将重点关注适合深度学习的互连方式。
 
 * **PCIe**，一种专用总线，用于每个通道点到点连接的高带宽需求（在$16$通道插槽中的PCIe4.0上高达32GB/s），延迟时间为个位数的微秒（5μs）。PCIe链接非常宝贵。处理器拥有的数量：AMD的EPYC 3有$128$个通道，Intel的Xeon每个芯片有$48$个通道；在桌面级CPU上，数字分别是$20$（Ryzen9）和$16$（Core i9）。由于GPU​通常有$16$个通道，这就限制了以全带宽与CPU连接的GPU数量。毕竟，它们还需要与其他高带宽外围设备（如存储和以太网）共享链路。与RAM访问一样，由于减少了数据包的开销，因此更适合大批量数据传输。
-* **以太网**，连接计算机最常用的方式。虽然它比PCIe慢得多，但它的安装成本非常低，而且具有很强的弹性，覆盖的距离也要长得多。低级服务器的典型带宽为1GBit/s。高端设备（如云中的[C5实例][https://aws.amazon.com/ec2/instance-types/c5/））提供10到100GBit/s的带宽。与以前所有的情况一样，数据传输有很大的开销。请注意，原始以太网几乎从不被直接使用，而是在物理互连之上使用执行的协议（例如UDP或TCP/IP]。这进一步增加了开销。与PCIe类似，以太网旨在连接两个设备，例如计算机和交换机。
-* **交换机**，一种连接多个设备的方式，该连接方式下的任何一对设备都可以同时执行（通常是全带宽）点对点连接。例如，以太网交换机可能以高带宽连接$40$台服务器。请注意，交换机并不是传统计算机网络所独有的。甚至PCIe通道也可以是[可交换的][https://www.broadcom.com/products/pcie-switches-bridges/pcie-switches]，例如：[P2实例][https://aws.amazon.com/ec2/instance-types/p2/]就是将大量GPU连接到主机处理器。
-* **NVLink**，是PCIe的替代品，适用于非常高带宽的互连。它为每条链路提供高达300Gbit/s的数据传输速率。服务器GPU（Volta V100）有六个链路。而消费级GPU（RTX 2080Ti）只有一个链路，运行速度也降低到100Gbit/s。我们建议使用[NCCL][https://github.com/NVIDIA/nccl]来实现GPU之间的高速数据传输。
+* **以太网**，连接计算机最常用的方式。虽然它比PCIe慢得多，但它的安装成本非常低，而且具有很强的弹性，覆盖的距离也要长得多。低级服务器的典型带宽为1GBit/s。高端设备（如云中的<img src="https://aws.amazon.com/ec2/instance-types/c5/））提供10到100GBit/s的带宽。与以前所有的情况一样，数据传输有很大的开销。请注意，原始以太网几乎从不被直接使用，而是在物理互连之上使用执行的协议（例如UDP或TCP/IP" alt="C5实例">。这进一步增加了开销。与PCIe类似，以太网旨在连接两个设备，例如计算机和交换机。
+* **交换机**，一种连接多个设备的方式，该连接方式下的任何一对设备都可以同时执行（通常是全带宽）点对点连接。例如，以太网交换机可能以高带宽连接$40$台服务器。请注意，交换机并不是传统计算机网络所独有的。甚至PCIe通道也可以是<img src="https://www.broadcom.com/products/pcie-switches-bridges/pcie-switches" alt="可交换的">，例如：<img src="https://aws.amazon.com/ec2/instance-types/p2/" alt="P2实例">就是将大量GPU连接到主机处理器。
+* **NVLink**，是PCIe的替代品，适用于非常高带宽的互连。它为每条链路提供高达300Gbit/s的数据传输速率。服务器GPU（Volta V100）有六个链路。而消费级GPU（RTX 2080Ti）只有一个链路，运行速度也降低到100Gbit/s。我们建议使用<img src="https://github.com/NVIDIA/nccl" alt="NCCL">来实现GPU之间的高速数据传输。
 
 ## 更多延迟
 
- :numref:`table_latency_numbers`和 :numref:`table_latency_numbers_tesla`中的小结来自[Eliot Eshelman][https://gist.github.com/eshelman]，他们将数字的更新版本保存到[GitHub gist][https://gist.github.com/eshelman/343a1c46cb3fba142c1afdcdeec17646]。
+ :numref:`table_latency_numbers`和 :numref:`table_latency_numbers_tesla`中的小结来自<img src="https://gist.github.com/eshelman" alt="Eliot Eshelman">，他们将数字的更新版本保存到<img src="https://gist.github.com/eshelman/343a1c46cb3fba142c1afdcdeec17646" alt="GitHub gist">。
 
 :常见延迟。
 
@@ -216,5 +216,5 @@ GPU内存的带宽要求甚至更高，因为它们的处理单元比CPU多得�
 1. 看看Turing T4GPU的性能数字。为什么从FP16到INT8和INT4的性能只翻倍？
 1. 一个网络包从旧金山到阿姆斯特丹的往返旅行需要多长时间？提示：你可以假设距离为10000公里。
 
-[Discussions][https://discuss.d2l.ai/t/5717]
+<img src="https://discuss.d2l.ai/t/5717" alt="Discussions">
 

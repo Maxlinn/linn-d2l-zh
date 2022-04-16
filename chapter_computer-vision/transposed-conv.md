@@ -30,7 +30,7 @@ from d2l import torch as d2l
 
 例如， :numref:`fig_trans_conv`解释了如何为$2\times 2$的输入张量计算卷积核为$2\times 2$的转置卷积。
 
-![卷积核为 $2\times 2$ 的转置卷积。阴影部分是中间张量的一部分，也是用于计算的输入和卷积核张量元素。 ](img/trans_conv.svg)
+!<img src="img/trans_conv.svg" alt="卷积核为 $2\times 2$ 的转置卷积。阴影部分是中间张量的一部分，也是用于计算的输入和卷积核张量元素。 ">
 :label:`fig_trans_conv`
 
 我们可以对输入矩阵`X`和卷积核矩阵`K`(**实现基本的转置卷积运算**)`trans_conv`。
@@ -111,7 +111,7 @@ tconv(X)
 在转置卷积中，步幅被指定为中间结果（输出），而不是输入。
 使用 :numref:`fig_trans_conv`中相同输入和卷积核张量，将步幅从1更改为2会增加中间张量的高和权重，因此输出张量在 :numref:`fig_trans_conv_stride2`中。
 
-![卷积核为$2\times 2$，步幅为2的转置卷积。阴影部分是中间张量的一部分，也是用于计算的输入和卷积核张量元素。](img/trans_conv_stride2.svg)
+!<img src="img/trans_conv_stride2.svg" alt="卷积核为$2\times 2$，步幅为2的转置卷积。阴影部分是中间张量的一部分，也是用于计算的输入和卷积核张量元素。">
 :label:`fig_trans_conv_stride2`
 
 以下代码可以验证 :numref:`fig_trans_conv_stride2`中步幅为2的转置卷积的输出。
@@ -261,5 +261,5 @@ Z == torch.matmul(W.T, Y.reshape(-1)).reshape(3, 3)
 1. 使用矩阵乘法来实现卷积是否有效率？为什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/3302]
+<img src="https://discuss.d2l.ai/t/3302" alt="Discussions">
 

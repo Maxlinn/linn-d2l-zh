@@ -40,7 +40,7 @@ $$\mathbf{c}_{t'} = \sum_{t=1}^T \alpha(\mathbf{s}_{t' - 1}, \mathbf{h}_t) \math
 与 :numref:`fig_seq2seq_details`中的循环神经网络编码器-解码器架构略有不同，
  :numref:`fig_s2s_attention_details`描述了Bahdanau注意力的架构。
 
-![一个带有Bahdanau注意力的循环神经网络编码器-解码器模型](img/seq2seq-attention-details.svg)
+!<img src="img/seq2seq-attention-details.svg" alt="一个带有Bahdanau注意力的循环神经网络编码器-解码器模型">
 :label:`fig_s2s_attention_details`
 
 
@@ -188,7 +188,7 @@ d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-![svg](chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_9_1.svg)
+!<img src="chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_9_1.svg" alt="svg">
     
 
 
@@ -233,7 +233,7 @@ d2l.show_heatmaps(
 
 
     
-![svg](chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_14_0.svg)
+!<img src="chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_14_0.svg" alt="svg">
     
 
 
@@ -248,5 +248,5 @@ d2l.show_heatmaps(
 1. 修改实验以将加性注意力打分函数替换为缩放点积注意力，它如何影响训练效率？
 
 
-[Discussions][https://discuss.d2l.ai/t/5754]
+<img src="https://discuss.d2l.ai/t/5754" alt="Discussions">
 

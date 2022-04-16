@@ -14,15 +14,15 @@
 关于模型计算性能、可伸缩性和效率相关的问题，我们将放在后面的章节中讨论。
 
 :begin_tab:toc
- - [mlp](chapter_multilayer-perceptrons/mlp.ipynb)
- - [mlp-scratch](chapter_multilayer-perceptrons/mlp-scratch.ipynb)
- - [mlp-concise](chapter_multilayer-perceptrons/mlp-concise.ipynb)
- - [underfit-overfit](chapter_multilayer-perceptrons/underfit-overfit.ipynb)
- - [weight-decay](chapter_multilayer-perceptrons/weight-decay.ipynb)
- - [dropout](chapter_multilayer-perceptrons/dropout.ipynb)
- - [backprop](chapter_multilayer-perceptrons/backprop.ipynb)
- - [numerical-stability-and-init](chapter_multilayer-perceptrons/numerical-stability-and-init.ipynb)
- - [environment](chapter_multilayer-perceptrons/environment.ipynb)
- - [kaggle-house-price](chapter_multilayer-perceptrons/kaggle-house-price.ipynb)
+ - <img src="chapter_multilayer-perceptrons/mlp.ipynb" alt="mlp">
+ - <img src="chapter_multilayer-perceptrons/mlp-scratch.ipynb" alt="mlp-scratch">
+ - <img src="chapter_multilayer-perceptrons/mlp-concise.ipynb" alt="mlp-concise">
+ - <img src="chapter_multilayer-perceptrons/underfit-overfit.ipynb" alt="underfit-overfit">
+ - <img src="chapter_multilayer-perceptrons/weight-decay.ipynb" alt="weight-decay">
+ - <img src="chapter_multilayer-perceptrons/dropout.ipynb" alt="dropout">
+ - <img src="chapter_multilayer-perceptrons/backprop.ipynb" alt="backprop">
+ - <img src="chapter_multilayer-perceptrons/numerical-stability-and-init.ipynb" alt="numerical-stability-and-init">
+ - <img src="chapter_multilayer-perceptrons/environment.ipynb" alt="environment">
+ - <img src="chapter_multilayer-perceptrons/kaggle-house-price.ipynb" alt="kaggle-house-price">
 :end_tab:
 

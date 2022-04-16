@@ -5,9 +5,9 @@
 
 ## 注册
 
-首先，我们需要在注册一个帐户https://aws.amazon.com/。 为了增加安全性，鼓励使用双因素身份验证。设置详细的计费和支出警报也是一个好主意，以避免任何意外，例如，当忘记停止运行实例时。登录AWS帐户后，转到[console][http://console.aws.amazon.com/]并搜索“Amazon SageMaker”（参见 :numref:`fig_sagemaker`），然后单击它打开SageMaker面板。
+首先，我们需要在注册一个帐户https://aws.amazon.com/。 为了增加安全性，鼓励使用双因素身份验证。设置详细的计费和支出警报也是一个好主意，以避免任何意外，例如，当忘记停止运行实例时。登录AWS帐户后，转到<img src="http://console.aws.amazon.com/" alt="console">并搜索“Amazon SageMaker”（参见 :numref:`fig_sagemaker`），然后单击它打开SageMaker面板。
 
-![搜索并打开SageMaker面板](img/sagemaker.png)
+!<img src="img/sagemaker.png" alt="搜索并打开SageMaker面板">
 :width:`300px`
 :label:`fig_sagemaker`
 
@@ -15,13 +15,13 @@
 
 接下来，让我们创建一个notebook实例，如 :numref:`fig_sagemaker-create`所示。
 
-![创建一个SageMaker实例](img/sagemaker-create.png)
+!<img src="img/sagemaker-create.png" alt="创建一个SageMaker实例">
 :width:`400px`
 :label:`fig_sagemaker-create`
 
-SageMaker提供多个具有不同计算能力和价格的[实例类型][https://aws.amazon.com/sagemaker/pricing/instance-types/]。创建notebook实例时，可以指定其名称和类型。在 :numref:`fig_sagemaker-create-2`中，我们选择`ml.p3.2xlarge`：使用一个Tesla V100 GPU和一个8核CPU，这个实例的性能足够本书的大部分内容使用。
+SageMaker提供多个具有不同计算能力和价格的<img src="https://aws.amazon.com/sagemaker/pricing/instance-types/" alt="实例类型">。创建notebook实例时，可以指定其名称和类型。在 :numref:`fig_sagemaker-create-2`中，我们选择`ml.p3.2xlarge`：使用一个Tesla V100 GPU和一个8核CPU，这个实例的性能足够本书的大部分内容使用。
 
-![选择实例类型](img/sagemaker-create-2.png)
+!<img src="img/sagemaker-create-2.png" alt="选择实例类型">
 :width:`400px`
 :label:`fig_sagemaker-create-2`
 
@@ -30,7 +30,7 @@ SageMaker提供多个具有不同计算能力和价格的[实例类型][https://
 我们可以指定此GitHub存储库URL（ :numref:`fig_sagemaker-create-3`），以允许SageMaker在创建实例时克隆它。
 
 
-![指定GitHub存储库](img/sagemaker-create-3.png)
+!<img src="img/sagemaker-create-3.png" alt="指定GitHub存储库">
 :width:`400px`
 :label:`fig_sagemaker-create-3`
 
@@ -38,23 +38,23 @@ SageMaker提供多个具有不同计算能力和价格的[实例类型][https://
 
 创建实例可能需要几分钟的时间。当实例准备就绪时，单击它旁边的“Open Jupyter”链接（ :numref:`fig_sagemaker-open`），以便你可以在此实例上编辑并运行本书的所有Jupyter Notebook（类似于 :numref:`sec_jupyter`中的步骤）。
 
-![在创建的SageMaker实例上打开Jupyter](img/sagemaker-open.png)
+!<img src="img/sagemaker-open.png" alt="在创建的SageMaker实例上打开Jupyter">
 :width:`400px`
 :label:`fig_sagemaker-open`
 
 完成工作后，不要忘记停止实例以避免进一步收费（ :numref:`fig_sagemaker-stop`）。
 
-![停止SageMaker实例](img/sagemaker-stop.png)
+!<img src="img/sagemaker-stop.png" alt="停止SageMaker实例">
 :width:`300px`
 :label:`fig_sagemaker-stop`
 
 ## 更新Notebook
 
 
-这本开源书的notebook将定期在GitHub上的[d2l-ai/d2l-pytorch-sagemaker][https://github.com/d2l-ai/d2l-pytorch-sagemaker]存储库中更新。要更新至最新版本，你可以在SageMaker实例（ :numref:`fig_sagemaker-terminal`）上打开终端。
+这本开源书的notebook将定期在GitHub上的<img src="https://github.com/d2l-ai/d2l-pytorch-sagemaker" alt="d2l-ai/d2l-pytorch-sagemaker">存储库中更新。要更新至最新版本，你可以在SageMaker实例（ :numref:`fig_sagemaker-terminal`）上打开终端。
 
 
-![在SageMaker实例上打开终端](img/sagemaker-terminal.png)
+!<img src="img/sagemaker-terminal.png" alt="在SageMaker实例上打开终端">
 :width:`300px`
 :label:`fig_sagemaker-terminal`
 
@@ -78,5 +78,5 @@ git pull
 1. 使用Amazon SageMaker编辑并运行任何需要GPU的部分。
 1. 打开终端以访问保存本书所有notebooks的本地目录。
 
-[Discussions][https://discuss.d2l.ai/t/5732]
+<img src="https://discuss.d2l.ai/t/5732" alt="Discussions">
 

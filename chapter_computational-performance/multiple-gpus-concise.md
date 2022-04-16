@@ -117,7 +117,7 @@ train(net, num_gpus=1, batch_size=256, lr=0.1)
 
 
     
-![svg](chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_10_1.svg)
+!<img src="chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_10_1.svg" alt="svg">
     
 
 
@@ -134,7 +134,7 @@ train(net, num_gpus=2, batch_size=512, lr=0.2)
 
 
     
-![svg](chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_12_1.svg)
+!<img src="chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_12_1.svg" alt="svg">
     
 
 
@@ -153,5 +153,5 @@ train(net, num_gpus=2, batch_size=512, lr=0.2)
 1. 有时候不同的设备提供了不同的计算能力，我们可以同时使用GPU和CPU，那应该如何分配工作？为什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/2803]
+<img src="https://discuss.d2l.ai/t/2803" alt="Discussions">
 

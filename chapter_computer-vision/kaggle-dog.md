@@ -9,7 +9,7 @@
 这个数据集实际上是著名的ImageNet的数据集子集。与 :numref:`sec_kaggle_cifar10`中CIFAR-10数据集中的图像不同，
 ImageNet数据集中的图像更高更宽，且尺寸不一。
 
-![狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。](img/kaggle-dog.jpg)
+!<img src="img/kaggle-dog.jpg" alt="狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。">
 :width:`400px`
 :label:`fig_kaggle_dog`
 
@@ -270,7 +270,7 @@ train(net, train_iter, valid_iter, num_epochs, lr, wd, devices, lr_period,
 
 
     
-![svg](chapter_computer-vision/kaggle-dog_files/kaggle-dog_21_1.svg)
+!<img src="chapter_computer-vision/kaggle-dog_files/kaggle-dog_21_1.svg" alt="svg">
     
 
 
@@ -305,7 +305,7 @@ with open('submission.csv', 'w') as f:
 
 
     
-![svg](chapter_computer-vision/kaggle-dog_files/kaggle-dog_23_1.svg)
+!<img src="chapter_computer-vision/kaggle-dog_files/kaggle-dog_23_1.svg" alt="svg">
     
 
 
@@ -322,5 +322,5 @@ with open('submission.csv', 'w') as f:
 1. 如果你使用更深的预训练模型，会得到更好的结果吗？如何调整超参数？能进一步改善结果吗？
 
 
-[Discussions][https://discuss.d2l.ai/t/2833]
+<img src="https://discuss.d2l.ai/t/2833" alt="Discussions">
 

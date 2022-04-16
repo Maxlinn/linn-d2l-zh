@@ -23,7 +23,7 @@ from d2l import torch as d2l
 
 ## 读取数据集
 
-首先，我们从H.G.Well的[时光机器][https://www.gutenberg.org/ebooks/35]中加载文本。
+首先，我们从H.G.Well的<img src="https://www.gutenberg.org/ebooks/35" alt="时光机器">中加载文本。
 这是一个相当小的语料库，只有30000多个单词，但足够我们小试牛刀，
 而现实中的文档集合可能会包含数十亿个单词。
 下面的函数(**将数据集读取到由多条文本行组成的列表中**)，其中每条文本行都是一个字符串。
@@ -235,5 +235,5 @@ len(corpus), len(vocab)
 1. 在本节的实验中，将文本词元为单词和更改`Vocab`实例的`min_freq`参数。这对词表大小有何影响？
 
 
-[Discussions][https://discuss.d2l.ai/t/2094]
+<img src="https://discuss.d2l.ai/t/2094" alt="Discussions">
 

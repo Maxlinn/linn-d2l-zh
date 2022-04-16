@@ -10,7 +10,7 @@
 
 我们先看看如何使用单个NVIDIA GPU进行计算。
 首先，确保你至少安装了一个NVIDIA GPU。
-然后，下载[NVIDIA驱动和CUDA][https://developer.nvidia.com/cuda-downloads]
+然后，下载<img src="https://developer.nvidia.com/cuda-downloads" alt="NVIDIA驱动和CUDA">
 并按照提示设置适当的路径。
 当这些准备工作完成，就可以使用`nvidia-smi`命令来(**查看显卡信息。**)
 
@@ -224,7 +224,7 @@ Y
 由于`Y`位于第二个GPU上，所以我们需要将`X`移到那里，
 然后才能执行相加运算。
 
-![复制数据以在同一设备上执行操作](img/copyto.svg)
+!<img src="img/copyto.svg" alt="复制数据以在同一设备上执行操作">
 :label:`fig_copyto`
 
 
@@ -358,5 +358,5 @@ net[0].weight.data.device
 1. 测量同时在两个GPU上执行两个矩阵乘法与在一个GPU上按顺序执行两个矩阵乘法所需的时间。提示：你应该看到近乎线性的缩放。
 
 
-[Discussions][https://discuss.d2l.ai/t/1841]
+<img src="https://discuss.d2l.ai/t/1841" alt="Discussions">
 

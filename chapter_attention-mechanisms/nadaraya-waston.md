@@ -92,7 +92,7 @@ plot_kernel_reg(y_hat)
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_8_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_8_0.svg" alt="svg">
     
 
 
@@ -166,7 +166,7 @@ plot_kernel_reg(y_hat)
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_10_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_10_0.svg" alt="svg">
     
 
 
@@ -185,7 +185,7 @@ d2l.show_heatmaps(attention_weights.unsqueeze(0).unsqueeze(0),
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_12_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_12_0.svg" alt="svg">
     
 
 
@@ -320,7 +320,7 @@ for epoch in range(5):
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_22_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_22_0.svg" alt="svg">
     
 
 
@@ -341,7 +341,7 @@ plot_kernel_reg(y_hat)
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_24_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_24_0.svg" alt="svg">
     
 
 
@@ -361,7 +361,7 @@ d2l.show_heatmaps(net.attention_weights.unsqueeze(0).unsqueeze(0),
 
 
     
-![svg](chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_26_0.svg)
+!<img src="chapter_attention-mechanisms/nadaraya-waston_files/nadaraya-waston_26_0.svg" alt="svg">
     
 
 
@@ -379,5 +379,5 @@ d2l.show_heatmaps(net.attention_weights.unsqueeze(0).unsqueeze(0),
 1. 为本节的核回归设计一个新的带参数的注意力汇聚模型。训练这个新模型并可视化其注意力权重。
 
 
-[Discussions][https://discuss.d2l.ai/t/5760]
+<img src="https://discuss.d2l.ai/t/5760" alt="Discussions">
 

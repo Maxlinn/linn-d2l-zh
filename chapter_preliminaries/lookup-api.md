@@ -104,5 +104,5 @@ torch.ones(4)
 1. 在深度学习框架中查找任何函数或类的文档。你能在这个框架的官方网站上找到文档吗?
 
 
-[Discussions][https://discuss.d2l.ai/t/1765]
+<img src="https://discuss.d2l.ai/t/1765" alt="Discussions">
 

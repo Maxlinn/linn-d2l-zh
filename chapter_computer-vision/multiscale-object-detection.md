@@ -79,7 +79,7 @@ display_anchors(fmap_w=4, fmap_h=4, s=[0.15])
 
 
     
-![svg](chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_5_1.svg)
+!<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_5_1.svg" alt="svg">
     
 
 
@@ -94,7 +94,7 @@ display_anchors(fmap_w=2, fmap_h=2, s=[0.4])
 
 
     
-![svg](chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_7_0.svg)
+!<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_7_0.svg" alt="svg">
     
 
 
@@ -109,7 +109,7 @@ display_anchors(fmap_w=1, fmap_h=1, s=[0.8])
 
 
     
-![svg](chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_9_0.svg)
+!<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_9_0.svg" alt="svg">
     
 
 
@@ -152,5 +152,5 @@ display_anchors(fmap_w=1, fmap_h=1, s=[0.8])
 1. 给定形状为$1 \times c \times h \times w$的特征图变量，其中$c$、$h$和$w$分别是特征图的通道数、高度和宽度。你怎样才能将这个变量转换为锚框类别和偏移量？输出的形状是什么？
 
 
-[Discussions][https://discuss.d2l.ai/t/2948]
+<img src="https://discuss.d2l.ai/t/2948" alt="Discussions">
 
