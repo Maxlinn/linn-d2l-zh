@@ -61,7 +61,7 @@ class FixLocalLinkComponent(IComponent):
                         return f'[{text}]({link})'
                     # if it is not an image, do not change
                     if not os.path.splitext(link)[1].lower() \
-                        in ['.png', '.jpg', '.jpeg', '.bmp', '.heic', '.gif', '.webp']:
+                            in ['.png', '.jpg', '.jpeg', '.bmp', '.heic', '.gif', '.webp']:
                         return f'[{text}]({link})'
                     # the link is relative of current dir, that is, root
                     target_filename = os.path.join(root, link)
@@ -141,7 +141,8 @@ class GenSideBarComponent(IComponent):
             return re.match(args.gen_file_ext_regex, ext) is not None
 
         # first ret of os.walk is **not** always absolute
-        for root, dirs, files in os.walk(args.gen_base_dir):
+        # also check symlinks
+        for root, dirs, files in os.walk(args.gen_base_dir, followlinks=True):
             # to filter dirs to be visited by os.walk, remove items in `dirs`(**same object**)
             dirs[:] = [dname for dname in dirs if not should_ignore(dname)]
             files = [fname for fname in files if not should_ignore(fname)]
