@@ -429,7 +429,7 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu())
 
 
     
-<img src="chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_28_1.svg" alt="svg">
+![svg](rnn-scratch_files/rnn-scratch_28_1.svg)
     
 
 
@@ -451,7 +451,7 @@ train_ch8(net, train_iter, vocab, lr, num_epochs, d2l.try_gpu(),
 
 
     
-<img src="chapter_recurrent-neural-networks/rnn-scratch_files/rnn-scratch_30_1.svg" alt="svg">
+![svg](rnn-scratch_files/rnn-scratch_30_1.svg)
     
 
 

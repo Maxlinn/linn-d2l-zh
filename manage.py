@@ -56,9 +56,13 @@ class FixLocalLinkComponent(IComponent):
                 def callback(matchobj):
                     # 0-th position of matchobj is the original string
                     text, link = matchobj.group(1), matchobj.group(2)
-                    # ignore link with a scheme, like 'http/https/file'
+                    # ignore link with a scheme, like 'http/https/file', do not change
                     if urlparse(link).scheme:
-                        return f'<img src="{link}" alt="{text}">'
+                        return f'[{text}]({link})'
+                    # if it is not an image, do not change
+                    if not os.path.splitext(link)[1].lower() \
+                        in ['.png', '.jpg', '.jpeg', '.bmp', '.heic', '.gif', '.webp']:
+                        return f'[{text}]({link})'
                     # the link is relative of current dir, that is, root
                     target_filename = os.path.join(root, link)
                     # noneed: ask OS to do the simplification
@@ -71,7 +75,7 @@ class FixLocalLinkComponent(IComponent):
                         target_relname = target_relname.replace('\\', '/')
                     return f'<img src="{target_relname}" alt="{text}">'
 
-                content = re.sub(r'!\[(.*?)\]\((.+?)\)', callback, content)
+                content = re.sub(r'\[(.*?)\]\((.+?)\)', callback, content)
 
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)

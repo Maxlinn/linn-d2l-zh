@@ -24,7 +24,7 @@
 
 有趣的是，在网络的最底层，模型学习到了一些类似于传统滤波器的特征抽取器。 :numref:`fig_filters`是从AlexNet论文 :cite:`Krizhevsky.Sutskever.Hinton.2012`复制的，描述了底层图像特征。
 
-<img src="img/filters.png" alt="AlexNet第一层学习到的特征抽取器。">
+!<img src="img/filters.png" alt="AlexNet第一层学习到的特征抽取器。">
 :width:`400px`
 :label:`fig_filters`
 
@@ -67,7 +67,7 @@ AlexNet使用了8层卷积神经网络，并以很大的优势赢得了2012年Im
 AlexNet和LeNet的架构非常相似，如 :numref:`fig_alexnet`所示。
 注意，这里我们提供了一个稍微精简版本的AlexNet，去除了当年需要两个小型GPU同时运算的设计特点。
 
-<img src="img/alexnet.svg" alt="从LeNet（左）到AlexNet（右）">
+![从LeNet（左）到AlexNet（右）](../img/alexnet.svg)
 :label:`fig_alexnet`
 
 AlexNet和LeNet的设计理念非常相似，但也存在显著差异。
@@ -204,7 +204,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-<img src="chapter_convolutional-modern/alexnet_files/alexnet_7_1.svg" alt="svg">
+![svg](alexnet_files/alexnet_7_1.svg)
     
 
 

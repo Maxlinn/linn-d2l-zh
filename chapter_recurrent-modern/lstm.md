@@ -32,7 +32,7 @@
 以计算输入门、遗忘门和输出门的值。
 因此，这三个门的值都在$(0, 1)$的范围内。
 
-<img src="img/lstm-0.svg" alt="长短期记忆模型中的输入门、遗忘门和输出门">
+![长短期记忆模型中的输入门、遗忘门和输出门](../img/lstm-0.svg)
 :label:`lstm_0`
 
 我们来细化一下长短期记忆网络的数学表达。
@@ -73,7 +73,7 @@ $\mathbf{b}_c \in \mathbb{R}^{1 \times h}$是偏置参数。
 
 候选记忆元的如 :numref:`lstm_1`所示。
 
-<img src="img/lstm-1.svg" alt="长短期记忆模型中的候选记忆元">
+![长短期记忆模型中的候选记忆元](../img/lstm-1.svg)
 :label:`lstm_1`
 
 ### 记忆元
@@ -95,7 +95,7 @@ $$\mathbf{C}_t = \mathbf{F}_t \odot \mathbf{C}_{t-1} + \mathbf{I}_t \odot \tilde
 
 这样我们就得到了计算记忆元的流程图，如 :numref:`lstm_2`。
 
-<img src="img/lstm-2.svg" alt="在长短期记忆网络模型中计算记忆元">
+![在长短期记忆网络模型中计算记忆元](../img/lstm-2.svg)
 
 :label:`lstm_2`
 
@@ -114,7 +114,7 @@ $$\mathbf{H}_t = \mathbf{O}_t \odot \tanh(\mathbf{C}_t).$$
 
  :numref:`lstm_3`提供了数据流的图形化演示。
 
-<img src="img/lstm-3.svg" alt="在长短期记忆模型中计算隐状态">
+![在长短期记忆模型中计算隐状态](../img/lstm-3.svg)
 :label:`lstm_3`
 
 ## 从零开始实现
@@ -232,7 +232,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-<img src="chapter_recurrent-modern/lstm_files/lstm_9_1.svg" alt="svg">
+![svg](lstm_files/lstm_9_1.svg)
     
 
 
@@ -260,7 +260,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-<img src="chapter_recurrent-modern/lstm_files/lstm_11_1.svg" alt="svg">
+![svg](lstm_files/lstm_11_1.svg)
     
 
 

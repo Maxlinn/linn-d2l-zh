@@ -14,7 +14,7 @@
 这被称为*编码器-解码器*（encoder-decoder）架构，
 如 :numref:`fig_encoder_decoder` 所示。
 
-<img src="img/encoder-decoder.svg" alt="编码器-解码器架构">
+![编码器-解码器架构](../img/encoder-decoder.svg)
 :label:`fig_encoder_decoder`
 
 我们以英语到法语的机器翻译为例：

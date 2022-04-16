@@ -6,7 +6,7 @@
 如 :numref:`fig_circle_area`所示，内接多边形的等长边越多，就越接近圆。
 这个过程也被称为*逼近法*（method of exhaustion）。
 
-<img src="img/polygon-circle.svg" alt="用逼近法求圆的面积">
+![用逼近法求圆的面积](../img/polygon-circle.svg)
 :label:`fig_circle_area`
 
 事实上，逼近法就是*积分*（integral calculus）的起源，
@@ -224,7 +224,7 @@ plot(x, [f(x), 2 * x - 3], 'x', 'f(x)', legend=['f(x)', 'Tangent line (x=1)'])
 
 
     
-<img src="chapter_preliminaries/calculus_files/calculus_13_1.svg" alt="svg">
+![svg](calculus_files/calculus_13_1.svg)
     
 
 

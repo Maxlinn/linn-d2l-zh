@@ -65,7 +65,7 @@
 这种架构通常称为*多层感知机*（multilayer perceptron），通常缩写为*MLP*。
 下面，我们以图的方式描述了多层感知机（ :numref:`fig_mlp`）。
 
-<img src="img/mlp.svg" alt="一个单隐藏层的多层感知机，具有5个隐藏单元">
+![一个单隐藏层的多层感知机，具有5个隐藏单元](../img/mlp.svg)
 :label:`fig_mlp`
 
 这个多层感知机有4个输入，3个输出，其隐藏层包含5个隐藏单元。
@@ -208,7 +208,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'relu(x)', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_3_0.svg" alt="svg">
+![svg](mlp_files/mlp_3_0.svg)
     
 
 
@@ -229,7 +229,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of relu', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_5_0.svg" alt="svg">
+![svg](mlp_files/mlp_5_0.svg)
     
 
 
@@ -276,7 +276,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'sigmoid(x)', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_7_0.svg" alt="svg">
+![svg](mlp_files/mlp_7_0.svg)
     
 
 
@@ -299,7 +299,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of sigmoid', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_9_0.svg" alt="svg">
+![svg](mlp_files/mlp_9_0.svg)
     
 
 
@@ -325,7 +325,7 @@ d2l.plot(x.detach(), y.detach(), 'x', 'tanh(x)', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_11_0.svg" alt="svg">
+![svg](mlp_files/mlp_11_0.svg)
     
 
 
@@ -349,7 +349,7 @@ d2l.plot(x.detach(), x.grad, 'x', 'grad of tanh', figsize=(5, 2.5))
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp_files/mlp_13_0.svg" alt="svg">
+![svg](mlp_files/mlp_13_0.svg)
     
 
 

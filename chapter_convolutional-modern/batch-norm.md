@@ -207,7 +207,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_7_1.svg" alt="svg">
+![svg](batch-norm_files/batch-norm_7_1.svg)
     
 
 
@@ -262,7 +262,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_13_1.svg" alt="svg">
+![svg](batch-norm_files/batch-norm_13_1.svg)
     
 
 

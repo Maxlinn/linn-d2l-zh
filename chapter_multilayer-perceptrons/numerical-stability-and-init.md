@@ -73,7 +73,7 @@ d2l.plot(x.detach().numpy(), [y.detach().numpy(), x.grad.numpy()],
 
 
     
-<img src="chapter_multilayer-perceptrons/numerical-stability-and-init_files/numerical-stability-and-init_1_0.svg" alt="svg">
+![svg](numerical-stability-and-init_files/numerical-stability-and-init_1_0.svg)
     
 
 

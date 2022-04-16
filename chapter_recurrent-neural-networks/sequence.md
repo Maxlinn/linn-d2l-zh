@@ -44,7 +44,7 @@
 处理序列数据需要统计工具和新的深度神经网络架构。
 为了简单起见，我们以 :numref:`fig_ftse100`所示的股票价格（富时100指数）为例。
 
-<img src="img/ftse100.png" alt="近30年的富时100指数">
+!<img src="img/ftse100.png" alt="近30年的富时100指数">
 :width:`400px`
 :label:`fig_ftse100`
 
@@ -84,7 +84,7 @@ $x_{t-1}, \ldots, x_1$可能是不必要的，
 由于$h_t$从未被观测到，这类模型也被称为
 *隐变量自回归模型*（latent autoregressive models）。
 
-<img src="img/sequence-model.svg" alt="隐变量自回归模型">
+![隐变量自回归模型](../img/sequence-model.svg)
 :label:`fig_sequence-model`
 
 这两种情况都有一个显而易见的问题：如何生成训练数据？
@@ -181,7 +181,7 @@ d2l.plot(time, [x], 'time', 'x', xlim=[1, 1000], figsize=(6, 3))
 
 
     
-<img src="chapter_recurrent-neural-networks/sequence_files/sequence_2_0.svg" alt="svg">
+![svg](sequence_files/sequence_2_0.svg)
     
 
 
@@ -281,7 +281,7 @@ d2l.plot([time, time[tau:]],
 
 
     
-<img src="chapter_recurrent-neural-networks/sequence_files/sequence_11_0.svg" alt="svg">
+![svg](sequence_files/sequence_11_0.svg)
     
 
 
@@ -326,7 +326,7 @@ d2l.plot([time, time[tau:], time[n_train + tau:]],
 
 
     
-<img src="chapter_recurrent-neural-networks/sequence_files/sequence_14_0.svg" alt="svg">
+![svg](sequence_files/sequence_14_0.svg)
     
 
 
@@ -374,7 +374,7 @@ d2l.plot([time[tau + i - 1: T - max_steps + i] for i in steps],
 
 
     
-<img src="chapter_recurrent-neural-networks/sequence_files/sequence_18_0.svg" alt="svg">
+![svg](sequence_files/sequence_18_0.svg)
     
 
 

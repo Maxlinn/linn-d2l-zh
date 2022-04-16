@@ -141,7 +141,7 @@ for ax, label in zip(axes, batch[1][0:10]):
 
 
     
-<img src="chapter_computer-vision/object-detection-dataset_files/object-detection-dataset_12_0.png" alt="png">
+!<img src="chapter_computer-vision/object-detection-dataset_files/object-detection-dataset_12_0.png" alt="png">
     
 
 

@@ -91,7 +91,7 @@ d2l.plt.hist([len(line) for line in train_tokens], bins=range(0, 1000, 50));
 
 
     
-<img src="chapter_natural-language-processing-applications/sentiment-analysis-and-dataset_files/sentiment-analysis-and-dataset_9_0.svg" alt="svg">
+![svg](sentiment-analysis-and-dataset_files/sentiment-analysis-and-dataset_9_0.svg)
     
 
 

@@ -34,7 +34,7 @@ d2l.plt.imshow(img);
 
 
     
-<img src="chapter_computer-vision/bounding-box_files/bounding-box_3_0.svg" alt="svg">
+![svg](bounding-box_files/bounding-box_3_0.svg)
     
 
 
@@ -128,7 +128,7 @@ fig.axes.add_patch(bbox_to_rect(cat_bbox, 'red'));
 
 
     
-<img src="chapter_computer-vision/bounding-box_files/bounding-box_13_0.svg" alt="svg">
+![svg](bounding-box_files/bounding-box_13_0.svg)
     
 
 

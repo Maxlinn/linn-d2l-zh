@@ -102,7 +102,7 @@ d2l.train_ch11(adam, init_adam_states(feature_dim),
 
 
     
-<img src="chapter_optimization/adam_files/adam_3_1.svg" alt="svg">
+![svg](adam_files/adam_3_1.svg)
     
 
 
@@ -120,7 +120,7 @@ d2l.train_concise_ch11(trainer, {'lr': 0.01}, data_iter)
 
 
     
-<img src="chapter_optimization/adam_files/adam_5_1.svg" alt="svg">
+![svg](adam_files/adam_5_1.svg)
     
 
 
@@ -168,7 +168,7 @@ d2l.train_ch11(yogi, init_adam_states(feature_dim),
 
 
     
-<img src="chapter_optimization/adam_files/adam_7_1.svg" alt="svg">
+![svg](adam_files/adam_7_1.svg)
     
 
 

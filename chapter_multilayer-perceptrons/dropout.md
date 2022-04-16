@@ -101,7 +101,7 @@ $$
 因此输出的计算不再依赖于$h_2$或$h_5$，并且它们各自的梯度在执行反向传播时也会消失。
 这样，输出层的计算不能过度依赖于$h_1, \ldots, h_5$的任何一个元素。
 
-<img src="img/dropout2.svg" alt="dropout前后的多层感知机">
+![dropout前后的多层感知机](../img/dropout2.svg)
 :label:`fig_dropout2`
 
 通常，我们在测试时不用暂退法。
@@ -231,7 +231,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-<img src="chapter_multilayer-perceptrons/dropout_files/dropout_9_0.svg" alt="svg">
+![svg](dropout_files/dropout_9_0.svg)
     
 
 
@@ -274,7 +274,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-<img src="chapter_multilayer-perceptrons/dropout_files/dropout_13_0.svg" alt="svg">
+![svg](dropout_files/dropout_13_0.svg)
     
 
 

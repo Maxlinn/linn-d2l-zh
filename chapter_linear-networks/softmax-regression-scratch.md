@@ -427,7 +427,7 @@ train_ch3(net, train_iter, test_iter, cross_entropy, num_epochs, updater)
 
 
     
-<img src="chapter_linear-networks/softmax-regression-scratch_files/softmax-regression-scratch_36_0.svg" alt="svg">
+![svg](softmax-regression-scratch_files/softmax-regression-scratch_36_0.svg)
     
 
 
@@ -454,7 +454,7 @@ predict_ch3(net, test_iter)
 
 
     
-<img src="chapter_linear-networks/softmax-regression-scratch_files/softmax-regression-scratch_38_0.svg" alt="svg">
+![svg](softmax-regression-scratch_files/softmax-regression-scratch_38_0.svg)
     
 
 

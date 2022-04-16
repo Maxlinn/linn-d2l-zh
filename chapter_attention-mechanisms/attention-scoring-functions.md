@@ -18,7 +18,7 @@
 由于注意力权重是概率分布，
 因此加权和其本质上是加权平均值。
 
-<img src="img/attention-output.svg" alt="计算注意力汇聚的输出为值的加权和">
+![计算注意力汇聚的输出为值的加权和](../img/attention-output.svg)
 :label:`fig_attention_output`
 
 用数学语言描述，假设有一个查询
@@ -217,7 +217,7 @@ d2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),
 
 
     
-<img src="chapter_attention-mechanisms/attention-scoring-functions_files/attention-scoring-functions_13_0.svg" alt="svg">
+![svg](attention-scoring-functions_files/attention-scoring-functions_13_0.svg)
     
 
 
@@ -303,7 +303,7 @@ d2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),
 
 
     
-<img src="chapter_attention-mechanisms/attention-scoring-functions_files/attention-scoring-functions_19_0.svg" alt="svg">
+![svg](attention-scoring-functions_files/attention-scoring-functions_19_0.svg)
     
 
 

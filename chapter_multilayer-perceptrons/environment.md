@@ -55,12 +55,12 @@
 
 考虑一下区分猫和狗的问题：训练数据包括 :numref:`fig_cat-dog-train`中的图像。
 
-<img src="img/cat-dog-train.svg" alt="区分猫和狗的训练数据">
+![区分猫和狗的训练数据](../img/cat-dog-train.svg)
 :label:`fig_cat-dog-train`
 
 在测试时，我们被要求对 :numref:`fig_cat-dog-test`中的图像进行分类。
 
-<img src="img/cat-dog-test.svg" alt="区分猫和狗的测试数据">
+![区分猫和狗的测试数据](../img/cat-dog-test.svg)
 :label:`fig_cat-dog-test`
 
 训练集由真实照片组成，而测试集只包含卡通图片。
@@ -93,7 +93,7 @@
 我们会发现关于“软饮”名称的分布发生了相当大的概念偏移，
 如 :numref:`fig_popvssoda` 所示。
 
-<img src="img/popvssoda.png" alt="美国软饮名称的概念偏移">
+!<img src="img/popvssoda.png" alt="美国软饮名称的概念偏移">
 :width:`400px`
 :label:`fig_popvssoda`
 

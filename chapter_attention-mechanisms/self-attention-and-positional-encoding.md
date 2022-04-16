@@ -77,7 +77,7 @@ attention(X, X, X, valid_lens).shape
 
 让我们比较下面几个架构，目标都是将由$n$个词元组成的序列映射到另一个长度相等的序列，其中的每个输入词元或输出词元都由$d$维向量表示。具体来说，我们将比较的是卷积神经网络、循环神经网络和自注意力这几个架构的计算复杂性、顺序操作和最大路径长度。请注意，顺序操作会妨碍并行计算，而任意的序列位置组合之间的路径越短，则能更轻松地学习序列中的远距离依赖关系 :cite:`Hochreiter.Bengio.Frasconi.ea.2001`。
 
-<img src="img/cnn-rnn-self-attention.svg" alt="比较卷积神经网络（填充词元被忽略）、循环神经网络和自注意力三种架构">
+![比较卷积神经网络（填充词元被忽略）、循环神经网络和自注意力三种架构](../img/cnn-rnn-self-attention.svg)
 :label:`fig_cnn-rnn-self-attention`
 
 考虑一个卷积核大小为$k$的卷积层。
@@ -174,7 +174,7 @@ d2l.plot(torch.arange(num_steps), P[0, :, 6:10].T, xlabel='Row (position)',
 
 
     
-<img src="chapter_attention-mechanisms/self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_8_0.svg" alt="svg">
+![svg](self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_8_0.svg)
     
 
 
@@ -216,7 +216,7 @@ d2l.show_heatmaps(P, xlabel='Column (encoding dimension)',
 
 
     
-<img src="chapter_attention-mechanisms/self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_12_0.svg" alt="svg">
+![svg](self-attention-and-positional-encoding_files/self-attention-and-positional-encoding_12_0.svg)
     
 
 

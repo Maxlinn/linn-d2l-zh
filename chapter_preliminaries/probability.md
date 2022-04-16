@@ -19,7 +19,7 @@
 这听起来可能很简单，但对于机器却可能是一个艰巨的挑战。
 首先，问题的难度可能取决于图像的分辨率。
 
-<img src="img/cat-dog-pixels.png" alt="不同分辨率的图像 ($10 \times 10$, $20 \times 20$, $40 \times 40$, $80 \times 80$, 和 $160 \times 160$ pixels)">
+!<img src="img/cat-dog-pixels.png" alt="不同分辨率的图像 ($10 \times 10$, $20 \times 20$, $40 \times 40$, $80 \times 80$, 和 $160 \times 160$ pixels)">
 :width:`300px`
 :label:`fig_cat_dog`
 
@@ -149,7 +149,7 @@ d2l.plt.legend();
 
 
     
-<img src="chapter_preliminaries/probability_files/probability_9_0.svg" alt="svg">
+![svg](probability_files/probability_9_0.svg)
     
 
 

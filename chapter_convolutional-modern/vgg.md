@@ -45,7 +45,7 @@ def vgg_block(num_convs, in_channels, out_channels):
 
 与AlexNet、LeNet一样，VGG网络可以分为两部分：第一部分主要由卷积层和汇聚层组成，第二部分由全连接层组成。如 :numref:`fig_vgg`中所示。
 
-<img src="img/vgg.svg" alt="从AlexNet到VGG，它们本质上都是块设计。">
+![从AlexNet到VGG，它们本质上都是块设计。](../img/vgg.svg)
 :width:`400px`
 :label:`fig_vgg`
 
@@ -139,7 +139,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-<img src="chapter_convolutional-modern/vgg_files/vgg_12_1.svg" alt="svg">
+![svg](vgg_files/vgg_12_1.svg)
     
 
 

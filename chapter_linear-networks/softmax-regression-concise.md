@@ -135,7 +135,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-<img src="chapter_linear-networks/softmax-regression-concise_files/softmax-regression-concise_10_0.svg" alt="svg">
+![svg](softmax-regression-concise_files/softmax-regression-concise_10_0.svg)
     
 
 

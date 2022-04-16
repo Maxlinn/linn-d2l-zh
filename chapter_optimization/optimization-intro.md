@@ -46,7 +46,7 @@ annotate('min of risk', (1.1, -1.05), (0.95, -0.5))
 
 
     
-<img src="chapter_optimization/optimization-intro_files/optimization-intro_5_0.svg" alt="svg">
+![svg](optimization-intro_files/optimization-intro_5_0.svg)
     
 
 
@@ -77,7 +77,7 @@ annotate('global minimum', (1.1, -0.95), (0.6, 0.8))
 
 
     
-<img src="chapter_optimization/optimization-intro_files/optimization-intro_7_0.svg" alt="svg">
+![svg](optimization-intro_files/optimization-intro_7_0.svg)
     
 
 
@@ -97,7 +97,7 @@ annotate('saddle point', (0, -0.2), (-0.52, -5.0))
 
 
     
-<img src="chapter_optimization/optimization-intro_files/optimization-intro_9_0.svg" alt="svg">
+![svg](optimization-intro_files/optimization-intro_9_0.svg)
     
 
 
@@ -127,7 +127,7 @@ d2l.plt.ylabel('y');
 
 
     
-<img src="chapter_optimization/optimization-intro_files/optimization-intro_11_1.svg" alt="svg">
+![svg](optimization-intro_files/optimization-intro_11_1.svg)
     
 
 
@@ -153,7 +153,7 @@ annotate('vanishing gradient', (4, 1), (2, 0.0))
 
 
     
-<img src="chapter_optimization/optimization-intro_files/optimization-intro_13_0.svg" alt="svg">
+![svg](optimization-intro_files/optimization-intro_13_0.svg)
     
 
 

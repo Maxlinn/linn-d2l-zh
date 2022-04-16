@@ -11,7 +11,7 @@
 *R-CNN*首先从输入图像中选取若干（例如2000个）*提议区域*（如锚框也是一种选取方法），并标注它们的类别和边界框（如偏移量）。 :cite:`Girshick.Donahue.Darrell.ea.2014`然后，用卷积神经网络对每个提议区域进行前向传播以抽取其特征。
 接下来，我们用每个提议区域的特征来预测类别和边界框。
 
-<img src="img/r-cnn.svg" alt="R-CNN模型">
+![R-CNN模型](../img/r-cnn.svg)
 :label:`fig_r-cnn`
 
  :numref:`fig_r-cnn`展示了R-CNN模型。具体来说，R-CNN包括以下四个步骤：
@@ -31,7 +31,7 @@ R-CNN的主要性能瓶颈在于，对每个提议区域，卷积神经网络的
 由于这些区域通常有重叠，独立的特征抽取会导致重复的计算。
 *Fast R-CNN* :cite:`Girshick.2015`对R-CNN的主要改进之一，是仅在整张图象上执行卷积神经网络的前向传播。
 
-<img src="img/fast-rcnn.svg" alt="Fast R-CNN模型">
+![Fast R-CNN模型](../img/fast-rcnn.svg)
 :label:`fig_fast_r-cnn`
 
  :numref:`fig_fast_r-cnn`中描述了Fast R-CNN模型。它的主要计算如下：
@@ -52,7 +52,7 @@ R-CNN的主要性能瓶颈在于，对每个提议区域，卷积神经网络的
 对于该兴趣区域，我们通过$2\times 2$的兴趣区域汇聚层得到一个$2\times 2$的输出。
 请注意，四个划分后的子窗口中分别含有元素0、1、4、5（5最大）；2、6（6最大）；8、9（9最大）；以及10。
 
-<img src="img/roi.svg" alt="一个 $2\times 2$ 的兴趣区域汇聚层">
+![一个 $2\times 2$ 的兴趣区域汇聚层](../img/roi.svg)
 :label:`fig_roi`
 
 下面，我们演示了兴趣区域汇聚层的计算方法。
@@ -114,7 +114,7 @@ torchvision.ops.roi_pool(X, rois, output_size=(2, 2), spatial_scale=0.1)
 为了较精确地检测目标结果，Fast R-CNN模型通常需要在选择性搜索中生成大量的提议区域。
 *Faster R-CNN* :cite:`Ren.He.Girshick.ea.2015`提出将选择性搜索替换为*区域提议网络*（region proposal network），从而减少提议区域的生成数量，并保证目标检测的精度。
 
-<img src="img/faster-rcnn.svg" alt="Faster R-CNN 模型">
+![Faster R-CNN 模型](../img/faster-rcnn.svg)
 :label:`fig_faster_r-cnn`
 
  :numref:`fig_faster_r-cnn`描述了Faster R-CNN模型。
@@ -133,7 +133,7 @@ torchvision.ops.roi_pool(X, rois, output_size=(2, 2), spatial_scale=0.1)
 
 如果在训练集中还标注了每个目标在图像上的像素级位置，那么*Mask R-CNN* :cite:`He.Gkioxari.Dollar.ea.2017`能够有效地利用这些详尽的标注信息进一步提升目标检测的精度。
 
-<img src="img/mask-rcnn.svg" alt="Mask R-CNN 模型">
+![Mask R-CNN 模型](../img/mask-rcnn.svg)
 :label:`fig_mask_r-cnn`
 
 如 :numref:`fig_mask_r-cnn`所示，Mask R-CNN是基于Faster R-CNN修改而来的。

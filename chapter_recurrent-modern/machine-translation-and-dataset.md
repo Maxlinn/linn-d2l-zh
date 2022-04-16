@@ -183,7 +183,7 @@ show_list_len_pair_hist(['source', 'target'], '# tokens per sequence',
 
 
     
-<img src="chapter_recurrent-modern/machine-translation-and-dataset_files/machine-translation-and-dataset_9_0.svg" alt="svg">
+![svg](machine-translation-and-dataset_files/machine-translation-and-dataset_9_0.svg)
     
 
 

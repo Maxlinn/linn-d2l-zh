@@ -81,7 +81,7 @@ d2l.train_ch11(adadelta, init_adadelta_states(feature_dim),
 
 
     
-<img src="chapter_optimization/adadelta_files/adadelta_3_1.svg" alt="svg">
+![svg](adadelta_files/adadelta_3_1.svg)
     
 
 
@@ -99,7 +99,7 @@ d2l.train_concise_ch11(trainer, {'rho': 0.9}, data_iter)
 
 
     
-<img src="chapter_optimization/adadelta_files/adadelta_5_1.svg" alt="svg">
+![svg](adadelta_files/adadelta_5_1.svg)
     
 
 

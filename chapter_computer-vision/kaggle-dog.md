@@ -9,7 +9,7 @@
 这个数据集实际上是著名的ImageNet的数据集子集。与 :numref:`sec_kaggle_cifar10`中CIFAR-10数据集中的图像不同，
 ImageNet数据集中的图像更高更宽，且尺寸不一。
 
-<img src="img/kaggle-dog.jpg" alt="狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。">
+!<img src="img/kaggle-dog.jpg" alt="狗的品种鉴定比赛网站，你可以通过单击“数据”选项卡来获得比赛数据集。">
 :width:`400px`
 :label:`fig_kaggle_dog`
 
@@ -270,7 +270,7 @@ train(net, train_iter, valid_iter, num_epochs, lr, wd, devices, lr_period,
 
 
     
-<img src="chapter_computer-vision/kaggle-dog_files/kaggle-dog_21_1.svg" alt="svg">
+![svg](kaggle-dog_files/kaggle-dog_21_1.svg)
     
 
 
@@ -305,7 +305,7 @@ with open('submission.csv', 'w') as f:
 
 
     
-<img src="chapter_computer-vision/kaggle-dog_files/kaggle-dog_23_1.svg" alt="svg">
+![svg](kaggle-dog_files/kaggle-dog_23_1.svg)
     
 
 

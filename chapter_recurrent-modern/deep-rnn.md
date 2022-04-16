@@ -20,7 +20,7 @@
  :numref:`fig_deep_rnn`描述了一个具有$L$个隐藏层的深度循环神经网络，
 每个隐状态都连续地传递到当前层的下一个时间步和下一层的当前时间步。
 
-<img src="img/deep-rnn.svg" alt="深度循环神经网络结构">
+![深度循环神经网络结构](../img/deep-rnn.svg)
 :label:`fig_deep_rnn`
 
 ## 函数依赖关系
@@ -116,7 +116,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-<img src="chapter_recurrent-modern/deep-rnn_files/deep-rnn_5_1.svg" alt="svg">
+![svg](deep-rnn_files/deep-rnn_5_1.svg)
     
 
 

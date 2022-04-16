@@ -34,7 +34,7 @@
 当通道或单元的数量不太小时，使计算性能有良好的提升。
 此外，由于可用的显存呈线性扩展，多个GPU能够处理不断变大的网络。
 
-<img src="img/alexnet-original.svg" alt="由于GPU显存有限，原有AlexNet设计中的模型并行">
+![由于GPU显存有限，原有AlexNet设计中的模型并行](../img/alexnet-original.svg)
 :label:`fig_alexnet_original`
 
 然而，我们需要大量的同步或*屏障操作*（barrier operation），因为每一层都依赖于所有其他层的结果。
@@ -49,7 +49,7 @@
 而且，GPU的数量越多，小批量包含的数据量就越大，从而就能提高训练效率。
 但是，添加更多的GPU并不能让我们训练更大的模型。
 
-<img src="img/splitting.svg" alt="在多个GPU上并行化。从左到右：原始问题、网络并行、分层并行、数据并行">
+![在多个GPU上并行化。从左到右：原始问题、网络并行、分层并行、数据并行](../img/splitting.svg)
 :label:`fig_splitting`
 
  :numref:`fig_splitting`中比较了多个GPU上不同的并行方式。
@@ -64,7 +64,7 @@
 给定需要训练的模型，虽然每个GPU上的参数值都是相同且同步的，但是每个GPU都将独立地维护一组完整的模型参数。
 例如， :numref:`fig_data_parallel`演示了在$k=2$时基于数据并行方法训练模型。
 
-<img src="img/data-parallel.svg" alt="利用两个GPU上的数据，并行计算小批量随机梯度下降">
+![利用两个GPU上的数据，并行计算小批量随机梯度下降](../img/data-parallel.svg)
 :label:`fig_data_parallel`
 
 一般来说，$k$个GPU并行训练过程如下：
@@ -307,7 +307,7 @@ train(num_gpus=1, batch_size=256, lr=0.2)
 
 
     
-<img src="chapter_computational-performance/multiple-gpus_files/multiple-gpus_21_1.svg" alt="svg">
+![svg](multiple-gpus_files/multiple-gpus_21_1.svg)
     
 
 
@@ -328,7 +328,7 @@ train(num_gpus=2, batch_size=256, lr=0.2)
 
 
     
-<img src="chapter_computational-performance/multiple-gpus_files/multiple-gpus_23_1.svg" alt="svg">
+![svg](multiple-gpus_files/multiple-gpus_23_1.svg)
     
 
 

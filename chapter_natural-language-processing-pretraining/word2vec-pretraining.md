@@ -137,7 +137,7 @@ skip_gram(torch.ones((2, 1), dtype=torch.long),
 > - 默认创建的torch.Tensor（或者torch.ones, zeros是**不带梯度的**），需要指定`requires_grad=True`
 
 > 关于cross_entropy_loss和sigmoid的区别：https://blog.csdn.net/Just_do_myself/article/details/123393900
-> <img src="attachment:image.png" alt="image.png">
+> ![image.png](attachment:image.png)
 
 > BCELoss
 > 
@@ -280,7 +280,7 @@ train(net, data_iter, lr, num_epochs)
 
 
     
-<img src="chapter_natural-language-processing-pretraining/word2vec-pretraining_files/word2vec-pretraining_31_1.svg" alt="svg">
+![svg](word2vec-pretraining_files/word2vec-pretraining_31_1.svg)
     
 
 

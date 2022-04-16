@@ -153,7 +153,7 @@ d2l.train_ch8(net, train_iter, vocab, lr, num_epochs, device)
 
 
     
-<img src="chapter_recurrent-neural-networks/rnn-concise_files/rnn-concise_13_1.svg" alt="svg">
+![svg](rnn-concise_files/rnn-concise_13_1.svg)
     
 
 

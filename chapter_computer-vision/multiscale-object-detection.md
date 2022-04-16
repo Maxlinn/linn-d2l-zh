@@ -79,7 +79,7 @@ display_anchors(fmap_w=4, fmap_h=4, s=[0.15])
 
 
     
-<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_5_1.svg" alt="svg">
+![svg](multiscale-object-detection_files/multiscale-object-detection_5_1.svg)
     
 
 
@@ -94,7 +94,7 @@ display_anchors(fmap_w=2, fmap_h=2, s=[0.4])
 
 
     
-<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_7_0.svg" alt="svg">
+![svg](multiscale-object-detection_files/multiscale-object-detection_7_0.svg)
     
 
 
@@ -109,7 +109,7 @@ display_anchors(fmap_w=1, fmap_h=1, s=[0.8])
 
 
     
-<img src="chapter_computer-vision/multiscale-object-detection_files/multiscale-object-detection_9_0.svg" alt="svg">
+![svg](multiscale-object-detection_files/multiscale-object-detection_9_0.svg)
     
 
 

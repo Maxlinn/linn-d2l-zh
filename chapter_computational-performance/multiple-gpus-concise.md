@@ -117,7 +117,7 @@ train(net, num_gpus=1, batch_size=256, lr=0.1)
 
 
     
-<img src="chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_10_1.svg" alt="svg">
+![svg](multiple-gpus-concise_files/multiple-gpus-concise_10_1.svg)
     
 
 
@@ -134,7 +134,7 @@ train(net, num_gpus=2, batch_size=512, lr=0.2)
 
 
     
-<img src="chapter_computational-performance/multiple-gpus-concise_files/multiple-gpus-concise_12_1.svg" alt="svg">
+![svg](multiple-gpus-concise_files/multiple-gpus-concise_12_1.svg)
     
 
 

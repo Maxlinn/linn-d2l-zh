@@ -114,7 +114,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, updater)
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp-scratch_files/mlp-scratch_12_0.svg" alt="svg">
+![svg](mlp-scratch_files/mlp-scratch_12_0.svg)
     
 
 
@@ -128,7 +128,7 @@ d2l.predict_ch3(net, test_iter)
 
 
     
-<img src="chapter_multilayer-perceptrons/mlp-scratch_files/mlp-scratch_14_0.svg" alt="svg">
+![svg](mlp-scratch_files/mlp-scratch_14_0.svg)
     
 
 

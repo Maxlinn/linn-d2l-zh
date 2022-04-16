@@ -8,7 +8,7 @@
 例如， :numref:`fig_style_transfer`中的内容图像为本书作者在西雅图郊区的雷尼尔山国家公园拍摄的风景照，而风格图像则是一幅主题为秋天橡树的油画。
 最终输出的合成图像应用了风格图像的油画笔触让整体颜色更加鲜艳，同时保留了内容图像中物体主体的形状。
 
-<img src="img/style-transfer.svg" alt="输入内容图像和风格图像，输出风格迁移后的合成图像">
+![输入内容图像和风格图像，输出风格迁移后的合成图像](../img/style-transfer.svg)
 :label:`fig_style_transfer`
 
 ## 方法
@@ -20,7 +20,7 @@
 这个深度卷积神经网络凭借多个层逐级抽取图像的特征，我们可以选择其中某些层的输出作为内容特征或风格特征。
 以 :numref:`fig_style_transfer_model`为例，这里选取的预训练的神经网络含有3个卷积层，其中第二层输出内容特征，第一层和第三层输出风格特征。
 
-<img src="img/neural-style.svg" alt="基于卷积神经网络的风格迁移。实线箭头和虚线箭头分别表示前向传播和反向传播">
+![基于卷积神经网络的风格迁移。实线箭头和虚线箭头分别表示前向传播和反向传播](../img/neural-style.svg)
 :label:`fig_style_transfer_model`
 
 接下来，我们通过前向传播（实线箭头方向）计算风格迁移的损失函数，并通过反向传播（虚线箭头方向）迭代模型参数，即不断更新合成图像。
@@ -53,7 +53,7 @@ d2l.plt.imshow(content_img);
 
 
     
-<img src="chapter_computer-vision/neural-style_files/neural-style_1_0.svg" alt="svg">
+![svg](neural-style_files/neural-style_1_0.svg)
     
 
 
@@ -65,7 +65,7 @@ d2l.plt.imshow(style_img);
 
 
     
-<img src="chapter_computer-vision/neural-style_files/neural-style_2_0.svg" alt="svg">
+![svg](neural-style_files/neural-style_2_0.svg)
     
 
 
@@ -329,7 +329,7 @@ output = train(content_X, contents_Y, styles_Y, device, 0.3, 500, 50)
 
 
     
-<img src="chapter_computer-vision/neural-style_files/neural-style_32_0.svg" alt="svg">
+![svg](neural-style_files/neural-style_32_0.svg)
     
 
 

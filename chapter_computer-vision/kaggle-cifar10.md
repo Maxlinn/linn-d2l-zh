@@ -11,7 +11,7 @@
  :numref:`fig_kaggle_cifar10`显示了竞赛网站页面上的信息。
 为了能提交结果，你需要首先注册Kaggle账户。
 
-<img src="img/kaggle-cifar10.png" alt="CIFAR-10 图像分类竞赛页面上的信息。竞赛用的数据集可通过点击“Data”选项卡获取。">
+!<img src="img/kaggle-cifar10.png" alt="CIFAR-10 图像分类竞赛页面上的信息。竞赛用的数据集可通过点击“Data”选项卡获取。">
 :width:`600px`
 :label:`fig_kaggle_cifar10`
 
@@ -327,7 +327,7 @@ train(net, train_iter, valid_iter, num_epochs, lr, wd, devices, lr_period,
 
 
     
-<img src="chapter_computer-vision/kaggle-cifar10_files/kaggle-cifar10_28_1.svg" alt="svg">
+![svg](kaggle-cifar10_files/kaggle-cifar10_28_1.svg)
     
 
 
@@ -358,7 +358,7 @@ df.to_csv('submission.csv', index=False)
 
 
     
-<img src="chapter_computer-vision/kaggle-cifar10_files/kaggle-cifar10_30_1.svg" alt="svg">
+![svg](kaggle-cifar10_files/kaggle-cifar10_30_1.svg)
     
 
 

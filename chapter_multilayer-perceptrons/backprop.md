@@ -61,7 +61,7 @@ $$J = L + s.$$
  左下角表示输入，右上角表示输出。
  注意显示数据流的箭头方向主要是向右和向上的。
 
-<img src="img/forward.svg" alt="前向传播的计算图">
+![前向传播的计算图](../img/forward.svg)
 :label:`fig_forward`
 
 ## 反向传播

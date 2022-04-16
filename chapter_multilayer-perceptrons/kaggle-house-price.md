@@ -107,7 +107,7 @@ def download_all():  #@save
 这便于每个人都可以学习哪些方法起作用，哪些没有起作用。
 如果你想参加Kaggle比赛，你首先需要注册一个账户（见 :numref:`fig_kaggle`）。
 
-<img src="img/kaggle.png" alt="Kaggle网站">
+!<img src="img/kaggle.png" alt="Kaggle网站">
 :width:`400px`
 :label:`fig_kaggle`
 
@@ -117,7 +117,7 @@ def download_all():  #@save
 
 >https://www.kaggle.com/c/house-prices-advanced-regression-techniques
 
-<img src="img/house-pricing.png" alt="房价预测比赛页面">
+!<img src="img/house-pricing.png" alt="房价预测比赛页面">
 :width:`400px`
 :label:`fig_house_pricing`
 
@@ -443,7 +443,7 @@ print(f'{k}-折验证: 平均训练log rmse: {float(train_l):f}, '
 
 
     
-<img src="chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_35_1.svg" alt="svg">
+![svg](kaggle-house-price_files/kaggle-house-price_35_1.svg)
     
 
 
@@ -496,7 +496,7 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 
 
     
-<img src="chapter_multilayer-perceptrons/kaggle-house-price_files/kaggle-house-price_39_1.svg" alt="svg">
+![svg](kaggle-house-price_files/kaggle-house-price_39_1.svg)
     
 
 
@@ -509,7 +509,7 @@ train_and_pred(train_features, test_features, train_labels, test_data,
 * 点击页面底部虚线框中的“Upload Submission File”按钮，选择你要上传的预测文件。
 * 点击页面底部的“Make Submission”按钮，即可查看你的结果。
 
-<img src="img/kaggle-submit2.png" alt="向Kaggle提交数据">
+!<img src="img/kaggle-submit2.png" alt="向Kaggle提交数据">
 :width:`400px`
 :label:`fig_kaggle_submit2`
 

@@ -87,7 +87,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(gd_2d))
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_1_1.svg" alt="svg">
+![svg](momentum_files/momentum_1_1.svg)
     
 
 
@@ -108,7 +108,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(gd_2d))
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_3_1.svg" alt="svg">
+![svg](momentum_files/momentum_3_1.svg)
     
 
 
@@ -147,7 +147,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(momentum_2d))
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_5_1.svg" alt="svg">
+![svg](momentum_files/momentum_5_1.svg)
     
 
 
@@ -168,7 +168,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(momentum_2d))
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_7_1.svg" alt="svg">
+![svg](momentum_files/momentum_7_1.svg)
     
 
 
@@ -198,7 +198,7 @@ d2l.plt.legend();
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_9_0.svg" alt="svg">
+![svg](momentum_files/momentum_9_0.svg)
     
 
 
@@ -251,7 +251,7 @@ train_momentum(0.02, 0.5)
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_14_1.svg" alt="svg">
+![svg](momentum_files/momentum_14_1.svg)
     
 
 
@@ -269,7 +269,7 @@ train_momentum(0.01, 0.9)
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_16_1.svg" alt="svg">
+![svg](momentum_files/momentum_16_1.svg)
     
 
 
@@ -286,7 +286,7 @@ train_momentum(0.005, 0.9)
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_18_1.svg" alt="svg">
+![svg](momentum_files/momentum_18_1.svg)
     
 
 
@@ -306,7 +306,7 @@ d2l.train_concise_ch11(trainer, {'lr': 0.005, 'momentum': 0.9}, data_iter)
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_20_1.svg" alt="svg">
+![svg](momentum_files/momentum_20_1.svg)
     
 
 
@@ -380,7 +380,7 @@ d2l.plt.legend();
 
 
     
-<img src="chapter_optimization/momentum_files/momentum_22_0.svg" alt="svg">
+![svg](momentum_files/momentum_22_0.svg)
     
 
 

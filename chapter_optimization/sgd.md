@@ -76,7 +76,7 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=50, f_grad=f_grad))
 
 
     
-<img src="chapter_optimization/sgd_files/sgd_5_1.svg" alt="svg">
+![svg](sgd_files/sgd_5_1.svg)
     
 
 
@@ -119,7 +119,7 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=1000, f_grad=f_grad))
 
 
     
-<img src="chapter_optimization/sgd_files/sgd_7_1.svg" alt="svg">
+![svg](sgd_files/sgd_7_1.svg)
     
 
 
@@ -144,7 +144,7 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=50, f_grad=f_grad))
 
 
     
-<img src="chapter_optimization/sgd_files/sgd_9_1.svg" alt="svg">
+![svg](sgd_files/sgd_9_1.svg)
     
 
 

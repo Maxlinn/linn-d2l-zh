@@ -263,7 +263,7 @@ gd_res = train_sgd(1, 1500, 10)
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_17_1.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_17_1.svg)
     
 
 
@@ -286,7 +286,7 @@ sgd_res = train_sgd(0.005, 1)
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_19_1.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_19_1.svg)
     
 
 
@@ -304,7 +304,7 @@ mini1_res = train_sgd(.4, 100)
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_21_1.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_21_1.svg)
     
 
 
@@ -321,7 +321,7 @@ mini2_res = train_sgd(.05, 10)
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_23_1.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_23_1.svg)
     
 
 
@@ -343,7 +343,7 @@ d2l.plt.gca().set_xscale('log')
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_25_0.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_25_0.svg)
     
 
 
@@ -401,7 +401,7 @@ train_concise_ch11(trainer, {'lr': 0.01}, data_iter)
 
 
     
-<img src="chapter_optimization/minibatch-sgd_files/minibatch-sgd_29_1.svg" alt="svg">
+![svg](minibatch-sgd_files/minibatch-sgd_29_1.svg)
     
 
 

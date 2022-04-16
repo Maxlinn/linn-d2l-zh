@@ -32,7 +32,7 @@ d2l.plt.imshow(img);
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_3_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_3_0.svg)
     
 
 
@@ -60,7 +60,7 @@ apply(img, torchvision.transforms.RandomHorizontalFlip())
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_7_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_7_0.svg)
     
 
 
@@ -74,7 +74,7 @@ apply(img, torchvision.transforms.RandomVerticalFlip())
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_9_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_9_0.svg)
     
 
 
@@ -97,7 +97,7 @@ apply(img, shape_aug)
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_11_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_11_0.svg)
     
 
 
@@ -116,7 +116,7 @@ apply(img, torchvision.transforms.ColorJitter(
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_13_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_13_0.svg)
     
 
 
@@ -131,7 +131,7 @@ apply(img, torchvision.transforms.ColorJitter(
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_15_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_15_0.svg)
     
 
 
@@ -147,7 +147,7 @@ apply(img, color_aug)
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_17_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_17_0.svg)
     
 
 
@@ -165,7 +165,7 @@ apply(img, augs)
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_19_0.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_19_0.svg)
     
 
 
@@ -310,7 +310,7 @@ train_with_data_aug(train_augs, test_augs, net)
 
 
     
-<img src="chapter_computer-vision/image-augmentation_files/image-augmentation_32_1.svg" alt="svg">
+![svg](image-augmentation_files/image-augmentation_32_1.svg)
     
 
 

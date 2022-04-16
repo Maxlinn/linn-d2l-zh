@@ -42,7 +42,7 @@ $$P(\textrm{"the"},\textrm{"man"},\textrm{"his"},\textrm{"son"}\mid\textrm{"love
 
 $$P(\textrm{"the"}\mid\textrm{"loves"})\cdot P(\textrm{"man"}\mid\textrm{"loves"})\cdot P(\textrm{"his"}\mid\textrm{"loves"})\cdot P(\textrm{"son"}\mid\textrm{"loves"}).$$
 
-<img src="img/skip-gram.svg" alt="跳元模型考虑了在给定中心词的情况下生成周围上下文词的条件概率">
+![跳元模型考虑了在给定中心词的情况下生成周围上下文词的条件概率](../img/skip-gram.svg)
 :label:`fig_skip_gram`
 
 > 区分Skip-Gram与N-gram，N-gram的公式如下，预测的是短语出现的概率
@@ -125,7 +125,7 @@ $$\begin{aligned}\frac{\partial \text{log}\, P(w_o \mid w_c)}{\partial \mathbf{v
 
 $$P(\textrm{"loves"}\mid\textrm{"the"},\textrm{"man"},\textrm{"his"},\textrm{"son"}).$$
 
-<img src="img/cbow.svg" alt="连续词袋模型考虑了给定周围上下文词生成中心词条件概率">
+![连续词袋模型考虑了给定周围上下文词生成中心词条件概率](../img/cbow.svg)
 
 :label:`fig_cbow`
 

@@ -152,7 +152,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(adagrad_2d))
 
 
     
-<img src="chapter_optimization/adagrad_files/adagrad_2_1.svg" alt="svg">
+![svg](adagrad_files/adagrad_2_1.svg)
     
 
 
@@ -171,7 +171,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(adagrad_2d))
 
 
     
-<img src="chapter_optimization/adagrad_files/adagrad_4_1.svg" alt="svg">
+![svg](adagrad_files/adagrad_4_1.svg)
     
 
 
@@ -211,7 +211,7 @@ d2l.train_ch11(adagrad, init_adagrad_states(feature_dim),
 
 
     
-<img src="chapter_optimization/adagrad_files/adagrad_8_1.svg" alt="svg">
+![svg](adagrad_files/adagrad_8_1.svg)
     
 
 
@@ -231,7 +231,7 @@ d2l.train_concise_ch11(trainer, {'lr': 0.1}, data_iter)
 
 
     
-<img src="chapter_optimization/adagrad_files/adagrad_10_1.svg" alt="svg">
+![svg](adagrad_files/adagrad_10_1.svg)
     
 
 

@@ -216,7 +216,7 @@ train(lambd=0)
 
 
     
-<img src="chapter_multilayer-perceptrons/weight-decay_files/weight-decay_11_1.svg" alt="svg">
+![svg](weight-decay_files/weight-decay_11_1.svg)
     
 
 
@@ -237,7 +237,7 @@ train(lambd=3)
 
 
     
-<img src="chapter_multilayer-perceptrons/weight-decay_files/weight-decay_13_1.svg" alt="svg">
+![svg](weight-decay_files/weight-decay_13_1.svg)
     
 
 
@@ -299,7 +299,7 @@ train_concise(0)
 
 
     
-<img src="chapter_multilayer-perceptrons/weight-decay_files/weight-decay_18_1.svg" alt="svg">
+![svg](weight-decay_files/weight-decay_18_1.svg)
     
 
 
@@ -313,7 +313,7 @@ train_concise(3)
 
 
     
-<img src="chapter_multilayer-perceptrons/weight-decay_files/weight-decay_19_1.svg" alt="svg">
+![svg](weight-decay_files/weight-decay_19_1.svg)
     
 
 

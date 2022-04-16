@@ -109,7 +109,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device)
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_3_1.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_3_1.svg)
     
 
 
@@ -155,7 +155,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_9_0.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_9_0.svg)
     
 
 
@@ -176,7 +176,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_11_1.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_11_1.svg)
     
 
 
@@ -213,7 +213,7 @@ d2l.plot(torch.arange(50), [scheduler(t) for t in range(50)])
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_13_0.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_13_0.svg)
     
 
 
@@ -244,7 +244,7 @@ d2l.plot(torch.arange(num_epochs), [get_lr(trainer, scheduler)
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_15_0.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_15_0.svg)
     
 
 
@@ -264,7 +264,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_17_1.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_17_1.svg)
     
 
 
@@ -313,7 +313,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_19_0.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_19_0.svg)
     
 
 
@@ -334,7 +334,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_21_1.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_21_1.svg)
     
 
 
@@ -359,7 +359,7 @@ d2l.plot(torch.arange(num_epochs), [scheduler(t) for t in range(num_epochs)])
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_23_0.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_23_0.svg)
     
 
 
@@ -379,7 +379,7 @@ train(net, train_iter, test_iter, num_epochs, loss, trainer, device,
 
 
     
-<img src="chapter_optimization/lr-scheduler_files/lr-scheduler_25_1.svg" alt="svg">
+![svg](lr-scheduler_files/lr-scheduler_25_1.svg)
     
 
 

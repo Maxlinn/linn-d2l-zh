@@ -120,7 +120,7 @@ show_images(X.reshape(18, 28, 28), 2, 9, titles=get_fashion_mnist_labels(y));
 
 
     
-<img src="chapter_linear-networks/image-classification-dataset_files/image-classification-dataset_13_0.svg" alt="svg">
+![svg](image-classification-dataset_files/image-classification-dataset_13_0.svg)
     
 
 

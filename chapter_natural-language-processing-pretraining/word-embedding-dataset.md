@@ -106,7 +106,7 @@ d2l.show_list_len_pair_hist(
 
 
     
-<img src="chapter_natural-language-processing-pretraining/word-embedding-dataset_files/word-embedding-dataset_9_0.svg" alt="svg">
+![svg](word-embedding-dataset_files/word-embedding-dataset_9_0.svg)
     
 
 

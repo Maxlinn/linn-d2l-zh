@@ -119,7 +119,7 @@ train_bert(train_iter, net, loss, len(vocab), devices, 50)
 
 
     
-<img src="chapter_natural-language-processing-pretraining/bert-pretraining_files/bert-pretraining_11_1.svg" alt="svg">
+![svg](bert-pretraining_files/bert-pretraining_11_1.svg)
     
 
 

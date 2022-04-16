@@ -40,7 +40,7 @@ $$\mathbf{c}_{t'} = \sum_{t=1}^T \alpha(\mathbf{s}_{t' - 1}, \mathbf{h}_t) \math
 与 :numref:`fig_seq2seq_details`中的循环神经网络编码器-解码器架构略有不同，
  :numref:`fig_s2s_attention_details`描述了Bahdanau注意力的架构。
 
-<img src="img/seq2seq-attention-details.svg" alt="一个带有Bahdanau注意力的循环神经网络编码器-解码器模型">
+![一个带有Bahdanau注意力的循环神经网络编码器-解码器模型](../img/seq2seq-attention-details.svg)
 :label:`fig_s2s_attention_details`
 
 
@@ -188,7 +188,7 @@ d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-<img src="chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_9_1.svg" alt="svg">
+![svg](bahdanau-attention_files/bahdanau-attention_9_1.svg)
     
 
 
@@ -233,7 +233,7 @@ d2l.show_heatmaps(
 
 
     
-<img src="chapter_attention-mechanisms/bahdanau-attention_files/bahdanau-attention_14_0.svg" alt="svg">
+![svg](bahdanau-attention_files/bahdanau-attention_14_0.svg)
     
 
 

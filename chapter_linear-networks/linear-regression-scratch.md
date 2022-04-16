@@ -81,7 +81,7 @@ d2l.plt.scatter(features[:, (1)].detach().numpy(), labels.detach().numpy(), 1);
 
 
     
-<img src="chapter_linear-networks/linear-regression-scratch_files/linear-regression-scratch_8_0.svg" alt="svg">
+![svg](linear-regression-scratch_files/linear-regression-scratch_8_0.svg)
     
 
 

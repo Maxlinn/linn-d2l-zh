@@ -239,7 +239,7 @@ $$\hat{y}= \sum_{i=0}^d x^i w_i$$
 我们直观地描述了多项式的阶数和欠拟合与过拟合之间的关系。
 
 
-<img src="img/capacity-vs-error.svg" alt="模型复杂度对欠拟合和过拟合的影响">
+![模型复杂度对欠拟合和过拟合的影响](../img/capacity-vs-error.svg)
 :label:`fig_capacity_vs_error`
 
 ### 数据集大小
@@ -401,7 +401,7 @@ train(poly_features[:n_train, :4], poly_features[n_train:, :4],
 
 
     
-<img src="chapter_multilayer-perceptrons/underfit-overfit_files/underfit-overfit_12_1.svg" alt="svg">
+![svg](underfit-overfit_files/underfit-overfit_12_1.svg)
     
 
 
@@ -424,7 +424,7 @@ train(poly_features[:n_train, :2], poly_features[n_train:, :2],
 
 
     
-<img src="chapter_multilayer-perceptrons/underfit-overfit_files/underfit-overfit_14_1.svg" alt="svg">
+![svg](underfit-overfit_files/underfit-overfit_14_1.svg)
     
 
 
@@ -453,7 +453,7 @@ train(poly_features[:n_train, :], poly_features[n_train:, :],
 
 
     
-<img src="chapter_multilayer-perceptrons/underfit-overfit_files/underfit-overfit_16_1.svg" alt="svg">
+![svg](underfit-overfit_files/underfit-overfit_16_1.svg)
     
 
 
