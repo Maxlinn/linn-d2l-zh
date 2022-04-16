@@ -14,15 +14,15 @@
 关于模型计算性能、可伸缩性和效率相关的问题，我们将放在后面的章节中讨论。
 
 :begin_tab:toc
- - <img src="chapter_multilayer-perceptrons/mlp.ipynb" alt="mlp">
- - <img src="chapter_multilayer-perceptrons/mlp-scratch.ipynb" alt="mlp-scratch">
- - <img src="chapter_multilayer-perceptrons/mlp-concise.ipynb" alt="mlp-concise">
- - <img src="chapter_multilayer-perceptrons/underfit-overfit.ipynb" alt="underfit-overfit">
- - <img src="chapter_multilayer-perceptrons/weight-decay.ipynb" alt="weight-decay">
- - <img src="chapter_multilayer-perceptrons/dropout.ipynb" alt="dropout">
- - <img src="chapter_multilayer-perceptrons/backprop.ipynb" alt="backprop">
- - <img src="chapter_multilayer-perceptrons/numerical-stability-and-init.ipynb" alt="numerical-stability-and-init">
- - <img src="chapter_multilayer-perceptrons/environment.ipynb" alt="environment">
- - <img src="chapter_multilayer-perceptrons/kaggle-house-price.ipynb" alt="kaggle-house-price">
+ - [mlp](mlp.ipynb)
+ - [mlp-scratch](mlp-scratch.ipynb)
+ - [mlp-concise](mlp-concise.ipynb)
+ - [underfit-overfit](underfit-overfit.ipynb)
+ - [weight-decay](weight-decay.ipynb)
+ - [dropout](dropout.ipynb)
+ - [backprop](backprop.ipynb)
+ - [numerical-stability-and-init](numerical-stability-and-init.ipynb)
+ - [environment](environment.ipynb)
+ - [kaggle-house-price](kaggle-house-price.ipynb)
 :end_tab:
 

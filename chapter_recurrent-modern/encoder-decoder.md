@@ -14,7 +14,7 @@
 这被称为*编码器-解码器*（encoder-decoder）架构，
 如 :numref:`fig_encoder_decoder` 所示。
 
-!<img src="img/encoder-decoder.svg" alt="编码器-解码器架构">
+<img src="img/encoder-decoder.svg" alt="编码器-解码器架构">
 :label:`fig_encoder_decoder`
 
 我们以英语到法语的机器翻译为例：
@@ -115,5 +115,5 @@ class EncoderDecoder(nn.Module):
 1. 除了机器翻译，你能想到其它可以适用于”编码器－解码器“架构的应用吗？
 
 
-<img src="https://discuss.d2l.ai/t/2779" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/2779)
 

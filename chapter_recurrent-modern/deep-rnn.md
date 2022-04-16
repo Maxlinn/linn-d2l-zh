@@ -20,7 +20,7 @@
  :numref:`fig_deep_rnn`描述了一个具有$L$个隐藏层的深度循环神经网络，
 每个隐状态都连续地传递到当前层的下一个时间步和下一层的当前时间步。
 
-!<img src="img/deep-rnn.svg" alt="深度循环神经网络结构">
+<img src="img/deep-rnn.svg" alt="深度循环神经网络结构">
 :label:`fig_deep_rnn`
 
 ## 函数依赖关系
@@ -116,7 +116,7 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 
 
     
-!<img src="chapter_recurrent-modern/deep-rnn_files/deep-rnn_5_1.svg" alt="svg">
+<img src="chapter_recurrent-modern/deep-rnn_files/deep-rnn_5_1.svg" alt="svg">
     
 
 
@@ -138,5 +138,5 @@ d2l.train_ch8(model, train_iter, vocab, lr, num_epochs, device)
 1. 在为文本建模时，是否可以将不同作者的源数据合并？有何优劣呢？
 
 
-<img src="https://discuss.d2l.ai/t/2770" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/2770)
 

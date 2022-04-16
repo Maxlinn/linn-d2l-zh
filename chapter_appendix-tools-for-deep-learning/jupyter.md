@@ -1,49 +1,49 @@
 # 使用Jupyter Notebooks
 :label:`sec_jupyter`
 
-本节介绍如何使用Jupyter Notebook编辑和运行本书各章中的代码。确保你已按照 :ref:`chap_installation`中的说明安装了Jupyter并下载了代码。如果你想了解更多关于Jupyter的信息，请参阅其<img src="https://jupyter.readthedocs.io/en/latest/" alt="文档">中的优秀教程。 
+本节介绍如何使用Jupyter Notebook编辑和运行本书各章中的代码。确保你已按照 :ref:`chap_installation`中的说明安装了Jupyter并下载了代码。如果你想了解更多关于Jupyter的信息，请参阅其[文档](https://jupyter.readthedocs.io/en/latest/)中的优秀教程。 
 
 ## 在本地编辑和运行代码
 
 假设本书代码的本地路径为`xx/yy/d2l-en/`。使用shell将目录更改为此路径（`cd xx/yy/d2l-en`）并运行命令`jupyter notebook`。如果浏览器未自动打开，请打开http://localhost:8888。此时你将看到Jupyter的界面以及包含本书代码的所有文件夹，如 :numref:`fig_jupyter00`所示
 
-!<img src="img/jupyter00.png" alt="包含本书代码的文件夹">
+<img src="img/jupyter00.png" alt="包含本书代码的文件夹">
 :width:`600px`
 :label:`fig_jupyter00`
 
 你可以通过单击网页上显示的文件夹来访问notebook文件。它们通常有后缀“.ipynb”。为了简洁起见，我们创建了一个临时的“test.ipynb”文件。单击后显示的内容如 :numref:`fig_jupyter01`所示。此notebook包括一个标记单元格和一个代码单元格。标记单元格中的内容包括“This Is a Title”和“This is text.”。代码单元包含两行Python代码。 
 
-!<img src="img/jupyter01.png" alt="“test.ipynb”文件中的markdown和代码块">
+<img src="img/jupyter01.png" alt="“test.ipynb”文件中的markdown和代码块">
 :width:`600px`
 :label:`fig_jupyter01`
 
 双击标记单元格以进入编辑模式。在单元格末尾添加一个新的文本字符串“Hello world.”，如 :numref:`fig_jupyter02`所示。 
 
-!<img src="img/jupyter02.png" alt="编辑markdown单元格">
+<img src="img/jupyter02.png" alt="编辑markdown单元格">
 :width:`600px`
 :label:`fig_jupyter02`
 
 如 :numref:`fig_jupyter03`所示，单击菜单栏中的“Cell” $\rightarrow$ “Run Cells”以运行编辑后的单元格。 
 
-!<img src="img/jupyter03.png" alt="运行单元格">
+<img src="img/jupyter03.png" alt="运行单元格">
 :width:`600px`
 :label:`fig_jupyter03`
 
 运行后，markdown单元格如 :numref:`fig_jupyter04`所示。 
 
-!<img src="img/jupyter04.png" alt="编辑后的markdown单元格">
+<img src="img/jupyter04.png" alt="编辑后的markdown单元格">
 :width:`600px`
 :label:`fig_jupyter04`
 
 接下来，单击代码单元。将最后一行代码后的元素乘以2，如 :numref:`fig_jupyter05`所示。 
 
-!<img src="img/jupyter05.png" alt="编辑代码单元格">
+<img src="img/jupyter05.png" alt="编辑代码单元格">
 :width:`600px`
 :label:`fig_jupyter05`
 
 你还可以使用快捷键（默认情况下为Ctrl+Enter）运行单元格，并从 :numref:`fig_jupyter06`获取输出结果。 
 
-!<img src="img/jupyter06.png" alt="运行代码单元格以获得输出">
+<img src="img/jupyter06.png" alt="运行代码单元格以获得输出">
 :width:`600px`
 :label:`fig_jupyter06`
 
@@ -109,5 +109,5 @@ jupyter nbextension enable execute_time/ExecuteTime
 1. 使用Jupyter Notebook通过端口转发来远程编辑和运行本书中的代码。
 1. 对于两个方矩阵，测量$\mathbf{A}^\top \mathbf{B}$与$\mathbf{A} \mathbf{B}$在$\mathbb{R}^{1024 \times 1024}$中的运行时间。哪一个更快？
 
-<img src="https://discuss.d2l.ai/t/5731" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5731)
 

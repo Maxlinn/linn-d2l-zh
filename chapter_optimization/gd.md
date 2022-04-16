@@ -101,7 +101,7 @@ show_trace(results, f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_6_0.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_6_0.svg" alt="svg">
     
 
 
@@ -125,7 +125,7 @@ show_trace(gd(0.05, f_grad), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_8_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_8_1.svg" alt="svg">
     
 
 
@@ -145,7 +145,7 @@ show_trace(gd(1.1, f_grad), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_10_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_10_1.svg" alt="svg">
     
 
 
@@ -175,7 +175,7 @@ show_trace(gd(2, f_grad), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_12_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_12_1.svg" alt="svg">
     
 
 
@@ -267,7 +267,7 @@ show_trace_2d(f_2d, train_2d(gd_2d, f_grad=f_2d_grad))
 
 
     
-!<img src="chapter_optimization/gd_files/gd_16_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_16_1.svg" alt="svg">
     
 
 
@@ -343,7 +343,7 @@ show_trace(newton(), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_18_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_18_1.svg" alt="svg">
     
 
 
@@ -375,7 +375,7 @@ show_trace(newton(), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_20_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_20_1.svg" alt="svg">
     
 
 
@@ -396,7 +396,7 @@ show_trace(newton(0.5), f)
 
 
     
-!<img src="chapter_optimization/gd_files/gd_22_1.svg" alt="svg">
+<img src="chapter_optimization/gd_files/gd_22_1.svg" alt="svg">
     
 
 
@@ -481,5 +481,5 @@ $$\mathbf{x} \leftarrow \mathbf{x} - \eta \mathrm{diag}(\mathbf{H})^{-1} \nabla 
 1. 将上述算法应用于多个目标函数（凸或非凸）。如果你把坐标旋转$45$度会怎么样？
 
 
-<img src="https://discuss.d2l.ai/t/3836" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/3836)
 

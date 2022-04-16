@@ -232,5 +232,5 @@ for X, Y in train_iter:
 1. 我们如何更改超参数以减小词表大小？
 
 
-<img src="https://discuss.d2l.ai/t/5722" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5722)
 

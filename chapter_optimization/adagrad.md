@@ -152,7 +152,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(adagrad_2d))
 
 
     
-!<img src="chapter_optimization/adagrad_files/adagrad_2_1.svg" alt="svg">
+<img src="chapter_optimization/adagrad_files/adagrad_2_1.svg" alt="svg">
     
 
 
@@ -171,7 +171,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(adagrad_2d))
 
 
     
-!<img src="chapter_optimization/adagrad_files/adagrad_4_1.svg" alt="svg">
+<img src="chapter_optimization/adagrad_files/adagrad_4_1.svg" alt="svg">
     
 
 
@@ -211,7 +211,7 @@ d2l.train_ch11(adagrad, init_adagrad_states(feature_dim),
 
 
     
-!<img src="chapter_optimization/adagrad_files/adagrad_8_1.svg" alt="svg">
+<img src="chapter_optimization/adagrad_files/adagrad_8_1.svg" alt="svg">
     
 
 
@@ -231,7 +231,7 @@ d2l.train_concise_ch11(trainer, {'lr': 0.1}, data_iter)
 
 
     
-!<img src="chapter_optimization/adagrad_files/adagrad_10_1.svg" alt="svg">
+<img src="chapter_optimization/adagrad_files/adagrad_10_1.svg" alt="svg">
     
 
 
@@ -248,11 +248,11 @@ d2l.train_concise_ch11(trainer, {'lr': 0.1}, data_iter)
 
 1. 证明对于正交矩阵$\mathbf{U}$和向量$\mathbf{c}$，以下等式成立：$\|\mathbf{c} - \mathbf{\delta}\|_2 = \|\mathbf{U} \mathbf{c} - \mathbf{U} \mathbf{\delta}\|_2$。为什么这意味着在变量的正交变化之后，扰动的程度不会改变？
 1. 尝试对函数$f(\mathbf{x}) = 0.1 x_1^2 + 2 x_2^2$、以及它旋转45度后的函数即$f(\mathbf{x}) = 0.1 (x_1 + x_2)^2 + 2 (x_1 - x_2)^2$使用AdaGrad算法。它的表现会不同吗？
-1. 证明<img src="https://en.wikipedia.org/wiki/Gershgorin_circle_theorem" alt="格什戈林圆盘定理">，其中提到，矩阵$\mathbf{M}$的特征值$\lambda_i$在至少一个$j$的选项中满足$|\lambda_i - \mathbf{M}_{jj}| \leq \sum_{k \neq j} |\mathbf{M}_{jk}|$的要求。
+1. 证明[格什戈林圆盘定理](https://en.wikipedia.org/wiki/Gershgorin_circle_theorem)，其中提到，矩阵$\mathbf{M}$的特征值$\lambda_i$在至少一个$j$的选项中满足$|\lambda_i - \mathbf{M}_{jj}| \leq \sum_{k \neq j} |\mathbf{M}_{jk}|$的要求。
 1. 关于对角线预处理矩阵$\mathrm{diag}^{-\frac{1}{2}}(\mathbf{M}) \mathbf{M} \mathrm{diag}^{-\frac{1}{2}}(\mathbf{M})$的特征值，格什戈林的定理告诉了我们什么？
 1. 尝试对适当的深度网络使用AdaGrad算法，例如，:numref:`sec_lenet`中应用于Fashion-MNIST的深度网络。
 1. 你要如何修改AdaGrad算法，才能使其在学习率方面的衰减不那么激进？
 
 
-<img src="https://discuss.d2l.ai/t/4319" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/4319)
 

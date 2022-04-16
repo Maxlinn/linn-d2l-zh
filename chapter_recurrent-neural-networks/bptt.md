@@ -149,7 +149,7 @@ $$z_t= \frac{\partial f(x_{t},h_{t-1},w_h)}{\partial w_h} +\xi_t \frac{\partial 
 
 ### 比较策略
 
-!<img src="img/truncated-bptt.svg" alt="比较RNN中计算梯度的策略，3行自上而下分别为：随机截断、常规截断、完整计算">
+<img src="img/truncated-bptt.svg" alt="比较RNN中计算梯度的策略，3行自上而下分别为：随机截断、常规截断、完整计算">
 :label:`fig_truncated_bptt`
 
  :numref:`fig_truncated_bptt`说明了
@@ -201,7 +201,7 @@ $$L = \frac{1}{T} \sum_{t=1}^T l(\mathbf{o}_t, y_t).$$
 以及最终时间步的隐状态$\mathbf{h}_2$
 以及当前时间步的输入$\mathbf{x}_3$。
 
-!<img src="img/rnn-bptt.svg" alt="上图表示具有三个时间步的循环神经网络模型依赖关系的计算图。未着色的方框表示变量，着色的方框表示参数，圆表示运算符">
+<img src="img/rnn-bptt.svg" alt="上图表示具有三个时间步的循环神经网络模型依赖关系的计算图。未着色的方框表示变量，着色的方框表示参数，圆表示运算符">
 :label:`fig_rnn_bptt`
 
 正如刚才所说， :numref:`fig_rnn_bptt`中的模型参数是
@@ -320,5 +320,5 @@ $\partial L / \partial \mathbf{W}_{hh}$时使用。
    1. 上述结果对于循环神经网络中的梯度意味着什么？
 1. 除了梯度截断，你还能想到其他方法来应对循环神经网络中的梯度爆炸吗？
 
-<img src="https://discuss.d2l.ai/t/2107" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/2107)
 

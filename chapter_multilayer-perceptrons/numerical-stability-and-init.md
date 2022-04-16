@@ -73,7 +73,7 @@ d2l.plot(x.detach().numpy(), [y.detach().numpy(), x.grad.numpy()],
 
 
     
-!<img src="chapter_multilayer-perceptrons/numerical-stability-and-init_files/numerical-stability-and-init_1_0.svg" alt="svg">
+<img src="chapter_multilayer-perceptrons/numerical-stability-and-init_files/numerical-stability-and-init_1_0.svg" alt="svg">
     
 
 
@@ -230,5 +230,5 @@ $$U\left(-\sqrt{\frac{6}{n_\mathrm{in} + n_\mathrm{out}}}, \sqrt{\frac{6}{n_\mat
 4. 如果我们知道某些项是发散的，我们能在事后修正吗？看看关于按层自适应速率缩放的论文 :cite:`You.Gitman.Ginsburg.2017` 。
 
 
-<img src="https://discuss.d2l.ai/t/1818" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1818)
 

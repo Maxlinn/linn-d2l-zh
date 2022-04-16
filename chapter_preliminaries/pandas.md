@@ -134,5 +134,5 @@ X, y
 2. 将预处理后的数据集转换为张量格式。
 
 
-<img src="https://discuss.d2l.ai/t/1750" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1750)
 

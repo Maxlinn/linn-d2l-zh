@@ -19,7 +19,7 @@ NiN块以一个普通卷积层开始，后面是两个$1 \times 1$的卷积层�
 第一层的卷积窗口形状通常由用户设置。
 随后的卷积窗口形状固定为$1 \times 1$。
 
-!<img src="img/nin.svg" alt="对比 VGG 和 NiN 及它们的块之间主要架构差异。">
+<img src="img/nin.svg" alt="对比 VGG 和 NiN 及它们的块之间主要架构差异。">
 :width:`600px`
 :label:`fig_nin`
 
@@ -107,7 +107,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-!<img src="chapter_convolutional-modern/nin_files/nin_7_1.svg" alt="svg">
+<img src="chapter_convolutional-modern/nin_files/nin_7_1.svg" alt="svg">
     
 
 
@@ -130,5 +130,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 一次性直接将$384 \times 5 \times 5$的表示缩减为$10 \times 5 \times 5$的表示，会存在哪些问题？
 
 
-<img src="https://discuss.d2l.ai/t/1869" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1869)
 

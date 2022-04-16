@@ -52,7 +52,7 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 
 
     
-!<img src="chapter_multilayer-perceptrons/mlp-concise_files/mlp-concise_6_0.svg" alt="svg">
+<img src="chapter_multilayer-perceptrons/mlp-concise_files/mlp-concise_6_0.svg" alt="svg">
     
 
 
@@ -68,5 +68,5 @@ d2l.train_ch3(net, train_iter, test_iter, loss, num_epochs, trainer)
 1. 尝试不同的方案来初始化权重，什么方法效果最好？
 
 
-<img src="https://discuss.d2l.ai/t/1802" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1802)
 

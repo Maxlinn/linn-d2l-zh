@@ -3,7 +3,7 @@
 
 在本章的前面几节中，我们已经为SNLI数据集（ :numref:`sec_natural-language-inference-and-dataset`）上的自然语言推断任务设计了一个基于注意力的结构（ :numref:`sec_natural-language-inference-attention`）。现在，我们通过微调BERT来重新审视这项任务。正如在 :numref:`sec_finetuning-bert`中讨论的那样，自然语言推断是一个序列级别的文本对分类问题，而微调BERT只需要一个额外的基于多层感知机的架构，如 :numref:`fig_nlp-map-nli-bert`中所示。
 
-!<img src="img/nlp-map-nli-bert.svg" alt="将预训练BERT提供给基于多层感知机的自然语言推断架构">
+<img src="img/nlp-map-nli-bert.svg" alt="将预训练BERT提供给基于多层感知机的自然语言推断架构">
 :label:`fig_nlp-map-nli-bert`
 
 在本节中，我们将下载一个预训练好的小版本的BERT，然后对其进行微调，以便在SNLI数据集上进行自然语言推断。
@@ -199,7 +199,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs,
 
 
     
-!<img src="chapter_natural-language-processing-applications/natural-language-inference-bert_files/natural-language-inference-bert_17_1.svg" alt="svg">
+<img src="chapter_natural-language-processing-applications/natural-language-inference-bert_files/natural-language-inference-bert_17_1.svg" alt="svg">
     
 
 
@@ -214,5 +214,5 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs,
 1. 如何根据一对序列的长度比值截断它们？将此对截断方法与`SNLIBERTDataset`类中使用的方法进行比较。它们的利弊是什么？
 
 
-<img src="https://discuss.d2l.ai/t/5718" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5718)
 

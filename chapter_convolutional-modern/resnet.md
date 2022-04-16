@@ -23,7 +23,7 @@ $$f^*_\mathcal{F} := \mathop{\mathrm{argmin}}_f L(\mathbf{X}, \mathbf{y}, f) \te
 在 :numref:`fig_functionclasses`的左边，虽然$\mathcal{F}_3$比$\mathcal{F}_1$更接近$f^*$，但$\mathcal{F}_6$却离的更远了。
 相反对于 :numref:`fig_functionclasses`右侧的嵌套函数（nested function）类$\mathcal{F}_1 \subseteq \ldots \subseteq \mathcal{F}_6$，我们可以避免上述问题。
 
-!<img src="img/functionclasses.svg" alt="对于非嵌套函数类，较复杂（由较大区域表示）的函数类不能保证更接近“真”函数（ $f^*$ ）。这种现象在嵌套函数类中不会发生。">
+<img src="img/functionclasses.svg" alt="对于非嵌套函数类，较复杂（由较大区域表示）的函数类不能保证更接近“真”函数（ $f^*$ ）。这种现象在嵌套函数类中不会发生。">
 :label:`fig_functionclasses`
 
 因此，只有当较复杂的函数类包含较小的函数类时，我们才能确保提高它们的性能。
@@ -46,7 +46,7 @@ $$f^*_\mathcal{F} := \mathop{\mathrm{argmin}}_f L(\mathbf{X}, \mathbf{y}, f) \te
  :numref:`fig_residual_block`右图是ResNet的基础架构--*残差块*（residual block）。
 在残差块中，输入可通过跨层数据线路更快地向前传播。
 
-!<img src="img/residual-block.svg" alt="一个正常块（左图）和一个残差块（右图）。">
+<img src="img/residual-block.svg" alt="一个正常块（左图）和一个残差块（右图）。">
 :label:`fig_residual_block`
 
 ResNet沿用了VGG完整的$3\times 3$卷积层设计。
@@ -95,7 +95,7 @@ class Residual(nn.Module):  #@save
 一种是当`use_1x1conv=False`时，应用ReLU非线性函数之前，将输入添加到输出。
 另一种是当`use_1x1conv=True`时，添加通过$1 \times 1$卷积调整通道和分辨率。
 
-!<img src="img/resnet-block.svg" alt="包含以及不包含 $1 \times 1$ 卷积层的残差块。">
+<img src="img/resnet-block.svg" alt="包含以及不包含 $1 \times 1$ 卷积层的残差块。">
 :label:`fig_resnet_block`
 
 下面我们来查看[**输入和输出形状一致**]的情况。
@@ -197,7 +197,7 @@ net = nn.Sequential(b1, b2, b3, b4, b5,
 虽然ResNet的主体架构跟GoogLeNet类似，但ResNet架构更简单，修改也更方便。这些因素都导致了ResNet迅速被广泛使用。
  :numref:`fig_resnet18`描述了完整的ResNet-18。
 
-!<img src="img/resnet18.svg" alt="ResNet-18 架构">
+<img src="img/resnet18.svg" alt="ResNet-18 架构">
 :label:`fig_resnet18`
 
 在训练ResNet之前，让我们[**观察一下ResNet中不同模块的输入形状是如何变化的**]。
@@ -240,7 +240,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-!<img src="chapter_convolutional-modern/resnet_files/resnet_17_1.svg" alt="svg">
+<img src="chapter_convolutional-modern/resnet_files/resnet_17_1.svg" alt="svg">
     
 
 
@@ -260,5 +260,5 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 1. 为什么即使函数类是嵌套的，我们仍然要限制增加函数的复杂性呢？
 
 
-<img src="https://discuss.d2l.ai/t/1877" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1877)
 

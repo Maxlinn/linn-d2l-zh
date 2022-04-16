@@ -25,11 +25,11 @@
 但后面的高级模型章节在很大程度上依赖于本章的知识。
 
 :begin_tab:toc
- - <img src="chapter_deep-learning-computation/model-construction.ipynb" alt="model-construction">
- - <img src="chapter_deep-learning-computation/parameters.ipynb" alt="parameters">
- - <img src="chapter_deep-learning-computation/deferred-init.ipynb" alt="deferred-init">
- - <img src="chapter_deep-learning-computation/custom-layer.ipynb" alt="custom-layer">
- - <img src="chapter_deep-learning-computation/read-write.ipynb" alt="read-write">
- - <img src="chapter_deep-learning-computation/use-gpu.ipynb" alt="use-gpu">
+ - [model-construction](model-construction.ipynb)
+ - [parameters](parameters.ipynb)
+ - [deferred-init](deferred-init.ipynb)
+ - [custom-layer](custom-layer.ipynb)
+ - [read-write](read-write.ipynb)
+ - [use-gpu](use-gpu.ipynb)
 :end_tab:
 

@@ -70,5 +70,5 @@
 
 * $\mathcal{O}$：大O标记
 
-<img src="https://discuss.d2l.ai/t/2089" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/2089)
 

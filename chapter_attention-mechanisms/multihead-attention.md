@@ -22,7 +22,7 @@
  :numref:`fig_multi-head-attention`
 展示了使用全连接层来实现可学习的线性变换的多头注意力。
 
-!<img src="img/multi-head-attention.svg" alt="多头注意力：多个头连结然后线性变换">
+<img src="img/multi-head-attention.svg" alt="多头注意力：多个头连结然后线性变换">
 :label:`fig_multi-head-attention`
 
 ## 模型
@@ -199,5 +199,5 @@ attention(X, Y, Y, valid_lens).shape
 1. 假设我们有一个完成训练的基于多头注意力的模型，现在希望修剪最不重要的注意力头以提高预测速度。如何设计实验来衡量注意力头的重要性呢？
 
 
-<img src="https://discuss.d2l.ai/t/5758" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5758)
 

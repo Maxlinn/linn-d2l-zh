@@ -48,5 +48,5 @@
 1. 如果输入具有不同的维度，你需要做什么？提示：查看参数绑定的相关内容。
 
 
-<img src="https://discuss.d2l.ai/t/5770" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5770)
 

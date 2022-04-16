@@ -170,5 +170,5 @@ Y_clone == Y
 1. 如何同时保存网络架构和参数？你会对架构加上什么限制？
 
 
-<img src="https://discuss.d2l.ai/t/1839" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1839)
 

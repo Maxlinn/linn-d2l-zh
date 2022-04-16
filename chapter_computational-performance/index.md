@@ -9,12 +9,12 @@
 例如，我们可以在不影响准确性的前提下，大大减少训练时间。
 
 :begin_tab:toc
- - <img src="chapter_computational-performance/hybridize.ipynb" alt="hybridize">
- - <img src="chapter_computational-performance/async-computation.ipynb" alt="async-computation">
- - <img src="chapter_computational-performance/auto-parallelism.ipynb" alt="auto-parallelism">
- - <img src="chapter_computational-performance/hardware.ipynb" alt="hardware">
- - <img src="chapter_computational-performance/multiple-gpus.ipynb" alt="multiple-gpus">
- - <img src="chapter_computational-performance/multiple-gpus-concise.ipynb" alt="multiple-gpus-concise">
- - <img src="chapter_computational-performance/parameterserver.ipynb" alt="parameterserver">
+ - [hybridize](hybridize.ipynb)
+ - [async-computation](async-computation.ipynb)
+ - [auto-parallelism](auto-parallelism.ipynb)
+ - [hardware](hardware.ipynb)
+ - [multiple-gpus](multiple-gpus.ipynb)
+ - [multiple-gpus-concise](multiple-gpus-concise.ipynb)
+ - [parameterserver](parameterserver.ipynb)
 :end_tab:
 

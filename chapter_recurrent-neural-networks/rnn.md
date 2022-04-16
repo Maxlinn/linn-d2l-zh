@@ -133,7 +133,7 @@ $\mathbf{W}_{xh} \in \mathbb{R}^{d \times h}, \mathbf{W}_{hh} \in \mathbb{R}^{h 
 而且$\mathbf{H}_t$还将送入全连接输出层，
 用于计算当前时间步$t$的输出$\mathbf{O}_t$。
 
-!<img src="img/rnn.svg" alt="具有隐状态的循环神经网络">
+<img src="img/rnn.svg" alt="具有隐状态的循环神经网络">
 :label:`fig_rnn`
 
 我们刚才提到，隐状态中
@@ -207,7 +207,7 @@ Bengio等人首先提出使用神经网络进行语言建模
 如何通过基于字符级语言建模的循环神经网络，
 使用当前的和先前的字符预测下一个字符。
 
-!<img src="img/rnn-train.svg" alt="基于循环神经网络的字符级语言模型：输入序列和标签序列分别为“machin”和“achine”">
+<img src="img/rnn-train.svg" alt="基于循环神经网络的字符级语言模型：输入序列和标签序列分别为“machin”和“achine”">
 :label:`fig_rnn_train`
 
 在训练过程中，我们对每个时间步的输出层的输出进行softmax操作，
@@ -257,7 +257,7 @@ Bengio等人首先提出使用神经网络进行语言建模
 在这里，信息论可以派上用场了。
 我们在引入softmax回归
 （ :numref:`subsec_info_theory_basics`）时定义了熵、惊异和交叉熵，
-并在<img src="https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/information-theory.html" alt="信息论的在线附录">
+并在[信息论的在线附录](https://d2l.ai/chapter_appendix-mathematics-for-deep-learning/information-theory.html)
 中讨论了更多的信息论知识。
 如果想要压缩文本，我们可以根据当前词元集预测的下一个词元。
 一个更好的语言模型应该能让我们更准确地预测下一个词元。
@@ -308,5 +308,5 @@ $$\exp\left(-\frac{1}{n} \sum_{t=1}^n \log P(x_t \mid x_{t-1}, \ldots, x_1)\righ
 1. 与本节中描述的语言模型相关的问题有哪些？
 
 
-<img src="https://discuss.d2l.ai/t/2100" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/2100)
 

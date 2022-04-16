@@ -119,7 +119,7 @@ train_bert(train_iter, net, loss, len(vocab), devices, 50)
 
 
     
-!<img src="chapter_natural-language-processing-pretraining/bert-pretraining_files/bert-pretraining_11_1.svg" alt="svg">
+<img src="chapter_natural-language-processing-pretraining/bert-pretraining_files/bert-pretraining_11_1.svg" alt="svg">
     
 
 
@@ -198,5 +198,5 @@ encoded_pair.shape, encoded_pair_cls.shape, encoded_pair_crane[0][:3]
 2. 将BERT输入序列的最大长度设置为512（与原始BERT模型相同）。使用原始BERT模型的配置，如$\text{BERT}_{\text{LARGE}}$。运行此部分时是否遇到错误？为什么？
 
 
-<img src="https://discuss.d2l.ai/t/5743" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5743)
 

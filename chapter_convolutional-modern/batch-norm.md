@@ -207,7 +207,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-!<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_7_1.svg" alt="svg">
+<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_7_1.svg" alt="svg">
     
 
 
@@ -262,7 +262,7 @@ d2l.train_ch6(net, train_iter, test_iter, num_epochs, lr, d2l.try_gpu())
 
 
     
-!<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_13_1.svg" alt="svg">
+<img src="chapter_convolutional-modern/batch-norm_files/batch-norm_13_1.svg" alt="svg">
     
 
 
@@ -311,5 +311,5 @@ Ali Rahimi在接受2017年NeurIPS大会的“接受时间考验奖”（Test of 
 1. 研究思路：想想你可以应用的其他“规范化”转换？你可以应用概率积分变换吗？全秩协方差估计可以么？
 
 
-<img src="https://discuss.d2l.ai/t/1874" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1874)
 

@@ -31,7 +31,7 @@
 在本章中，我们将重点讨论如何预训练文本的这种表示，
 如 :numref:`fig_nlp-map-pretrain`中所强调的那样。
 
-!<img src="img/nlp-map-pretrain.svg" alt="预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务（本章主要研究上游文本的预训练）">
+<img src="img/nlp-map-pretrain.svg" alt="预训练好的文本表示可以放入各种深度学习架构，应用于不同自然语言处理任务（本章主要研究上游文本的预训练）">
 :label:`fig_nlp-map-pretrain`
 
  :numref:`fig_nlp-map-pretrain`显示了
@@ -39,15 +39,15 @@
 我们将在 :numref:`chap_nlp_app`中介绍它们。
 
 :begin_tab:toc
- - <img src="chapter_natural-language-processing-pretraining/word2vec.ipynb" alt="word2vec">
- - <img src="chapter_natural-language-processing-pretraining/approx-training.ipynb" alt="approx-training">
- - <img src="chapter_natural-language-processing-pretraining/word-embedding-dataset.ipynb" alt="word-embedding-dataset">
- - <img src="chapter_natural-language-processing-pretraining/word2vec-pretraining.ipynb" alt="word2vec-pretraining">
- - <img src="chapter_natural-language-processing-pretraining/glove.ipynb" alt="glove">
- - <img src="chapter_natural-language-processing-pretraining/subword-embedding.ipynb" alt="subword-embedding">
- - <img src="chapter_natural-language-processing-pretraining/similarity-analogy.ipynb" alt="similarity-analogy">
- - <img src="chapter_natural-language-processing-pretraining/bert.ipynb" alt="bert">
- - <img src="chapter_natural-language-processing-pretraining/bert-dataset.ipynb" alt="bert-dataset">
- - <img src="chapter_natural-language-processing-pretraining/bert-pretraining.ipynb" alt="bert-pretraining">
+ - [word2vec](word2vec.ipynb)
+ - [approx-training](approx-training.ipynb)
+ - [word-embedding-dataset](word-embedding-dataset.ipynb)
+ - [word2vec-pretraining](word2vec-pretraining.ipynb)
+ - [glove](glove.ipynb)
+ - [subword-embedding](subword-embedding.ipynb)
+ - [similarity-analogy](similarity-analogy.ipynb)
+ - [bert](bert.ipynb)
+ - [bert-dataset](bert-dataset.ipynb)
+ - [bert-pretraining](bert-pretraining.ipynb)
 :end_tab:
 

@@ -20,7 +20,7 @@ $$\frac{\mathbf{x}^\top \mathbf{y}}{\|\mathbf{x}\| \|\mathbf{y}\|} \in [-1, 1].$
 
 ## 自监督的word2vec
 
-<img src="https://code.google.com/archive/p/word2vec/" alt="word2vec">工具是为了解决上述问题而提出的。==它将每个词映射到一个固定长度的向量，这些向量能更好地表达不同词之间的相似性和类比关系。word2vec工具包含两个模型，即*跳元模型*（skip-gram） :cite:`Mikolov.Sutskever.Chen.ea.2013`和*连续词袋*（CBOW） :cite:`Mikolov.Chen.Corrado.ea.2013`。==对于在语义上有意义的表示，==它们的训练依赖于条件概率，条件概率可以被看作是使用语料库中一些词来预测另一些单词。由于是不带标签的数据，因此跳元模型和连续词袋都是*自监督模型*。==
+[word2vec](https://code.google.com/archive/p/word2vec/)工具是为了解决上述问题而提出的。==它将每个词映射到一个固定长度的向量，这些向量能更好地表达不同词之间的相似性和类比关系。word2vec工具包含两个模型，即*跳元模型*（skip-gram） :cite:`Mikolov.Sutskever.Chen.ea.2013`和*连续词袋*（CBOW） :cite:`Mikolov.Chen.Corrado.ea.2013`。==对于在语义上有意义的表示，==它们的训练依赖于条件概率，条件概率可以被看作是使用语料库中一些词来预测另一些单词。由于是不带标签的数据，因此跳元模型和连续词袋都是*自监督模型*。==
 
 > 自监督模型属于有监督模型，自监督的监督信号来自**数据集构造**，自监督学习方法：基于上下文、基于时序、基于对比等。
 > 
@@ -42,7 +42,7 @@ $$P(\textrm{"the"},\textrm{"man"},\textrm{"his"},\textrm{"son"}\mid\textrm{"love
 
 $$P(\textrm{"the"}\mid\textrm{"loves"})\cdot P(\textrm{"man"}\mid\textrm{"loves"})\cdot P(\textrm{"his"}\mid\textrm{"loves"})\cdot P(\textrm{"son"}\mid\textrm{"loves"}).$$
 
-!<img src="img/skip-gram.svg" alt="跳元模型考虑了在给定中心词的情况下生成周围上下文词的条件概率">
+<img src="img/skip-gram.svg" alt="跳元模型考虑了在给定中心词的情况下生成周围上下文词的条件概率">
 :label:`fig_skip_gram`
 
 > 区分Skip-Gram与N-gram，N-gram的公式如下，预测的是短语出现的概率
@@ -125,7 +125,7 @@ $$\begin{aligned}\frac{\partial \text{log}\, P(w_o \mid w_c)}{\partial \mathbf{v
 
 $$P(\textrm{"loves"}\mid\textrm{"the"},\textrm{"man"},\textrm{"his"},\textrm{"son"}).$$
 
-!<img src="img/cbow.svg" alt="连续词袋模型考虑了给定周围上下文词生成中心词条件概率">
+<img src="img/cbow.svg" alt="连续词袋模型考虑了给定周围上下文词生成中心词条件概率">
 
 :label:`fig_cbow`
 
@@ -175,7 +175,7 @@ $$\frac{\partial \log\, P(w_c \mid \mathcal{W}_o)}{\partial \mathbf{v}_{o_i}} = 
 1. 英语中的一些固定短语由多个单词组成，例如“new york”。如何训练它们的词向量？提示:查看word2vec论文的第四节 :cite:`Mikolov.Sutskever.Chen.ea.2013`。
 1. 让我们以跳元模型为例来思考word2vec设计。跳元模型中两个词向量的点积与余弦相似度之间有什么关系？对于语义相似的一对词，为什么它们的词向量（由跳元模型训练）的余弦相似度可能很高？
 
-<img src="https://discuss.d2l.ai/t/5744" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5744)
 
 
 ```python

@@ -17,7 +17,7 @@
 本章将探讨两种流行且具有代表性的下游自然语言处理任务：
 情感分析和自然语言推断，它们分别分析单个文本和文本对之间的关系。
 
-!<img src="img/nlp-map-app.svg" alt="预训练文本表示可以通过不同模型架构，放入不同的下游自然语言处理应用（本章重点介绍如何为不同的下游应用设计模型）">
+<img src="img/nlp-map-app.svg" alt="预训练文本表示可以通过不同模型架构，放入不同的下游自然语言处理应用（本章重点介绍如何为不同的下游应用设计模型）">
 :label:`fig_nlp-map-app`
 
 如 :numref:`fig_nlp-map-app`所述，
@@ -42,12 +42,12 @@
 下面，我们从情感分析应用开始，分别解读基于循环神经网络和卷积神经网络的模型设计。
 
 :begin_tab:toc
- - <img src="chapter_natural-language-processing-applications/sentiment-analysis-and-dataset.ipynb" alt="sentiment-analysis-and-dataset">
- - <img src="chapter_natural-language-processing-applications/sentiment-analysis-rnn.ipynb" alt="sentiment-analysis-rnn">
- - <img src="chapter_natural-language-processing-applications/sentiment-analysis-cnn.ipynb" alt="sentiment-analysis-cnn">
- - <img src="chapter_natural-language-processing-applications/natural-language-inference-and-dataset.ipynb" alt="natural-language-inference-and-dataset">
- - <img src="chapter_natural-language-processing-applications/natural-language-inference-attention.ipynb" alt="natural-language-inference-attention">
- - <img src="chapter_natural-language-processing-applications/finetuning-bert.ipynb" alt="finetuning-bert">
- - <img src="chapter_natural-language-processing-applications/natural-language-inference-bert.ipynb" alt="natural-language-inference-bert">
+ - [sentiment-analysis-and-dataset](sentiment-analysis-and-dataset.ipynb)
+ - [sentiment-analysis-rnn](sentiment-analysis-rnn.ipynb)
+ - [sentiment-analysis-cnn](sentiment-analysis-cnn.ipynb)
+ - [natural-language-inference-and-dataset](natural-language-inference-and-dataset.ipynb)
+ - [natural-language-inference-attention](natural-language-inference-attention.ipynb)
+ - [finetuning-bert](finetuning-bert.ipynb)
+ - [natural-language-inference-bert](natural-language-inference-bert.ipynb)
 :end_tab:
 

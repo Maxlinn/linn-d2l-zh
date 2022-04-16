@@ -60,7 +60,7 @@ d2l.plt.xlabel('time');
 
 
     
-!<img src="chapter_optimization/rmsprop_files/rmsprop_2_0.svg" alt="svg">
+<img src="chapter_optimization/rmsprop_files/rmsprop_2_0.svg" alt="svg">
     
 
 
@@ -95,7 +95,7 @@ d2l.show_trace_2d(f_2d, d2l.train_2d(rmsprop_2d))
 
 
     
-!<img src="chapter_optimization/rmsprop_files/rmsprop_4_1.svg" alt="svg">
+<img src="chapter_optimization/rmsprop_files/rmsprop_4_1.svg" alt="svg">
     
 
 
@@ -137,7 +137,7 @@ d2l.train_ch11(rmsprop, init_rmsprop_states(feature_dim),
 
 
     
-!<img src="chapter_optimization/rmsprop_files/rmsprop_9_1.svg" alt="svg">
+<img src="chapter_optimization/rmsprop_files/rmsprop_9_1.svg" alt="svg">
     
 
 
@@ -158,7 +158,7 @@ d2l.train_concise_ch11(trainer, {'lr': 0.01, 'alpha': 0.9},
 
 
     
-!<img src="chapter_optimization/rmsprop_files/rmsprop_11_1.svg" alt="svg">
+<img src="chapter_optimization/rmsprop_files/rmsprop_11_1.svg" alt="svg">
     
 
 
@@ -177,5 +177,5 @@ d2l.train_concise_ch11(trainer, {'lr': 0.01, 'alpha': 0.9},
 1. 随着优化的进展，需要调整$\gamma$吗？RMSProp算法对此有多敏感？
 
 
-<img src="https://discuss.d2l.ai/t/4322" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/4322)
 

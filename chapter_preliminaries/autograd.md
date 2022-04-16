@@ -251,5 +251,5 @@ a.grad == d / a
 1. 使$f(x)=\sin(x)$，绘制$f(x)$和$\frac{df(x)}{dx}$的图像，其中后者不使用$f'(x)=\cos(x)$。
 
 
-<img src="https://discuss.d2l.ai/t/1759" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/1759)
 

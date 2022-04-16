@@ -13,19 +13,19 @@
 最后在结束本章时，我们将本章和前几章的知识应用于两个流行的计算机视觉基准数据集。
 
 :begin_tab:toc
- - <img src="chapter_computer-vision/image-augmentation.ipynb" alt="image-augmentation">
- - <img src="chapter_computer-vision/fine-tuning.ipynb" alt="fine-tuning">
- - <img src="chapter_computer-vision/bounding-box.ipynb" alt="bounding-box">
- - <img src="chapter_computer-vision/anchor.ipynb" alt="anchor">
- - <img src="chapter_computer-vision/multiscale-object-detection.ipynb" alt="multiscale-object-detection">
- - <img src="chapter_computer-vision/object-detection-dataset.ipynb" alt="object-detection-dataset">
- - <img src="chapter_computer-vision/ssd.ipynb" alt="ssd">
- - <img src="chapter_computer-vision/rcnn.ipynb" alt="rcnn">
- - <img src="chapter_computer-vision/semantic-segmentation-and-dataset.ipynb" alt="semantic-segmentation-and-dataset">
- - <img src="chapter_computer-vision/transposed-conv.ipynb" alt="transposed-conv">
- - <img src="chapter_computer-vision/fcn.ipynb" alt="fcn">
- - <img src="chapter_computer-vision/neural-style.ipynb" alt="neural-style">
- - <img src="chapter_computer-vision/kaggle-cifar10.ipynb" alt="kaggle-cifar10">
- - <img src="chapter_computer-vision/kaggle-dog.ipynb" alt="kaggle-dog">
+ - [image-augmentation](image-augmentation.ipynb)
+ - [fine-tuning](fine-tuning.ipynb)
+ - [bounding-box](bounding-box.ipynb)
+ - [anchor](anchor.ipynb)
+ - [multiscale-object-detection](multiscale-object-detection.ipynb)
+ - [object-detection-dataset](object-detection-dataset.ipynb)
+ - [ssd](ssd.ipynb)
+ - [rcnn](rcnn.ipynb)
+ - [semantic-segmentation-and-dataset](semantic-segmentation-and-dataset.ipynb)
+ - [transposed-conv](transposed-conv.ipynb)
+ - [fcn](fcn.ipynb)
+ - [neural-style](neural-style.ipynb)
+ - [kaggle-cifar10](kaggle-cifar10.ipynb)
+ - [kaggle-dog](kaggle-dog.ipynb)
 :end_tab:
 

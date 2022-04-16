@@ -3,14 +3,14 @@
 
 我们在 :numref:`sec_natural-language-inference-and-dataset`中介绍了自然语言推断任务和SNLI数据集。鉴于许多模型都是基于复杂而深度的架构，Parikh等人提出用注意力机制解决自然语言推断问题，并称之为“可分解注意力模型” :cite:`Parikh.Tackstrom.Das.ea.2016`。这使得模型没有循环层或卷积层，在SNLI数据集上以更少的参数实现了当时的最佳结果。在本节中，我们将描述并实现这种基于注意力的自然语言推断方法（使用MLP），如 :numref:`fig_nlp-map-nli-attention`中所述。
 
-!<img src="img/nlp-map-nli-attention.svg" alt="将预训练GloVe送入基于注意力和MLP的自然语言推断架构">
+<img src="img/nlp-map-nli-attention.svg" alt="将预训练GloVe送入基于注意力和MLP的自然语言推断架构">
 :label:`fig_nlp-map-nli-attention`
 
 ## 模型
 
 与保留前提和假设中词元的顺序相比，我们可以将一个文本序列中的词元与另一个文本序列中的每个词元对齐，然后比较和聚合这些信息，以预测前提和假设之间的逻辑关系。与机器翻译中源句和目标句之间的词元对齐类似，前提和假设之间的词元对齐可以通过注意力机制灵活地完成。
 
-!<img src="img/nli-attention.svg" alt="利用注意力机制进行自然语言推断">
+<img src="img/nli-attention.svg" alt="利用注意力机制进行自然语言推断">
 :label:`fig_nli_attention`
 
  :numref:`fig_nli_attention`描述了使用注意力机制的自然语言推断方法。从高层次上讲，它由三个联合训练的步骤组成：对齐、比较和汇总。我们将在下面一步一步地对它们进行说明。
@@ -236,7 +236,7 @@ d2l.train_ch13(net, train_iter, test_iter, loss, trainer, num_epochs,
 
 
     
-!<img src="chapter_natural-language-processing-applications/natural-language-inference-attention_files/natural-language-inference-attention_18_1.svg" alt="svg">
+<img src="chapter_natural-language-processing-applications/natural-language-inference-attention_files/natural-language-inference-attention_18_1.svg" alt="svg">
     
 
 
@@ -288,5 +288,5 @@ predict_snli(net, vocab, ['he', 'is', 'good', '.'], ['he', 'is', 'bad', '.'])
 1. 假设我们想要获得任何一对句子的语义相似级别（例如，0到1之间的连续值）。我们应该如何收集和标注数据集？你能设计一个有注意力机制的模型吗？
 
 
-<img src="https://discuss.d2l.ai/t/5728" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5728)
 

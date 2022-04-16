@@ -76,7 +76,7 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=50, f_grad=f_grad))
 
 
     
-!<img src="chapter_optimization/sgd_files/sgd_5_1.svg" alt="svg">
+<img src="chapter_optimization/sgd_files/sgd_5_1.svg" alt="svg">
     
 
 
@@ -119,7 +119,7 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=1000, f_grad=f_grad))
 
 
     
-!<img src="chapter_optimization/sgd_files/sgd_7_1.svg" alt="svg">
+<img src="chapter_optimization/sgd_files/sgd_7_1.svg" alt="svg">
     
 
 
@@ -144,11 +144,11 @@ d2l.show_trace_2d(f, d2l.train_2d(sgd, steps=50, f_grad=f_grad))
 
 
     
-!<img src="chapter_optimization/sgd_files/sgd_9_1.svg" alt="svg">
+<img src="chapter_optimization/sgd_files/sgd_9_1.svg" alt="svg">
     
 
 
-关于如何设置学习率，还有更多的选择。例如，我们可以从较小的学习率开始，然后使其迅速上涨，再让它降低，尽管这会更慢。我们甚至可以在较小和较大的学习率之间切换。这样的计划各种各样。现在，让我们专注于可以进行全面理论分析的学习率计划，即凸环境下的学习率。对于一般的非凸问题，很难获得有意义的收敛保证，因为总的来说，最大限度地减少非线性非凸问题是NP困难的。有关的研究调查，请参阅例如2015年Tibshirani的优秀<img src="https://www.stat.cmu.edu/~ryantibs/convexopt-F15/lectures/26-nonconvex.pdf" alt="讲义笔记">。
+关于如何设置学习率，还有更多的选择。例如，我们可以从较小的学习率开始，然后使其迅速上涨，再让它降低，尽管这会更慢。我们甚至可以在较小和较大的学习率之间切换。这样的计划各种各样。现在，让我们专注于可以进行全面理论分析的学习率计划，即凸环境下的学习率。对于一般的非凸问题，很难获得有意义的收敛保证，因为总的来说，最大限度地减少非线性非凸问题是NP困难的。有关的研究调查，请参阅例如2015年Tibshirani的优秀[讲义笔记](https://www.stat.cmu.edu/~ryantibs/convexopt-F15/lectures/26-nonconvex.pdf)。
 
 ## 凸目标的收敛性分析
 
@@ -244,5 +244,5 @@ $${n \choose 1} \frac{1}{n} \left(1-\frac{1}{n}\right)^{n-1} = \frac{n}{n-1} \le
 1. 假设$f(x) = x^2 (1 + \sin x)$。$f$有多少局部最小值？你能改变$f$以尽量减少它需要评估所有局部最小值的方式吗？
 
 
-<img src="https://discuss.d2l.ai/t/3838" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/3838)
 

@@ -7,7 +7,7 @@
 
 Transformer作为编码器－解码器架构的一个实例，其整体架构图在 :numref:`fig_transformer`中展示。正如所见到的，transformer是由编码器和解码器组成的。与 :numref:`fig_s2s_attention_details`中基于Bahdanau注意力实现的序列到序列的学习相比，transformer的编码器和解码器是基于自注意力的模块叠加而成的，源（输入）序列和目标（输出）序列的*嵌入*（embedding）表示将加上*位置编码*（positional encoding），再分别输入到编码器和解码器中。
 
-!<img src="img/transformer.svg" alt="transformer架构">
+<img src="img/transformer.svg" alt="transformer架构">
 :width:`500px`
 :label:`fig_transformer`
 
@@ -376,7 +376,7 @@ d2l.train_seq2seq(net, train_iter, lr, num_epochs, tgt_vocab, device)
 
 
     
-!<img src="chapter_attention-mechanisms/transformer_files/transformer_27_1.svg" alt="svg">
+<img src="chapter_attention-mechanisms/transformer_files/transformer_27_1.svg" alt="svg">
     
 
 
@@ -430,7 +430,7 @@ d2l.show_heatmaps(
 
 
     
-!<img src="chapter_attention-mechanisms/transformer_files/transformer_33_0.svg" alt="svg">
+<img src="chapter_attention-mechanisms/transformer_files/transformer_33_0.svg" alt="svg">
     
 
 
@@ -471,7 +471,7 @@ d2l.show_heatmaps(
 
 
     
-!<img src="chapter_attention-mechanisms/transformer_files/transformer_37_0.svg" alt="svg">
+<img src="chapter_attention-mechanisms/transformer_files/transformer_37_0.svg" alt="svg">
     
 
 
@@ -488,7 +488,7 @@ d2l.show_heatmaps(
 
 
     
-!<img src="chapter_attention-mechanisms/transformer_files/transformer_39_0.svg" alt="svg">
+<img src="chapter_attention-mechanisms/transformer_files/transformer_39_0.svg" alt="svg">
     
 
 
@@ -511,5 +511,5 @@ d2l.show_heatmaps(
 1. 如果不使用卷积神经网络，如何设计基于transformer模型的图像分类任务？提示：可以参考Vision Transformer :cite:`Dosovitskiy.Beyer.Kolesnikov.ea.2021`。
 
 
-<img src="https://discuss.d2l.ai/t/5756" alt="Discussions">
+[Discussions](https://discuss.d2l.ai/t/5756)
 
