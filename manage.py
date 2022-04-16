@@ -71,7 +71,7 @@ class FixLocalLinkComponent(IComponent):
                         target_relname = target_relname.replace('\\', '/')
                     return f'<img src="{target_relname}" alt="{text}">'
 
-                content = re.sub(r'\[(.*?)\]\((.+?)\)', callback, content)
+                content = re.sub(r'!\[(.*?)\]\((.+?)\)', callback, content)
 
                 with open(filename, 'w', encoding='utf-8') as f:
                     f.write(content)
