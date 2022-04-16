@@ -100,8 +100,8 @@ class GenSideBarComponent(IComponent):
         #                     default=3, help='File/Dir deeper than max_depth will be flattened, consider root as 1.')
         # todo: how to check time in git
         parser.add_argument('--gen-sort-by', type=str,
-                            choices=['name', 'name_desc', 'created',
-                                     'created_desc', 'modified', 'modified_desc'],
+                            choices=('name', 'name_desc', 'created',
+                                     'created_desc', 'modified', 'modified_desc'),
                             default='name',
                             const='name',
                             nargs='?',
@@ -167,10 +167,10 @@ class GenSideBarComponent(IComponent):
                 def criterion(fname): return fname
             elif args.gen_sort_by.find('created') != -1:
                 def criterion(fname): return os.stat(
-                    os.path.join(args.gen_base_dir), fname).st_ctime
+                    os.path.join(args.gen_base_dir, fname)).st_ctime
             elif args.gen_sort_by.find('modified') != -1:
                 def criterion(fname): return os.stat(
-                    os.path.join(args.gen_base_dir), fname).st_mtime
+                    os.path.join(args.gen_base_dir, fname)).st_mtime
             return criterion, is_reverse
 
         # Generate markdown bullet list sidebar, DFS
