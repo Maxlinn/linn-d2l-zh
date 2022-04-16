@@ -27,7 +27,7 @@ class FixLocalLinkComponent(IComponent):
                             default='.', help='From where to start fix, default to current directory.')
         parser.add_argument('--fix-file-ext-regex', type=str,
                             default=r'\.md|\.ipynb', help='Which extensions of file to fix, using regex; '
-                                                  'If want everything(even no ext), using ".*".')
+                            'If want everything(even no ext), using ".*".')
         parser.add_argument('--fix-convert-path-sep', action='store_true',
                             default=True, help='Whether to replace \\ in link to /.')
 
@@ -50,23 +50,26 @@ class FixLocalLinkComponent(IComponent):
                 with open(filename, 'r', encoding='utf-8') as f:
                     content = f.read()
 
+                # replace the markdown syntax to html syntax
+                # because docsify will automatically add prefix to the link
+                # see https://github.com/docsifyjs/docsify/issues/850
                 def callback(matchobj):
                     # 0-th position of matchobj is the original string
                     text, link = matchobj.group(1), matchobj.group(2)
                     # ignore link with a scheme, like 'http/https/file'
                     if urlparse(link).scheme:
-                        return f'[{text}][{link}]'
+                        return f'<img src="{link}" alt="{text}">'
                     # the link is relative of current dir, that is, root
                     target_filename = os.path.join(root, link)
-                    # must: ask OS to do the simplification
-                    target_filename = os.path.realpath(target_filename)
-                    # compute the relative path to base dir
+                    # noneed: ask OS to do the simplification
+                    # target_filename = os.path.realpath(target_filename)
+                    # # compute the relative path to base dir
                     target_relname = os.path.relpath(
                         target_filename, args.fix_base_dir)
                     # replace \\ to /
                     if args.fix_convert_path_sep:
                         target_relname = target_relname.replace('\\', '/')
-                    return f'[{text}]({target_relname})'
+                    return f'<img src="{target_relname}" alt="{text}">'
 
                 content = re.sub(r'\[(.*?)\]\((.+?)\)', callback, content)
 
@@ -156,11 +159,13 @@ class GenSideBarComponent(IComponent):
             is_reverse = (args.gen_sort_by.rfind('_desc') != -1)
             criterion = None
             if args.gen_sort_by.find('name') != -1:
-                criterion = lambda fname: fname
+                def criterion(fname): return fname
             elif args.gen_sort_by.find('created') != -1:
-                criterion = lambda fname: os.stat(os.path.join(args.gen_base_dir), fname).st_ctime
+                def criterion(fname): return os.stat(
+                    os.path.join(args.gen_base_dir), fname).st_ctime
             elif args.gen_sort_by.find('modified') != -1:
-                criterion = lambda fname: os.stat(os.path.join(args.gen_base_dir), fname).st_mtime
+                def criterion(fname): return os.stat(
+                    os.path.join(args.gen_base_dir), fname).st_mtime
             return criterion, is_reverse
 
         # Generate markdown bullet list sidebar, DFS
@@ -172,12 +177,14 @@ class GenSideBarComponent(IComponent):
             nonlocal towrite
             # sort dirnames and filenames this level altogether
             dirnames, filenames = dir2ls[root]
-            names = sorted(dirnames + filenames, key=criterion, reverse=is_reverse)
+            names = sorted(dirnames + filenames,
+                           key=criterion, reverse=is_reverse)
             for name in names:
                 basename = os.path.basename(name)
                 basename_noext = os.path.splitext(basename)[0]
 
-                line = '\t' * indent + f'- [{basename_noext}]({clean_path(name)})'
+                line = '\t' * indent + \
+                    f'- [{basename_noext}]({clean_path(name)})'
                 towrite += line + '\n'
                 # recursively searching. using 'name in dirnames' to decide whether it's a file of dir
                 # since generally dirs are less than files
